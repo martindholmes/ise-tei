@@ -1,0 +1,928 @@
+<!doctype html>
+<!-- Server: sfs-consume-14 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta id="webtracker" name="webtracker" content='{"event_id": "9ba7102c-d8b7-11e4-b304-0200ac1d1d1a", "project": "jsch", "non_clicker": 0.7153287545292503, "active_tests": ["psp_redirect_immersion"], "clicker": 0.28755643001855197}'>
+
+        <meta name="description" content="JSch is a pure Java implementation of SSH2. JSch allows you to connect to an sshd server and use port forwarding, X11 forwarding, file transfer, …">
+        <meta name="keywords" content="Security,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
+<noscript>
+    <meta http-equiv="refresh" content="5; url=http://downloads.sourceforge.net/project/jsch/jsch.jar/0.1.52/jsch-0.1.52.jar?r=http%3A%2F%2Fwww.jcraft.com%2Fjsch%2F&amp;ts=1427924383&amp;use_mirror=hivelocity">
+</noscript>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Download JSch from SourceForge.net</title>
+        <link rel="shortcut icon" href="//a.fsdn.com/con/img/sftheme/favicon.ico">
+        
+
+<!-- CCM Tag -->
+<script type="text/javascript">
+  //ccm informer
+/*jshint ignore:start*/
+    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+/*jshint ignore:end*/
+
+  //ccm tag
+  (function () {
+    /*global _ml:true, window */
+    _ml = window._ml || {};
+    _ml.eid = '771';
+    _ml.ht = 'shex';
+    _ml.informer = {
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+    s.parentNode.insertBefore(mltag, s);
+  })();
+</script>
+<!-- End CCM Tag -->
+
+    <link rel="canonical" href="http://sourceforge.net/projects/jsch/">
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG, ga */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1427907890';
+        </script>
+        <script src="//a.fsdn.com/con/js/min/sf.head.js?1427907890" type="text/javascript"></script>
+        
+<!--[if lt IE 7 ]>
+  <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+ 
+<link rel="stylesheet" href="//a.fsdn.com/con/css/download.css?1427907890" type="text/css">
+<style type="text/css">
+    .Bb73f6e271f9c5e4c4bf6e493af1df274b3eab67a { display: none !important; }
+</style>
+
+  
+
+    <style type="text/css" >.sfdl { width:150px;height:28px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 0px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl-lite { background:0 center no-repeat #337733 none;color:white !important;height:auto;padding:0.5em 1em;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #339933), color-stop(100%, #337733));background-image:-moz-linear-gradient(top, #339933 0%, #337733 100%);background-image:linear-gradient(top, #339933 0%, #337733 100%);}.sfdl-lite:hover { background:0 center no-repeat #339933;}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:14px;}.sfdl b { display:block;line-height:7.0px;}.sfdl small { display:block;line-height:7.0px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}.info-circle{ right:10px;bottom:16px;}.direct-dl{ font-size:10px;text-align:right;display:inline-block;width:100%;}</style>
+
+
+        
+<script type="text/javascript">
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+        
+  <script type='text/javascript'>
+
+   (function() {
+         var useSSL = 'https:' === document.location.protocol;
+         var src = (useSSL ? 'https:' : 'http:') +
+               '//www.googletagservices.com/tag/js/gpt.js';
+         document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+   })();
+   </script>
+
+   <!-- GPT Slot Definitions -->
+   <script type='text/javascript'>
+       /*global googletag */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_A', [728, 90], 'div-gpt-ad-1392148432530-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Dwnld_immersion_700x500', [700, 500], 'div-gpt-ad-1392148432589-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('db_zip', 'V8W 2Y2')
+                                                        .setTargeting('db_csize', '100_to_499')
+                                                        .setTargeting('db_ip', '142.104.196.240')
+                                                        .setTargeting('db_cname', 'University of Victoria')
+                                                        .setTargeting('db_industry', 'Healthcare_Medical_Pharmaceutical_BioTech')
+                                                        .setTargeting('db_city', 'Victoria')
+                                                        .setTargeting('db_state', 'BC')
+                                                        .setTargeting('db_psic', '8049')
+                                                        .setTargeting('db_country', 'CA')
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '700x500')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_300x250_A', [300, 250], 'div-gpt-ad-1392148432580-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_B', [728, 90], 'div-gpt-ad-1392148432597-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_Multi', [[300, 250], [336, 280], [580, 400], [600, 300], [650, 500], [728, 90]], 'div-gpt-ad-1392148432584-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '300x250,336x280,580x400,600x300,650x500,728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_728x90', [728, 90], 'div-gpt-ad-1392148432581-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_300x250', [300, 250], 'div-gpt-ad-1392148432582-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Temp3_300x250'] =  'logNoRenderInGA';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_728x90_A', [728, 90], 'div-gpt-ad-1392148432591-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_728x90_B', [728, 90], 'div-gpt-ad-1392148432592-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_300x250_A', [300, 250], 'div-gpt-ad-1392148432593-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_300x250_B', [300, 250], 'div-gpt-ad-1392148432594-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_multi_A', [[728, 90], [300, 250], [336, 280]], 'div-gpt-ad-1392148432595-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '728x90,300x250,336x280')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_622x297_A', [622, 297], 'div-gpt-ad-1392148432596')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '622x297')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left', [150, 1060], 'div-gpt-ad-139343511-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right', [150, 1060], 'div-gpt-ad-139343512-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['jsch', 'security', 'java'])
+                                                        .setTargeting('shortname', 'jsch')
+                                                        .setTargeting('aud', ['endusers'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.52/jsch-0.1.52.jar/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('u', 'e:9ba7102c-d8b7-11e4-b304-0200ac1d1d1a')
+                                                        .setTargeting('page_type', 'pg_download'));
+            
+            googletag.pubads().enableSyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.b.b;
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+        });
+   </script>
+        
+
+        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1427907890"></script>
+<script type="text/javascript" src="//a.fsdn.com/con/js/madmen.js?1427907890"></script>
+<script type="text/javascript">
+    
+    SF.Ads.AdtemplateImpression = false;
+    
+
+    SF.Ads.wireWindowOnError();
+    SF.geoCountryCode = 'CA';
+
+    
+    SF.Ads.ironsource = true;
+    SF.Ads.ironsourceType = 'multisize';
+    
+</script>
+
+        <script type="text/javascript">
+
+            /*jshint ignore:start*/
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            /*jshint ignore:end*/
+
+            //var $ = jQuery.noConflict(); // jshint ignore:line
+        </script>
+        <script type="text/javascript">
+                ga('create', 'UA-36130941-1', {'name': '1'});
+                ga('create', 'UA-36130941-1', 'auto');
+            if (typeof _ml !== 'undefined' && _ml.us) {
+                if (_ml.us.tp && _ml.us.tp.length > 0) {
+                    ga('set', 'dimension2', _ml.us.tp[0]);
+                }
+                if (_ml.us.pc && _ml.us.pc.length > 0) {
+                    ga('set', 'dimension7', _ml.us.pc[0]);
+                }
+                ga('set', 'dimension3', _ml.us.ind);
+                ga('set', 'dimension4', _ml.us.cr);
+                ga('set', 'dimension5', _ml.us.cs);
+                ga('set', 'dimension6', _ml.us.dm);
+                ga('set', 'dimension8', _ml.us.sn);
+            }
+                ga('send', 'pageview', {'title': '1'} );
+        </script>
+    </head>
+    <body id="pg_dwnld" class="bluesteel">
+        
+
+
+
+
+
+    
+
+<div id="SF_Dwnld_immersion_700x500_wrapped" class="ad immersion ad_wrapped " data-unit="SF_Dwnld_immersion_700x500">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432589-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432589-0');
+        });
+    }
+})();
+</script>
+</div>
+<script type="text/javascript">
+SF.Ads.recordImmersionCall('#p77_immersion script[src*="ad.doubleclick.net"]', immersion_adcode, true);
+</script>
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <span>SourceForge</span>
+        </a>
+        <form method="get" action="/directory/">
+            <input type="text" id="words" name="q" placeholder="Search">
+        </form>
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="/directory/" title="Browse our software.">Browse</a>
+            <a href="/directory/enterprise" title="Browse our Enterprise software.">Enterprise</a>
+            <a href="/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/support" title="Contact us for help and feedback.">Help</a>
+            <a href="/jobs?source=header" title="Search 80k+ tech jobs." class="featured-link">Jobs</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                  <a href="https://sourceforge.net/auth/">Log In</a>
+                <span>or</span>
+                <a href="https://sourceforge.net/user/registration">Join</a>
+              </div>
+            
+        </nav>
+    </div>
+</header>
+<header id="site-sec-header">
+    <div class="wrapper">
+         
+    </div>
+</header>
+
+
+        
+<div id="banner-ads" class="ads">
+    
+
+
+
+    
+
+<div id="SF_Temp1_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Temp1_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432530-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432530-0');
+        });
+    }
+})();
+</script>
+</div>
+    
+
+
+
+    
+
+<div id="SF_Temp4_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Temp4_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432591-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432591-0');
+        });
+    }
+})();
+</script>
+</div>
+</div>
+<header id="page-header">
+    <div class="wrapper">
+	
+        
+
+<div id="downloading">
+    <div id="starting">
+        <h1>
+                <a href="/projects/jsch/">JSch</a>
+        </h1>
+
+        <p id="downloader">
+            Your download will start shortly...
+        </p>
+        <script id="redirect-template" type="text/x-handlebars-template">
+            Learn more: check out <a href="/projects/jsch/postdownload">screenshots, reviews, and more</a>. We'll take you there in a few moments.
+        </script>
+        <p id="problems">
+        
+        
+            Problems with the download?  Please use this 
+            <a href="http://downloads.sourceforge.net/project/jsch/jsch.jar/0.1.52/jsch-0.1.52.jar?r=http%3A%2F%2Fwww.jcraft.com%2Fjsch%2F&amp;ts=1427924383&amp;use_mirror=hivelocity" class="direct-download">
+        direct link</a>, or try another 
+            <a href="/settings/mirror_choices?projectname=jsch&amp;filename=jsch.jar/0.1.52/jsch-0.1.52.jar"
+               title="A mirror is an exact copy of a download available in multiple locations around the world.  Select the one closest to your location."
+               class="mirror" data-release-url="http://downloads.sourceforge.net/project/jsch/jsch.jar/0.1.52/jsch-0.1.52.jar?r=http%3A%2F%2Fwww.jcraft.com%2Fjsch%2F&amp;ts=1427924383&amp;use_mirror=hivelocity" rel="nofollow">
+        mirror</a>.
+        </p>
+    </div>
+    <div id="mirror">
+        Mirror provided by: 
+    
+      
+      
+      <a id="provider_top" href="https://www.hivelocity.net/lp/sourceforge/" title="HIVELOCITY"><img class="mirror-logo" src="http://a.fsdn.com/mirrorimages/hivelocity_100x41.png" alt="HIVELOCITY" width="100" height="41"/></a>
+    
+
+    </div>
+</div>
+<div id="mirror-drawer"></div>
+
+        
+    </div>
+        
+
+</header>
+        <div id="messages">
+        </div>
+
+        <div id="page-body">
+
+
+<div id="content-immersion" class="content">
+    <div class="ads">
+        <div id="immersion-container" class="ad immersion">
+            <script type="text/javascript">
+                document.write(immersion_adcode);
+                SF.Ads.wireWrapperResize('.ad.wrapper', '#content-immersion');
+            </script>
+        </div>
+    </div>
+    
+    
+<div class="sidebar template1">
+    
+    
+
+        
+        
+        <div class="recommended-widget">
+            
+<aside class="sidebar-widget">
+	<header>
+        <h3>Recommended Projects</h3>
+	</header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a href="/projects/ant-contrib/" title="ANT Contrib"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/ant-contrib/" title="Learn more about ANT Contrib ">ANT Contrib</a>
+                <div class="summary">
+                
+                </div>
+                </div>
+
+            </li>
+            
+                <li class="item even">
+                <a href="/projects/sshtools/" title="SSHTools"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/sshtools/" title="Learn more about SSHTools ">SSHTools</a>
+                <div class="summary">
+                
+                </div>
+                </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a href="/projects/lejos/" title="leJOS"><img alt="Icon" src="//a.fsdn.com/allura/p/lejos/icon" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/lejos/" title="Learn more about leJOS ">leJOS</a>
+                <div class="summary">
+                Run Java on the Lego EV3, NXT or RCX
+                </div>
+                </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+        </div>
+        
+        <div class="unit ">
+            
+
+
+
+    
+
+<div id="SF_Temp1_300x250_A_wrapped" class="ad medrec  " data-unit="SF_Temp1_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432580-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432580-0');
+        });
+    }
+})();
+</script>
+</div>
+        </div> 
+
+
+
+</div>
+
+    
+</div>
+
+
+<div id="content-ironsource" class="content with-sidebar">
+
+    <div id="template5-container">
+        <div class="ads template5 altered">
+            
+
+
+
+    
+    
+
+<div id="SF_Temp4_multi_A_wrapped" class="ad multisize  " data-unit="SF_Temp4_multi_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432595-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432595-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Temp5_622x297_A_wrapped" class="ad   " data-unit="SF_Temp5_622x297_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432596" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432596');
+        });
+    }
+})();
+</script>
+</div>
+                <div class="top3-widget">
+                    
+<aside class="sidebar-widget">
+	<header>
+        <h3>Top 3 Projects in Security</h3>
+	</header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a class="horiz-proj-icon" href="/projects/scrollout/" title="Scrollout F1"><img alt="Icon" src="//a.fsdn.com/allura/p/scrollout/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/scrollout/" title="Learn more about Scrollout F1 ">Scrollout F1</a>
+                <p>
+                An easy-to-use, anti-spam email gateway
+                </p>
+                </div>
+                <div class="dl-content top3_dlp_t5">
+                    <a href="/projects/scrollout/files/latest/download?source=dlp_top3" title="Scrollout F1" class="sfdl sfdl-lite">Download</a>
+                </div>
+
+            </li>
+            
+                <li class="item even">
+                <a class="horiz-proj-icon" href="/projects/assp/" title="Anti-Spam SMTP Proxy Server"><img alt="Icon" src="//a.fsdn.com/allura/p/assp/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/assp/" title="Learn more about Anti-Spam SMTP Proxy Server ">Anti-Spam SMTP Proxy Server</a>
+                <p>
+                Anti-Spam SMTP Proxy Server implements multiple spam filters
+                </p>
+                </div>
+                <div class="dl-content top3_dlp_t5">
+                    <a href="/projects/assp/files/latest/download?source=dlp_top3" title="Anti-Spam SMTP Proxy Server" class="sfdl sfdl-lite">Download</a>
+                </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a class="horiz-proj-icon" href="/projects/keepass/" title="KeePass"><img alt="Icon" src="//a.fsdn.com/allura/p/keepass/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/keepass/" title="Learn more about KeePass ">KeePass</a>
+                <p>
+                A lightweight and easy-to-use password manager
+                </p>
+                </div>
+                <div class="dl-content top3_dlp_t5">
+                    <a href="/projects/keepass/files/latest/download?source=dlp_top3" title="KeePass" class="sfdl sfdl-lite">Download</a>
+                </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+                </div>
+        </div>
+        
+        
+<div class="sidebar template5">
+    
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_300x250_A_wrapped" class="ad medrec  " data-unit="SF_Temp4_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432593-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432593-0');
+        });
+    }
+})();
+</script>
+</div>
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_300x250_B_wrapped" class="ad medrec  " data-unit="SF_Temp4_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432594-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432594-0');
+        });
+    }
+})();
+</script>
+</div>
+        
+<div class="updater-widget">
+    <aside class="sidebar-widget">
+        <header>
+            <h3>Keep Me Updated</h3>
+        </header>
+        <section>
+            <a href="/projects/jsch/">JSch</a>
+            <p>Stay up-to-date with the latest features and bug fixes.</p>
+            
+
+<form action="/projects/jsch/subscribe" method="post" class="subscribe-form">
+  
+  <input type="email" class="subscriber-email" name="XZk4AWOW5cBS2mysWnfuuqP7hSmA" placeholder="john.doe@example.org" value="" required>
+  
+  
+  <p class="subscriber-existing-email" style="display: none">
+  Sent to None.
+  
+  </p>
+  <button type="submit" class="subscriber-submit">
+    <span>
+      Subscribe to Updates
+    </span>
+  </button>
+  <input type="hidden" name="_visit_cookie" value="54f72ec02d82e32206d83dec"/>
+  <input type='hidden' name='timestamp' value='1427924383'/>
+  <input type='hidden' name='spinner' value='XYyttOYzVUdR4wqcZPGwcIA_pMZs'/>
+  <p class='Bb73f6e271f9c5e4c4bf6e493af1df274b3eab67a'><label for='XZEMCV:msYeRZAmlAsGO9t71hwJM'>You seem to have CSS turned off. Please don't fill out this field.</label><input id='XZEMCV:msYeRZAmlAsGO9t71hwJM' name='XZUMCV:msYfW4DP6VM82LkocYOeA' type='text'/></p>
+  <p class='Bb73f6e271f9c5e4c4bf6e493af1df274b3eab67a'><label for='XZEMCV:msYeVZAmlAsGO9t71hwJM'>You seem to have CSS turned off. Please don't fill out this field.</label><input id='XZEMCV:msYeVZAmlAsGO9t71hwJM' name='XZUMCV:msYPW4DP6VM82LkocYOeA' type='text'/></p>
+</form>
+
+
+
+            <section class="disclaimer">
+                <img alt="Privacy Lock" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABZ2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFjb3JuIHZlcnNpb24gMy4yLjI8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CoEEZi4AAAGWSURBVEiJtZbNLgVBEIW/M1gSxM9CJBYWViKRED9vwEKsPZKnEeIFJFjYYmEhiBC/wUIEx0Jf2p2Zvn0XatVzuqpOV83pmpFtUiapGxgFBgN0A5zZfkkGNuLrCCQVwDwwC3Q3bT8Bu8CeW5ywkiAkXwKmWxxw3/Z2yqGowaeakj8DR8AxELdmVtJkiqCzGZDUBcxF0AmwYfsp7PcCK8BY2J+XdGj7PbeCQWAgrF+BrUZyANuPwCbwFqAhoL+ugiqCHkBhfWv7ocLnDmjgBWURJAli+6gCg3LiPVX55RDUBuZaFUF8ss9EbKzvyhcMkYokjQPD/N5YgF5JCzWxcd8nJY0Ar7YPYqefiyZpFUhqOsNebK/HQNyi2jLbsFKO0kWrsUdgh+++LwJ9uYw5BAY2bZ8ASHoA1mitQMh0+gTuo+d70upqm6ADmJFUhCk7Q35r88oEJoJvEdbZlktwafs9TMzL/yC4iNbn7RDkquhKUsP3OmBZcyr3ZS3zq5zcqksEdYEi8UFpslKOmOAGOOXvlGzXSr8yX2vxed1gNcKOAAAAAElFTkSuQmCC" />
+                <p>We will only send you <strong>JSch</strong> related information.</p>
+            </section>
+        </section>
+    </aside>
+</div>
+ 
+
+
+
+</div>
+
+        
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp4_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432592-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432592-0');
+        });
+    }
+})();
+</script>
+</div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    SF.Ads.postImmersionAd(immersion_adcode, '#content-immersion', '#content-template2');
+</script>
+
+
+
+
+
+    
+
+<div id="SF_Temp1_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp1_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432597-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432597-0');
+        });
+    }
+})();
+</script>
+</div>
+
+
+
+        </div>
+        
+
+          
+<footer id="site-footer">
+    <div class="wrapper">
+        <nav>
+            <h5>SourceForge</h5>
+            <a href="/about">About</a>
+            <a href="/blog/category/sitestatus/">Site Status</a>
+            <a href="http://twitter.com/sfnet_ops">@sfnet_ops</a>
+            
+
+        </nav>
+        <nav>
+            <h5>Find and Develop Software</h5>
+            <a href="/create/">Create a Project</a>
+            <a href="/directory/">Software Directory</a>
+            <a href="/top">Top Downloaded Projects</a>
+        </nav>
+        <nav>
+            <h5>Community</h5>
+            <a href="/blog/">Blog</a>
+            <a href="http://twitter.com/sourceforge">@sourceforge</a>
+            <a href="/jobs?source=footer">Job Board</a>
+            <a href="http://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+        </nav>
+        <nav>
+            <h5>Help</h5>
+            <a href="http://p.sf.net/sourceforge/docs">Site Documentation</a>
+            <a href="/support">Support Request</a>
+            <a href="http://p.sf.net/sourceforge/irc">Real-Time Support</a>
+        </nav>
+    </div>
+</footer>
+<footer id="site-copyright-footer">
+    <div class="wrapper">
+        <div id="copyright">
+            Copyright &copy; 2015 Dice. All Rights Reserved.<br />
+            SourceForge is a <a href="http://www.diceholdingsinc.com/phoenix.zhtml?c=211152&amp;p=irol-landing">Dice Holdings, Inc.</a> service.
+        </div>
+        <nav>
+            <a href="http://slashdotmedia.com/terms-of-use/">Terms</a>
+            <a href="http://slashdotmedia.com/privacy-statement/">Privacy</a>
+            <span id='teconsent'></span>
+            <a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
+
+
+            <a href="http://slashdotmedia.com">Advertise</a>
+            <a href="http://sourceforge.jp/">SourceForge.JP</a>
+            <a href="http://apmsolutions.sourceforge.net/">Performance</a>
+        </nav>
+    </div>
+</footer>
+    <script type="text/javascript">
+        if (SF.Ads.isEnterpriseVisitor()) {
+          SF.pspRedirect = false;
+        } else {
+          SF.pspRedirect = true;
+            SF.pdlpRedirect = true; //pdlp trafficking %us is active, and its US only
+        }
+        SF.downloadDelay = 5000;
+        if (immersion_adcode) {
+            SF.downloadRedirectDelay = 60000;
+        } else {
+            SF.downloadRedirectDelay = 60000;
+        }
+        SF.ios = false;
+        SF.installer = false;
+        SF.shortname = 'jsch';
+        SF.filename = '/jsch.jar/0.1.52/jsch-0.1.52.jar';
+        SF.nowrap = false; //user chose direct
+        SF.isPreWrapped = false;
+        SF.enableEmailVerify = true;
+    </script>
+    <script src="//a.fsdn.com/con/js/min/sf.dwnld.js?1427907890" type="text/javascript"></script>
+
+
+        <!-- Begin comScore Tag -->
+        <script src="http://b.scorecardresearch.com/beacon.js"></script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035546&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cj=1" alt="comScore2" />
+        </noscript>
+        <!-- End comScore Tag -->
+    
+
+            <script type="text/javascript" src="//consent-st.truste.com/get?name=notice.js&amp;domain=slashdot.org&amp;c=teconsent&amp;text=true"></script>
+            </body>
+</html>

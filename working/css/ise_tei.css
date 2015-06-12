@@ -1,0 +1,232 @@
+/* CSS Support for Author Mode in Oxygen for ISE Projects. */
+
+/* Suppress most of the header. */
+
+teiHeader{
+  display: block;
+  padding: 1em;
+  background-color: #d0d0d0;
+  border: solid 1px black;
+  margin-bottom: 1em;
+}
+
+encodingDesc, revisionDesc, editorialDesc, editionStmt, publicationStmt, sourceDesc{
+  display: none;
+} 
+
+/* Elements in text. */
+
+front, body, back, div, head, sp, l{
+  display: block;
+}
+
+/*The first l in a speech will follow the 
+  speaker element, so it shouldn't be 
+  block. */
+speaker + l{
+  display: inline;
+}
+
+div{
+  border-top: solid 1pt gray;
+  border-bottom: solid 1pt gray;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 1em;
+}
+
+div:first-of-type{
+  border-top-width: 0;
+}
+
+div:last-of-type{
+  border-bottom-width: 0;
+}
+
+div[type="act"], div[type="prologue"], div[type="epilogue"]{
+  padding-left: 4em;
+}
+
+docTitle{
+  text-align: center;
+  font-size: 300%;
+}
+
+head{
+  text-align: center;
+  font-size: 200%;
+}
+
+speaker, stage{
+  font-style: italic;
+}
+
+stage{
+  margin: 1em 0;
+}
+
+speaker{
+  padding-left: 2em;
+  padding-right: 1em;
+  display: inline;
+}
+
+/* Breaks. */
+
+lb{
+  display: block;
+  content: "";
+}
+
+lb[type="tln"]{
+  display: none;
+}
+
+cb[n="2"], pb{
+  display: block;
+  border-bottom: solid 1px black;
+}
+
+cb[n="2"]{
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* Inline textual features. */
+g{
+  background-color: #e0e0e0;
+}
+
+*[rendition~="simple:allcaps"]{
+  text-transform: capitalize;
+}
+
+*[rendition~="simple:blackletter"]{
+  font-weight: bold;
+  font-family: monospace;
+}
+
+*[rendition~="simple:bold"]{
+  font-weight: bold;
+}
+
+*[rendition~="simple:bottombraced"]{
+  text-decoration: underline;
+}
+
+*[rendition~="simple:boxed"]{
+  border: solid 1pt black;
+  padding: 0.2em;
+}
+
+*[rendition~="simple:centre"]{
+  display: block;
+  text-align: center;
+}
+
+*[rendition~="simple:cursive"]{
+  font-family: cursive;
+}
+
+*[rendition~="simple:display"]{
+  display: block;
+}
+
+*[rendition~="simple:doublestrikethrough"]{
+  text-decoration: line-through;
+}
+
+*[rendition~="simple:doubleunderline"]{
+  text-decoration: underline;
+  border-bottom: double 1pt black;
+}
+
+*[rendition~="simple:dropcap"]{
+  display: inline-block;
+  float: left;
+  font-size: 300%;
+}
+
+*[rendition~="simple:float"]{
+  display: block;
+  float: left;
+}
+
+*[rendition~="simple:hyphen"]{
+  content: "-";
+}
+
+*[rendition~="simple:italic"]{
+  font-style: italic;
+}
+
+*[rendition~="simple:larger"]{
+  font-size: 120%;
+}
+
+*[rendition~="simple:leftbraced"]{
+  border-left: solid 1pt black;
+}
+
+*[rendition~="simple:letterspace"]{
+  letter-spacing: 1ex;
+}
+
+*[rendition~="simple:normalstyle"]{
+  font-style: normal;
+  font-weight: normal;
+}
+
+*[rendition~="simple:normalweight"]{
+  font-weight: normal;
+}
+
+*[rendition~="simple:right"]{
+  text-align: right;
+}
+
+*[rendition~="simple:rotateleft"]{
+  background-color: #ffff00;
+}
+
+*[rendition~="simple:rotateright"]{
+  background-color: #00ffff;
+}
+
+*[rendition~="simple:smallcaps"]{
+  font-variant: small-caps;
+}
+
+[rendition~="simple:smaller"]{
+  font-size: 80%;
+}
+
+*[rendition~="simple:strikethrough"]{
+  text-decoration: line-through;
+}
+
+*[rendition~="simple:subscript"]{
+  font-size: 70%;
+  vertical-align: sub;
+}
+
+*[rendition~="simple:superscript"]{
+  font-size: 70%;
+  vertical-align: super;
+}
+
+*[rendition~="simple:topbraced"]{
+  border-top: solid 1pt black;
+}
+
+*[rendition~="simple:typewriter"]{
+  font-family: monospace;
+}
+
+*[rendition~="simple:underline"]{
+  text-decoration: underline;
+}
+
+*[rendition~="simple:wavyunderline"]{
+  text-decoration: underline;
+}

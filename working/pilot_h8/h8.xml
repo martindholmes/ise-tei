@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:basic" xml:id="iykn2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Henry VIII</title>
+      </titleStmt>
+      <editionStmt><p></p></editionStmt>
+      <publicationStmt><p></p></publicationStmt>
+      <sourceDesc><p></p></sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          
+          <person xml:id="vaux">
+            <persName>Nicholas Vaux <roleName>Sir</roleName></persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="surveyor">
+            <persName>Surveyor
+              <addName>Sur.</addName>
+            </persName>
+            <nationality>English</nationality> 
+            <occupation>Surveyor</occupation>
+ 
+          </person>
+          
+          <person xml:id="surrey">
+            <persName>Surrey <roleName>Earl of</roleName></persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+                                </person>
+          
+          <person xml:id="suffolk">
+            <persName>Suffolk <roleName>Duke</roleName></persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+                      </person>
+          
+          <person xml:id="somerset">
+            <persName>Charles Somerset <roleName>Sir</roleName></persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+                     
+          </person>
+          
+          <person xml:id="sergeant">
+            <persName>Sergeant at Arms</persName>
+            <nationality>English</nationality>
+            <occupation>Soldier</occupation>
+           
+          </person>
+          <!-- there are two secretaries -->
+          <person xml:id="secretary1">
+            <persName>Secretary</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+                                  </person>
+          
+          <person xml:id="secretary2">
+            <persName>Secretary</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <!-- end of addition -->
+          
+          <person xml:id="scribe">
+            <persName>Scribe</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+                                             </person>
+
+          
+          <person xml:id="abergavenny">
+            <persName>Lord Abergavenny</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="acolyte">
+            <persName>Acolyte</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="anne">
+            <persName>Anne Bullen
+              <addName>Anne Boleyn</addName>
+              <addName>Anne Bollen</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Royal</occupation>
+          </person>
+          
+          <!-- new was xml:id="bishop"-->
+          <person xml:id="canterbury">
+            <persName>Bishop of Canterbury</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          <!-- additions start -->
+          <person xml:id="lincoln">
+            <persName>Bishop of Lincoln</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="ely">
+            <persName>Bishop of Ely</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="rochester">
+            <persName>Bishop of Rochester</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="asaph">
+            <persName>Bishop of Saint Asaph</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="mayor">
+            <persName>Mayor of London</persName>
+            <nationality>English</nationality>
+            <occupation>Politician</occupation>
+          </person>
+          
+          <person xml:id="dorset">
+            <persName>Marquis Dorset</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="barons">
+            <persName>Barons of the Cinque Ports</persName>
+            <nationality>English</nationality>
+            <occupation>Noblemen</occupation>
+          </person>
+          
+          <person xml:id="duchess">
+            <persName>Duchess of Norfolk</persName>
+            <nationality>English</nationality>
+            <occupation>Noblewoman</occupation>
+          </person>
+          
+          <person xml:id="london">
+            <persName>Bishop of London
+            <addName>Stokeley</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+                   
+          <person xml:id="marchioness">
+            <persName>Marchioness of Dorset</persName>
+            <nationality>English</nationality>
+            <occupation>Noblewoman</occupation>
+            <occupation>Godmother to Princess Elizabeth</occupation>
+          </person>
+          
+          <!-- end of additions (for now) -->
+          
+          <person xml:id="capuchius">
+            <persName>Lord Capuchius
+               <addName>Eustace Chapuys</addName>
+            </persName>
+            <nationality>Savoyard</nationality>
+            <occupation>Diplomat</occupation>
+          </person>
+          
+          <person xml:id="campeius">
+            <persName>Cardinal Campeius
+              <addName>Lorenzo Campeggio</addName>
+            </persName>
+            <nationality>Italian</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="brandon">
+            <persName>Brandon</persName>
+            <nationality>English</nationality>
+            <occupation>Soldier</occupation>
+          </person>
+          
+          <person xml:id="buckingham">
+            <persName>Duke of Buckingham</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="butts">
+            <persName>Doctor Butts</persName>
+            <nationality>English</nationality>
+            <occupation>Physician</occupation>
+          </person>
+          
+          <person xml:id="cardinal">
+            <persName>Cardinal Wolsey</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="chamberlain">
+            <persName>Lord Chamberlain</persName>
+            <nationality>English</nationality>
+            <occupation>Counselor</occupation>
+          </person>
+          
+          <person xml:id="chancellor">
+            <persName>Lord Chancellor</persName>
+            <nationality>English</nationality>
+            <occupation>Counselor</occupation>
+          </person>
+          
+          <person xml:id="cranmer">
+            <persName>Archbishop Cranmer</persName>
+            <nationality>English</nationality>
+            <occupation>Cleric</occupation>
+          </person>
+          
+          <person xml:id="crier">
+            <persName>Crier</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+      
+          <person xml:id="cromwell">
+            <persName>Thomas Cromwell</persName>
+            <nationality>English</nationality>
+            <occupation>Counselor</occupation>
+          </person>
+          
+          <person xml:id="denny">
+            <persName>Sir Anthony Denny</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="gardiner">
+            <persName>Gardiner
+              <addName>Stephen Gardiner</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Secretary to the King</occupation>
+            <occupation>Bishop of Winchester</occupation>
+          </person>
+          
+          <person xml:id="garter">
+            <persName>Garter
+              <addName>Garter King at Arms</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          <!-- added and changed to multiple gentlemen -->
+          <person xml:id="gentleman1">
+            <persName>1 Gentleman</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="gentleman2">
+            <persName>2 Gentleman</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="gentleman3">
+            <persName>3 Gentleman</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="gentlewoman">
+            <persName>Gentlewoman</persName>
+            <nationality>English</nationality>
+            <occupation>Noblewoman</occupation>
+          </person>
+          
+          <person xml:id="griffith">
+            <persName>Griffith</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="guards">
+            <persName>Guards</persName>
+            <nationality>English</nationality>
+            <occupation>Soldier</occupation>
+          </person>
+          
+          <person xml:id="guildford">
+            <persName>Guildford
+            <addName>Sir Henry Guildford</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+            
+          <person xml:id="katherine">
+            <persName>Katharine</persName>
+            <nationality>Spanish</nationality>
+            <occupation>Royal</occupation>
+          </person>
+          
+          <person xml:id="keeper">
+            <persName>Keeper
+            <addName>Keeper of the Council Chamber</addName>
+            </persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="henry">
+            <persName>King Henry</persName>
+            <nationality>English</nationality>
+            <occupation>Royal</occupation>
+          </person>
+          
+          <person xml:id="lords">
+            <persName>Lords</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="lovell">
+            <persName>Sir Thomas Lovell</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="messenger">
+            <persName>Messenger</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="norfolk">
+            <persName>Duke of Norfolk</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="oldlady">
+            <persName>Old Lady</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="page">
+            <persName>Page</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="patience">
+            <persName>Patience"</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="personages">
+            <persName>Personages</persName>
+            <occupation>spirit</occupation>
+          </person>
+          
+          <person xml:id="pman">
+            <persName>Porter's Man</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="porter">
+            <persName>Porter</persName>
+            <nationality>Porter</nationality>
+            <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="sandys">
+            <persName>Lord Sandys</persName>
+            <nationality>English</nationality>
+            <occupation>Nobleman</occupation>
+          </person>
+          
+          <person xml:id="servant">
+            <persName>Servant</persName>
+            <nationality>English</nationality>
+            <occupation>Servant</occupation>
+          </person>
+            
+          
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change>Created this file <date when="2015-03">2015</date></change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+
+    <front>
+      <docTitle>
+        <titlePart type="main">[Title goes here...]</titlePart>
+      </docTitle>
+      <figure type="rule"/>
+      <div type="prologue">
+
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        
+      </div>
+    </body>
+  </text>
+</TEI>

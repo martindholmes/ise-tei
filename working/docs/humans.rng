@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="humans">
+      <oneOrMore>
+        <ref name="human"/>
+      </oneOrMore>
+    </element>
+  </start>
+  <define name="human">
+    <element name="human">
+      <attribute name="period">
+        <a:documentation>Defines the period during which a person lived.</a:documentation>
+        <choice>
+          <value>stone-age</value>
+          <a:documentation>The stone-age period lasted around 3.4 million years, ending between 4500 BCE and 2000 BCE.</a:documentation>
+          <value>modern</value>
+          <a:documentation>The modern period began at the end of the Middle Ages and lasts to the present day.</a:documentation>
+        </choice>
+      </attribute>
+      <attribute name="size">
+        <a:documentation>Characterizes a cartoon character based on their size.</a:documentation>
+        <choice>
+          <value>large</value>
+          <a:documentation>A large person.</a:documentation>
+          <value>small</value>
+          <a:documentation>A small person.</a:documentation>
+        </choice>
+      </attribute>
+      <ref name="name"/>
+    </element>
+  </define>
+  <define name="name">
+    <element name="name">
+      <text/>
+    </element>
+  </define>
+</grammar>

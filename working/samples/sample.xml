@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- THIS IS A SAMPLE FILE ONLY. VERY MUTABLE AND NOT TO BE 
+     BELIEVED. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>King Henry the Eighth or All is True.</title>
+      </titleStmt>
+      <editionStmt><p></p></editionStmt>
+      <publicationStmt><p></p></publicationStmt>
+      <sourceDesc><p></p></sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>Created this file <date when="2015-03">2015</date></change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <pb/>
+    <fw type="header"><fw type="pageNum" rendition="simple:right">205</fw></fw>
+    <figure type="rule"/>
+    <figure type="ornament"/>
+    <front>
+      <docTitle>
+        <titlePart type="main">The Famous Hi<g ref="ise:longStLigature">st</g>ory of the Life of<lb/>
+        <hi rendition="simple:smaller">King HENRY the Eight.</hi></titlePart>
+      </docTitle>
+      <figure type="rule"/>
+      <div type="prologue" rendition="simple:italic">
+        <lb type="tln" n="1"/><head>THE PROLOGUE</head>
+        <figure type="rule"/>
+        <cb n="1"/>
+        <lb type="tln" n="2"/><l><hi rendition="simple:dropcap">I</hi> Come no more to make you laugh, Things now,</l>
+        <lb type="tln" n="3"/><l>That beare a Weighty, and a Serious Brow,</l>
+        <lb type="tln" n="4"/><l>Sad, high, and working, full of State and Woe:</l>
+        <lb type="tln" n="5"/><l>Such Noble Sc<g ref="ise:oeLigature">oe</g>nes, as draw the Eye to flow</l>
+        <lb type="tln" n="6"/><l>We now pre<g ref="ise:longS">s</g>ent. Those that can Pitty, heere</l>
+        <lb type="tln" n="7"/><l>May (if they thinke it well) let fall a Teare,</l>
+        <lb type="tln" n="8"/><l>The Subiect will deserue it. Such as giue</l>
+        <lb type="tln" n="9"/><l>Their Money out of hope they may beleeue,</l>
+        <lb type="tln" n="10"/><l>May heere finde Truth too. Tho<g ref="ise:longS">s</g>e that come to see</l>
+        <lb type="tln" n="11"/><l>Onely a <g ref="ise:longS">s</g>how or two, and <g ref="ise:longS">s</g>o agree,</l>
+        <lb type="tln" n="12"/><l>The Play may pa<g ref="ise:longSSLigature">ss</g>e: If they be <g ref="ise:longStLigature">st</g>ill, and willing,</l>
+        <lb type="tln" n="13"/><l>Ile vndertake may <g ref="ise:longS">s</g>ee away their <g ref="ise:longS">s</g>hilling</l>
+        <lb type="tln" n="14"/><l>Richly in two <g ref="ise:longS">s</g>hort houres. Onely they</l>
+        <lb type="tln" n="15"/><l>That come to heare a Merry, Bawdy Play,</l>
+        <lb type="tln" n="16"/><l>A noy<g ref="ise:longS">s</g>e of Targets: Or to <g ref="ise:longS">s</g>ee a Fellow</l>
+        <lb type="tln" n="17"/><l>In a long Motley Coate, garded with Yellow,</l>
+        <cb n="2"/>
+        <lb type="tln" n="18"/><l>Will be deceyu'd. For gentle Hearers, know</l>
+        <lb type="tln" n="19"/><l>To ranke our cho<g ref="ise:longS">s</g>en Truth with <g ref="ise:longS">s</g>uch a <g
+          ref="ise:longS">s</g>how</l>
+        <lb type="tln" n="20"/><l>As Foole, and Fight is, be<g ref="ise:longS">s</g>ide forfeyting</l>
+        <lb type="tln" n="21"/><l>Our owne Braines, and the Opinion that we bring</l>
+        <lb type="tln" n="22"/><l>To make that onely true, we now intend,</l>
+        <lb type="tln" n="23"/><l>Will leaue vs neuer an vnder<g ref="ise:longStLigature">st</g>anding Friend</l>
+        <lb type="tln" n="24"/><l>Therefore, for Goodne<g ref="ise:longSSLigature">ss</g>e sake, and as you are knowne</l>
+        <lb type="tln" n="25"/><l>The Fir<g ref="ise:longStLigature">st</g> and Happie<g ref="ise:stLigature">st</g> Hearers of the
+          Towne,</l>
+        <lb type="tln" n="26"/><l>Be <g ref="ise:longS">s</g>ad, as we would make ye. Thinke ye <g ref="ise:longS"
+          >s</g>ee</l>
+        <lb type="tln" n="27"/><l>The very Per<g ref="ise:longS">s</g>ons of our Noble Story,</l>
+        <lb type="tln" n="28"/><l>As they were Liuing: Thinke you <g ref="ise:longS">s</g>ee them Great,</l>
+        <lb type="tln" n="29"/><l>And follow'd with the generall throng, and <g ref="ise:longS">s</g>weat</l>
+        <lb type="tln" n="30"/><l>Of thou<g ref="ise:longS">s</g>and Friends: Then, in a moment, <g ref="ise:longS"
+          >s</g>ee</l>
+        <lb type="tln" n="31"/><l>How <g ref="ise:longS">s</g>oone this Mightine<g ref="ise:longSSLigature">ss</g>e, meets
+          Mi<g ref="ise:longS">s</g>ery:</l>
+        <lb type="tln" n="32"/><l>And if you can be merry then, Ile <g ref="ise:longS">s</g>ay,</l>
+        <lb type="tln" n="33"/><l>A Man may weepe vpon his Wedding day.</l>
+      </div>
+    </front>
+    <cb type="fullWidth"/>
+    <figure type="rule"/>
+    <body>
+      <div type="act">
+        <div type="scene">
+          <lb type="tln" n="34"/><head>A<g ref="ise:ctLigature">ct</g>us Primus. Sc<g ref="ise:oeLigature">oe</g>na Prima.</head>
+          <figure type="rule"/>
+<cb/>
+          <lb/>
+          <lb type="tln" n="35"/><stage type="entrance" rendition="simple:centre simple:italic">Enter the Duke of Norfolke at one doore. At the other,<lb/>
+            <lb type="tln" n="36"/>the Duke of Buckingham, and the Lord<lb/>
+            <lb type="tln" n="37"/>Aburgauenny.</stage>
+          <lb/>
+          <lb type="tln" n="38"/><sp who="ise:h8_buckingham"><speaker rendition="simple:centre">Buckingham.</speaker>
+            
+          <lb type="tln" n="39"/><l><hi rendition="simple:dropcap">G</hi>Ood morrow, and well met. How haue ye done</l>
+            <lb type="tln" n="40"/><l>Since la<g ref="ise:longStLigature">st</g> we <g ref="ise:longS">s</g>aw in France?</l></sp>
+          <lb type="tln" n="41"/><sp who="ise:h8_norfolk"><speaker>Norf.</speaker> <l>I thanke your Grace:</l>
+            <lb type="tln" n="42"/><l>Healthfull, and euer <g ref="ise:longS">s</g>ince a fre<g ref="ise:longS">s</g>h Admirer</l>
+            <lb type="tln" n="43"/><l>Of what I <g ref="ise:longS">s</g>aw there.</l></sp>
+          <lb type="tln" n="44"/><sp who="ise:h8_buckingham"><speaker>Buck.</speaker> <l>An vntimely Ague</l>
+            <lb type="tln" n="45"/><l>Staid me a Pri<g ref="ise:longS">s</g>oner in my Chamber, when</l>
+            <lb type="tln" n="46"/><l>Tho<g ref="ise:longS">s</g>e Sunnes of Glory, tho<g ref="ise:longS">s</g>e two Lights of Men</l>
+            <lb type="tln" n="47"/><l>Met in the vale of Andren.</l></sp>
+          <lb type="tln" n="48"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>'Twixt Guynes and Arde,</l>
+            <lb type="tln" n="49"/><l>I was then pre<g ref="ise:longS">s</g>ent, <g ref="ise:longS">s</g>aw them <g ref="ise:longS">s</g>alute on Hor<g ref="ise:longS">s</g>ebacke,</l>
+            <lb type="tln" n="50"/><l>Beheld them when they lighted, how they clung</l>
+            <lb type="tln" n="51"/><l>In their Embracement, as they grew together,</l>
+            <lb type="tln" n="52"/><l>Which had they,</l>
+            <lb type="tln" n="53"/><l>What foure Thron'd ones could haue weigh'd</l>
+            <lb type="tln" n="54"/><l>Such a compounded one?</l></sp>
+          <lb type="tln" n="55"/><sp who="ise:h8_buckingham"><speaker>Buck.</speaker> <l>All the whole time</l>
+            <lb type="tln" n="56"/><l>I was my Chambers Pri<g ref="ise:longS">s</g>oner.</l></sp>
+          <cb/>
+          <lb type="tln" n="57"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Then you lo<g ref="ise:longStLigature">st</g></l>
+            <lb type="tln" n="58"/><l>The view of earthly glory: Men might <g ref="ise:longS">s</g>ay</l>
+            <lb type="tln" n="59"/><l>Till this time Pompe was <g ref="ise:longS">s</g>ingle, but now married</l>
+            <lb type="tln" n="60"/><l>To one aboue it <g ref="ise:longS">s</g>elfe. Each following day</l>
+            <lb type="tln" n="61"/><l>Became the next dayes ma<g ref="ise:longStLigature">st</g>er, till the la<g ref="ise:longStLigature">st</g></l>
+            <lb type="tln" n="62"/><l>Made former Wonders, it's. To day the French,</l>
+            <lb type="tln" n="63"/><l>All Clinquant all in Gold, like Heathen Gods</l>
+            <lb type="tln" n="64"/><l>Shone downe the Engli<g ref="ise:longS">s</g>h; and to morrow, they</l>
+            <lb type="tln" n="65"/><l>Made Britaine, India: Euery man that <g ref="ise:longStLigature">st</g>ood,</l>
+            <lb type="tln" n="66"/><l>Shew'd like a Mine. Their Dwarfi<g ref="ise:longS">s</g>h Pages were</l>
+            <lb type="tln" n="67"/><l>As Cherubins, all gilt: the Madams too,</l>
+            <lb type="tln" n="68"/><l>Not vs'd to toyle, did almo<g ref="ise:longStLigature">st</g> <g ref="ise:longS">s</g>weat to beare</l>
+            <lb type="tln" n="69"/><l>The Pride vpon them, that their very labour</l>
+            <lb type="tln" n="70"/><l>Was to them, as a Painting. Now this Ma<g ref="ise:longS">s</g>ke</l>
+            <lb type="tln" n="71"/><l>Was cry'de incompareable; and th'en<g ref="ise:longS">s</g>uing night</l>
+            <lb type="tln" n="72"/><l>Made it a Foole, and Begger. The two Kings</l>
+            <lb type="tln" n="73"/><l>Equall in lu<g ref="ise:longStLigature">st</g>re, were now be<g ref="ise:longStLigature">st</g>, now wor<g ref="ise:longStLigature">st</g></l>
+            <lb type="tln" n="74"/><l>As pre<g ref="ise:longS">s</g>ence did pre<g ref="ise:longS">s</g>ent them: Him in eye,</l>
+            <lb type="tln" n="75"/><l>Still him in prai<g ref="ise:longS">s</g>e, and being pre<g ref="ise:longS">s</g>ent both,</l>
+            <lb type="tln" n="76"/><l>'Twas <g ref="ise:longS">s</g>aid they <g ref="ise:longS">s</g>aw but one, and no Di<g ref="ise:longS">s</g>cerner</l>
+            <lb type="tln" n="77"/><l>Dur<g ref="ise:longStLigature">st</g> wagge his Tongue in cen<g ref="ise:longS">s</g>ure, when the<g ref="ise:longS">s</g>e Sunnes</l>
+            <lb type="tln" n="78"/><l>(For <g ref="ise:longS">s</g>o they phra<g ref="ise:longS">s</g>e 'em) by their Heralds challeng'd</l>
+            <lb type="tln" n="79"/><l>The Noble Spirits to Armes, they did performe</l>
+            
+            <fw type="footer"><fw type="sig" rendition="simple:centre">t 3</fw><fw type="catch" rendition="simple:right">Beyond</fw></fw>
+            
+            <pb/>
+            <fw type="header"><fw type="pageNum" rendition="simple:left">206</fw><fw type="title" rendition="simple:centre">The Life of King Henry the Eight.</fw></fw>
+            
+            <cb/>
+            <lb type="tln" n="80"/><l>Beyond thoughts Compa<g ref="ise:longSSLigature">ss</g>e, that former fabulous Storie</l>
+            <lb type="tln" n="81"/><l>Being now <g ref="ise:longS">s</g>eene, po<g ref="ise:longSSLigature">ss</g>ible enough, got credit</l>
+            <lb type="tln" n="82"/><l>That Beuis was beleeu'd.</l></sp>
+          <lb type="tln" n="83"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>Oh you go farre.</l></sp>
+          <lb type="tln" n="84"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>As I belong to wor<g ref="ise:longS">s</g>hip, and affect</l>
+            <lb type="tln" n="85"/><l>In Honor, Hone<g ref="ise:longStLigature">st</g>y, the tract of eu'ry thing,</l>
+            <lb type="tln" n="86"/><l>Would by a good Di<g ref="ise:longS">s</g>cour<g ref="ise:longS">s</g>er loo<g ref="ise:longS">s</g>e <g ref="ise:longS">s</g>ome life,</l>
+            <lb type="tln" n="87"/><l>Which A<g ref="ise:ctLigature">ct</g>ions <g ref="ise:longS">s</g>elfe, was tongue too.</l></sp>
+          <lb type="tln" n="88"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>All was Royall,</l>
+            <lb type="tln" n="89"/><l>To the di<g ref="ise:longS">s</g>posing of it nought rebell'd,</l>
+            <lb type="tln" n="90"/><l>Order gaue each thing view. The Office did</l>
+            <lb type="tln" n="91"/><l>Di<g ref="ise:longStLigature">st</g>in<g ref="ise:ctLigature">ct</g>ly his full Fun<g ref="ise:ctLigature">ct</g>ion: who did guide,</l>
+            <lb type="tln" n="92"/><l>I meane who <g ref="ise:longS">s</g>et the Body, and the Limbes</l>
+            <lb type="tln" n="93"/><l>Of this great Sport together?</l></sp>
+          <lb type="tln" n="94"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>As you gue<g ref="ise:longSSLigature">ss</g>e:</l>
+          <lb type="tln" n="95"/><l>One certes, that promi<g ref="ise:longS">s</g>es no Element</l>
+            <lb type="tln" n="96"/><l>In <g ref="ise:longS">s</g>uch a bu<g ref="ise:longS">s</g>ine<g ref="ise:longSSLigature">ss</g>e.</l></sp>
+          <lb type="tln" n="97"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>I pray you who, my Lord?</l></sp>
+          <lb type="tln" n="98"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>All this was ordred by the good Di<g ref="ise:longS">s</g>cretion</l>
+            <lb type="tln" n="99"/><l>Of the right Reuerend Cardinall of Yorke.</l></sp>
+          <lb type="tln" n="100"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>The diuell <g ref="ise:longS">s</g>peed him: No mans Pye is freed</l>
+            <lb type="tln" n="101"/><l>From his Ambitious finger. What had he</l>
+            <lb type="tln" n="102"/><l>To do in the<g ref="ise:longS">s</g>e fierce Vanities? I wonder,</l>
+            <lb type="tln" n="103"/><l>That <g ref="ise:longS">s</g>uch a Keech can with his very bulke</l>
+            <lb type="tln" n="104"/><l>Take vp the Rayes o'th'beneficiall Sun,</l>
+            <lb type="tln" n="105"/><l>And keepe it from the Earth.</l></sp>
+          <lb type="tln" n="106"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Surely Sir,</l>
+            <lb type="tln" n="107"/><l>There's in him <g ref="ise:longStLigature">st</g>uffe, that put's him to the<g ref="ise:longS">s</g>e ends:</l>
+            <lb type="tln" n="108"/><l>For being not propt by Aunce<g ref="ise:longStLigature">st</g>ry, who<g ref="ise:longS">s</g>e grace</l>
+            <lb type="tln" n="109"/><l>Chalkes Succe<g ref="ise:longSSLigature">ss</g>ors their way; nor call'd vpon</l>
+            <lb type="tln" n="110"/><l>For high feats done to'th'Crowne; neither Allied</l>
+            <lb type="tln" n="111"/><l>To eminent Assi<g ref="ise:longStLigature">st</g>ants; but Spider-like</l>
+            <lb type="tln" n="112"/><l>Out of his Selfe-drawing Web. O giues vs note,</l>
+            <lb type="tln" n="113"/><l>The force of his owne merit makes his way</l>
+            <lb type="tln" n="114"/><l>A guift that heauen giues for him, which buyes</l>
+            <lb type="tln" n="115"/><l>A place next to the King.</l></sp>
+          <lb type="tln" n="116"/><sp who="ise:h8_abergavenny"><speaker>Abur.</speaker> <l>I cannot tell</l>
+            <lb type="tln" n="117"/><l>What Heauen hath giuen him: let <g ref="ise:longS">s</g>ome Grauer eye</l>
+            <lb type="tln" n="118"/><l>Pierce into that, but I can <g ref="ise:longS">s</g>ee his Pride</l>
+            <lb type="tln" n="119"/><l>Peepe through each part of him: whence ha's he that,</l>
+            <lb type="tln" n="120"/><l>If not from Hell? The Diuell is a Niggard,</l>
+            <lb type="tln" n="121"/><l>Or ha's giuen all before, and he begins</l>
+            <lb type="tln" n="122"/><l>A new Hell in him<g ref="ise:longS">s</g>elfe.</l></sp>
+          <lb type="tln" n="123"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>Why the Diuell,</l>
+            <lb type="tln" n="124"/><l>Vpon this French going out, tooke he vpon him</l>
+            <lb type="tln" n="125"/><l>(Without the priuity o'th'King) t'appoint</l>
+            <lb type="tln" n="126"/><l>Who <g ref="ise:longS">s</g>hould attend on him? He makes vp the File</l>
+            <lb type="tln" n="127"/><l>Of all the Gentry; for the mo<g ref="ise:longStLigature">st</g> part <g ref="ise:longS">s</g>uch</l>
+            <lb type="tln" n="128"/><l>To whom as great a Charge, as little Honor</l>
+            <lb type="tln" n="129"/><l>He meant to lay vpon: and his owne Letter</l>
+            <lb type="tln" n="130"/><l>The Honourable Boord of Councell, out</l>
+            <lb type="tln" n="131"/><l>Mu<g ref="ise:longStLigature">st</g> fetch him in, he Papers.</l></sp>
+          <lb type="tln" n="132"/><sp who="ise:h8_abergavenny"><speaker>Abur.</speaker> <l>I do know</l>
+            <lb type="tln" n="133"/><l>Kin<g ref="ise:longS">s</g>men of mine, three at the lea<g ref="ise:longStLigature">st</g>, that haue</l>
+            <lb type="tln" n="134"/><l>By this, <g ref="ise:longS">s</g>o <g ref="ise:longS">s</g>icken'd their Estates, that neuer</l>
+            <lb type="tln" n="135"/><l>They <g ref="ise:longS">s</g>hall abound as formerly.</l></sp>
+          <lb type="tln" n="136"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>O many</l>
+            <lb type="tln" n="137"/><l>Haue broke their backes with laying Mannors on 'em</l>
+            <lb type="tln" n="138"/><l>For this great Iourney. What did this vanity</l>
+            <lb type="tln" n="139"/><l>But mini<g ref="ise:longStLigature">st</g>er communication of</l>
+            <lb type="tln" n="140"/><l>A mo<g ref="ise:longStLigature">st</g> poore i<g ref="ise:longSSLigature">ss</g>ue.</l></sp>
+          <lb type="tln" n="141"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Greeuingly I thinke,</l>
+            <lb type="tln" n="142"/><l>The Peace betweene the French and vs, not valewes</l>
+            <lb type="tln" n="143"/><l>The Co<g ref="ise:longStLigature">st</g> that did conclude it.</l></sp>
+          <lb type="tln" n="144"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>Euery man,</l>
+            <lb type="tln" n="145"/><l>After the hideous <g ref="ise:longStLigature">st</g>orme that follow'd, was</l>
+            
+            <cb/>
+            
+            <lb type="tln" n="146"/><l>A thing In<g ref="ise:longS">s</g>pir'd, and not con<g ref="ise:longS">s</g>ulting, broke</l>
+            <lb type="tln" n="147"/><l>Into a generall Prophe<g ref="ise:longS">s</g>ie; That this Tempe<g ref="ise:longStLigature">st</g></l>
+            <lb type="tln" n="148"/><l>Da<g ref="ise:longS">s</g>hing the Garment of this Peace, aboaded</l>
+            <lb type="tln" n="149"/><l>The <g ref="ise:longS">s</g>odaine breach on't.</l></sp>
+          <lb type="tln" n="150"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Which is budded out,</l>
+            <lb type="tln" n="151"/><l>For France hath flaw'd the League, and hath attach'd</l>
+            <lb type="tln" n="152"/><l>Our Merchants goods at Burdeux.</l></sp>
+          <lb type="tln" n="153"/><sp who="ise:h8_abergavenny"><speaker>Abur.</speaker> <l>Is it therefore</l>
+            <lb type="tln" n="154"/><l>th'Amba<g ref="ise:longSSLigature">ss</g>ador is <g ref="ise:longS">s</g>ilenc'd?</l></sp>
+          <lb type="tln" n="155"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Marry is't.</l></sp>
+          <lb type="tln" n="156"/><sp who="ise:h8_abergavenny"><speaker>Abur.</speaker> <l>A proper Title of a Peace, and purchas'd</l>
+            <lb type="tln" n="157"/><l>At a <g ref="ise:longS">s</g>uperfluous rate.</l></sp>
+          <lb type="tln" n="158"/><sp who="ise:h8_buckingham"><speaker>Buc.</speaker> <l>Why all this Bu<g ref="ise:longS">s</g>ine<g ref="ise:longSSLigature">ss</g>e</l>
+            <lb type="tln" n="159"/><l>Our Reuerend Cardinall carried.</l></sp>
+          <lb type="tln" n="160"/><sp who="ise:h8_norfolk"><speaker>Nor.</speaker> <l>Like it your Grace,</l>
+            <lb type="tln" n="161"/><l>The State takes notice of the priuate difference</l>
+            <lb type="tln" n="162"/><l>Betwixt you, and the Cardinall. I adui<g ref="ise:longS">s</g>e you</l>
+            <lb type="tln" n="163"/><l>(And take it from a heart, that wi<g ref="ise:longS">s</g>hes towards you</l>
+            <lb type="tln" n="164"/><l>Honor, and plenteous <g ref="ise:longS">s</g>afety) that you reade</l>
+            <lb type="tln" n="165"/><l>The Cardinals Malice, and his Potency</l>
+            <lb type="tln" n="166"/><l>Together; To con<g ref="ise:longS">s</g>ider further, that</l>
+            <lb type="tln" n="167"/><l>What his high Hatred would effect, wants not</l>
+            <lb type="tln" n="168"/><l>A Mini<g ref="ise:longStLigature">st</g>er in his Power. You know his Nature,</l>
+            <lb type="tln" n="169"/><l>That he's Reuengefull; and I know, his Sword</l>
+            <lb type="tln" n="170"/><l>Hath a <g ref="ise:longS">s</g>harpe edge: It's long, and't may be <g ref="ise:longS">s</g>aide</l>
+            <lb type="tln" n="171"/><l>It reaches farre, and where 'twill not extend,</l>
+            <lb type="tln" n="172"/><l>Thither he darts it. Bo<g ref="ise:longS">s</g>ome vp my coun<g ref="ise:longS">s</g>ell,</l>
+            <lb type="tln" n="173"/><l>You'l finde it whole<g ref="ise:longS">s</g>ome. Loe, where comes that Rock</l>
+            <lb type="tln" n="174"/><l>That I aduice your <g ref="ise:longS">s</g>hunning.</l></sp>
+          
+          <lb/>
+          <lb type="tln" n="175"/><stage type="entrance" rendition="simple:centre">Enter Cardinall Wolsey, the Purse borne before him, certaine<lb/>
+            <lb type="tln" n="176"/>  of the Guard, and two Secretaries with Papers: The<lb/>
+            <lb type="tln" n="177"/> Cardinall in his passage, fixeth his eye on Buck-<lb/>
+            <lb type="tln" n="178"/> ham, and Buckingham on him,<lb/>
+            <lb type="tln" n="179"/> both full of disdaine.</stage>
+          <lb/>
+          <lb type="tln" n="180"/><sp who="ise:h8_cardinal"><speaker>Car.</speaker> <l>The Duke of Buckinghams Surueyor? Ha?</l>
+            <lb type="tln" n="181"/><l>Where's his Examination?</l></sp>
+          <lb type="tln" n="182"/><sp who="ise:h8_secretary"><speaker>Secr.</speaker> <l>Heere <g ref="ise:longS">s</g>o plea<g ref="ise:longS">s</g>e you.</l></sp>
+          <lb type="tln" n="183"/><sp who="ise:h8_cardinal"><speaker>Car.</speaker> <l>Is he in per<g ref="ise:longS">s</g>on, ready?</l></sp>
+          <lb type="tln" n="184"/><sp who="ise:h8_secretary"><speaker>Secr.</speaker> <l>I, plea<g ref="ise:longS">s</g>e your Grace.</l></sp>
+          <lb type="tln" n="185"/><sp who="ise:h8_cardinal"><speaker>Car.</speaker> <l>Well, we <g ref="ise:longS">s</g>hall then know more, &amp; Buckingham</l>
+            <lb type="tln" n="186"/><l>Shall le<g ref="ise:longSSLigature">ss</g>en this bigge looke.</l></sp>
+          <lb type="tln" n="187"/><stage type="exit">Exeunt Cardinall, and his Traine.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." default="doAll" name="ise_all">
+
+  <!-- note: following properties are passed as parameters via Oxygen:
+      -${pd}:  current project directory path (i.e. where the ise.xpr file lives)
+      -${teiFramework}:  current project directory path (i.e. where the ise.xpr file lives)
+      OBSOLETE: -${scpPw} the password for the HCMC account to upload the finished materials.
+  -->
+
+  <property name="echo.separator" value="************************************************"/>
+<!--  This is an incoming parameter on the command line which supplies the path of a file 
+     which is going to be used to create the valList for the sp/@who attribute. It's a TEI 
+     file which has a <particDesc>. -->
+  <property name="sourceParticDescFile" value="${sourceParticDescFile}"/>
+
+  <target name="createSchemas">
+    <echo message="${echo.separator}"/>
+    <echo message="Create ODD files for three schema levels."/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/schemas/ise_root.odd"/>
+      <arg value="-xsl:${pd}/xsl/build_ise_schemas.xsl"/> 
+      <arg value="sourceParticDescFile=${sourceParticDescFile}"/>
+    </java>
+    
+    <echo message="${echo.separator}"/>
+    <echo message="Create schemas from ODD files."/>
+    <echo message="Using this as defaultSource: ${teiFramework}/xml/tei/odd/p5subset.xml"/>
+    <echo message="Using this as inputFile: ${pd}/schemas/ise_full.odd"/>
+    <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
+      <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
+      <property name="inputFile" value="${pd}/schemas/ise_full.odd"/>
+      <property name="outputFile" value="${pd}/schemas/ise_full.rng"/>
+      <property name="profile" value="default"/>
+      <property name="lang" value="en"/>
+    </ant>
+    
+    <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
+      <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
+      <property name="inputFile" value="${pd}/schemas/ise_intermediate.odd"/>
+      <property name="outputFile" value="${pd}/schemas/ise_intermediate.rng"/>
+    </ant>
+    
+    <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
+      <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
+      <property name="inputFile" value="${pd}/schemas/ise_basic.odd"/>
+      <property name="outputFile" value="${pd}/schemas/ise_basic.rng"/>
+    </ant>
+  </target>
+
+  <target name="createpackage">
+    <echo message="${echo.separator}"/>
+    <echo message="Delete existing files."/>
+    <delete dir="${pd}/../package"/>
+    <mkdir dir="${pd}/../package/ise"/>
+    <delete dir="${pd}/../dist"/>
+    <mkdir dir="${pd}/../dist"/>
+    <echo message="${echo.separator}"/>
+    <echo message="Copy created components to package/ise output directory."/>
+    <echo message="${echo.separator}"/>
+    <echo message="Copying schemas."/>
+    <mkdir dir="${pd}/../package/ise/schemas"/>
+    <copy todir="${pd}/../package/ise/schemas">
+      <fileset dir="${pd}/schemas" casesensitive="yes">
+        <include name="*.odd"/>
+        <include name="*.rng"/>
+      </fileset>
+    </copy>
+    <echo message="${echo.separator}"/>
+    <echo message="Creating template."/>
+    <mkdir dir="${pd}/../package/ise/templates"/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/templates/template.xml"/>
+      <arg value="-xsl:${pd}/xsl/fill_out_ise_template.xsl"/> 
+      <arg value="-o:${pd}/../package/ise/templates/ISE Basic.xml"/> 
+    </java>
+    <echo message="${echo.separator}"/>
+    <echo message="Creating sample documents."/>
+    <mkdir dir="${pd}/../package/ise/samples"/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/samples/sample.xml"/>
+      <arg value="-xsl:${pd}/xsl/strip_sample.xsl"/> 
+      <arg value="-o:${pd}/../package/ise/samples/basic.xml"/> 
+      <arg value="targetSchema=ise:basic"/>
+    </java>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/samples/sample.xml"/>
+      <arg value="-xsl:${pd}/xsl/strip_sample.xsl"/> 
+      <arg value="-o:${pd}/../package/ise/samples/intermediate.xml"/> 
+      <arg value="targetSchema=ise:intermediate"/>
+    </java>
+    <copy file="${pd}/samples/sample.xml" tofile="${pd}/../package/ise/samples/full.xml"/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/samples/sample.xml"/>
+      <arg value="-xsl:${pd}/xsl/sample_to_text.xsl"/> 
+      <arg value="-o:${pd}/../package/ise/samples/text.txt"/> 
+    </java>
+    <echo message="${echo.separator}"/>
+    <echo message="Copying CSS."/>
+    <mkdir dir="${pd}/../package/ise/css"/>
+    <copy file="${pd}/css/ise_tei.css" tofile="${pd}/../package/ise/css/ise_tei.css"/>
+    <echo message="${echo.separator}"/>
+    <echo message="Copying XSLT."/>
+    <mkdir dir="${pd}/../package/ise/xsl"/>
+    <copy todir="${pd}/../package/ise/xsl">
+      <fileset dir="${pd}/xsl" casesensitive="yes">
+        <include name="html.xsl"/>
+        <include name="includes.xml"/>
+      </fileset>
+    </copy>
+    <echo message="${echo.separator}"/>
+    <echo message="Creating documentation."/>
+    <exec executable="/bin/bash" dir="${pd}/docs" failonerror="true">
+      <arg value="make_ise_package_materials.sh"/>
+    </exec>
+    <echo message="${echo.separator}"/>
+    <echo message="Copying documentation."/>
+    <copy todir="${pd}/../package/ise/docs">
+      <fileset dir="${pd}/docs" casesensitive="yes">
+        <include name="ise*.*"/>
+      </fileset>
+    </copy>
+    <echo message="${echo.separator}"/>
+    <echo message="Copying project file."/>
+    <copy todir="${pd}/../package/ise" file="${pd}/ise_tei.xpr"/>
+    <echo message="${echo.separator}"/>
+    <echo message="Create zip package."/>
+    <zip basedir="${pd}/../package" destfile="${pd}/../dist/ise_tei.zip"/>
+    <echo message="${echo.separator}"/>
+    <echo message="Copy facsimile pages to dist directory."/>
+    <copy todir="${pd}/../dist">
+      <fileset dir="${pd}/facsimile" casesensitive="yes">
+        <include name="*.jpg"/>
+      </fileset>
+    </copy>
+    <echo message="${echo.separator}"/>
+    <echo message="Copy baby schema to dist directory."/>
+    <copy todir="${pd}/../dist">
+      <fileset dir="${pd}/docs" casesensitive="yes">
+        <include name="humans.rng"/>
+      </fileset>
+    </copy>
+    <echo message="${echo.separator}"/>
+  </target>
+  
+  <target name="cleanup">
+    <echo message="${echo.separator}"/>
+    <echo message="Clean up some stuff."/>
+<!--   Note: not doing this, because we need these schemas for testing. -->
+    <!--<delete>
+      <fileset dir="${pd}/schemas" casesensitive="yes">
+        <include name="*.odd"/>
+        <include name="*.rng"/>
+        <exclude name="ise_root.odd"/>
+      </fileset>
+    </delete>-->
+  </target>
+  
+  <target name="uploadPackages">
+    <echo message="${echo.separator}"/>
+    <echo message="Uploading files to server."/>
+<!--    Oxygen handles this as part of its scenario. -->
+    <!--<input
+      message="Please enter hcmc password:"
+      addproperty="scpPw"
+    />-->
+<!--    This fails because of a dependency issue that I can't resolve. -->
+    <!--<scp toDir="hcmc@nfs.hcmc.uvic.ca:/www/projects/ise"
+          password="${scpPw}">
+      <fileset dir="${pd}/../dist"/>
+    </scp>-->
+<!--  Fails in Oxygen. Give up.  -->
+    <!--<exec executable="rsync" dir="${pd}/../dist" failonerror="true">
+      <arg value="-\-verbose"/>
+      <arg value="-\-progress"/>
+      <arg value="-\-stats"/>
+      <arg value="-\-compress"/>
+      <arg value="-\-recursive"/>
+      <arg value="-\-times"/>
+      <arg value="-e ssh"/>
+      <arg value="'${pd}/../dist'"/>
+      <arg value="hcmc:${scpPw}@nfs.hcmc.uvic.ca:/hcmc/workshops/ise/"/>
+    </exec>-->
+    <exec executable="/bin/bash" dir="${pd}" failonerror="true">
+      <arg value="rsync_site_to_home1t.sh"/>
+      <arg value="PW=${scpPw}"/>
+    </exec>
+  </target>
+  
+  <target name="doAll">
+    <antcall target="createSchemas"/>
+    <antcall target="createpackage"/>
+    <antcall target="cleanup"/>
+    <!--<antcall target="uploadPackages"/>-->
+  </target>
+
+</project>

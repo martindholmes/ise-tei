@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>[Title of the play]</title>
+      </titleStmt>
+      <editionStmt><p></p></editionStmt>
+      <publicationStmt><p></p></publicationStmt>
+      <sourceDesc><p></p></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p></p>
+    </encodingDesc>
+    <revisionDesc>
+      <change>Created this file on ....</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <docTitle>
+        <titlePart type="main">[Title as it appears in the document]</titlePart>
+      </docTitle>
+      <div>
+        <!-- Prologue here... -->
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>  </head>
+      </div>
+    </body>
+  </text>
+</TEI>

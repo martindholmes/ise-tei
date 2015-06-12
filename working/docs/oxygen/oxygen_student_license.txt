@@ -1,0 +1,12 @@
+
+------START-LICENSE-KEY------
+Registration_Name=Humanities Computing & Media Centre
+Company=University of Victoria
+Category=Academic-Classroom
+Component=XML-Editor, XSLT-Debugger, Saxon-SA
+Version=16
+Number_of_Licenses=1
+Date=10-15-2014
+Subscription=366
+SGN=MCwCFBae3GeO3LgrI17a9kH/QXqJCkwJAhQXyMcxco5Wv+Mxb+ZIHAtth3eMEA\=\=
+-------END-LICENSE-KEY------- 

@@ -1,0 +1,371 @@
+<work>
+<iseHeader>
+King Henry the Eighth or All is True.
+Created this file 2015
+</iseHeader>
+<PAGE n="1">
+<RT>
+    <PN>
+      <RA>
+    205
+      </RA>
+    </PN>
+  </RT>
+<FRONTMATTER>
+<TITLEHEAD>
+The Famous Hi{{s}t}ory of the Life of
+    <L/>
+King HENRY the Eight.
+</TITLEHEAD>
+<DIV name="Prologue">
+<TLN n="1"/>
+    <LD>
+    <I>THE PROLOGUE</I>
+    </LD>
+<COL n="1">
+<TLN n="2"/>
+        <MODE t="verse">
+      <I><ORNAMENT drop="3">I</ORNAMENT> Come no more to make you laugh, Things now,</I>
+<TLN n="3"/><I>That beare a Weighty, and a Serious Brow,</I>
+<TLN n="4"/><I>Sad, high, and working, full of State and Woe:</I>
+<TLN n="5"/><I>Such Noble Sc{oe}nes, as draw the Eye to flow</I>
+<TLN n="6"/><I>We now pre{s}ent. Those that can Pitty, heere</I>
+<TLN n="7"/><I>May (if they thinke it well) let fall a Teare,</I>
+<TLN n="8"/><I>The Subiect will deserue it. Such as giue</I>
+<TLN n="9"/><I>Their Money out of hope they may beleeue,</I>
+<TLN n="10"/><I>May heere finde Truth too. Tho{s}e that come to see</I>
+<TLN n="11"/><I>Onely a {s}how or two, and {s}o agree,</I>
+<TLN n="12"/><I>The Play may pa{{s}{s}}e: If they be {{s}t}ill, and willing,</I>
+<TLN n="13"/><I>Ile vndertake may {s}ee away their {s}hilling</I>
+<TLN n="14"/><I>Richly in two {s}hort houres. Onely they</I>
+<TLN n="15"/><I>That come to heare a Merry, Bawdy Play,</I>
+<TLN n="16"/><I>A noy{s}e of Targets: Or to {s}ee a Fellow</I>
+<TLN n="17"/><I>In a long Motley Coate, garded with Yellow,</I>
+</COL>
+<COL n="2">
+<TLN n="18"/><I>Will be deceyu'd. For gentle Hearers, know</I>
+<TLN n="19"/><I>To ranke our cho{s}en Truth with {s}uch a {s}how</I>
+<TLN n="20"/><I>As Foole, and Fight is, be{s}ide forfeyting</I>
+<TLN n="21"/><I>Our owne Braines, and the Opinion that we bring</I>
+<TLN n="22"/><I>To make that onely true, we now intend,</I>
+<TLN n="23"/><I>Will leaue vs neuer an vnder{{s}t}anding Friend</I>
+<TLN n="24"/><I>Therefore, for Goodne{{s}{s}}e sake, and as you are knowne</I>
+<TLN n="25"/><I>The Fir{{s}t} and Happie{st} Hearers of the
+          Towne,</I>
+<TLN n="26"/><I>Be {s}ad, as we would make ye. Thinke ye {s}ee</I>
+<TLN n="27"/><I>The very Per{s}ons of our Noble Story,</I>
+<TLN n="28"/><I>As they were Liuing: Thinke you {s}ee them Great,</I>
+<TLN n="29"/><I>And follow'd with the generall throng, and {s}weat</I>
+<TLN n="30"/><I>Of thou{s}and Friends: Then, in a moment, {s}ee</I>
+<TLN n="31"/><I>How {s}oone this Mightine{{s}{s}}e, meets
+          Mi{s}ery:</I>
+<TLN n="32"/><I>And if you can be merry then, Ile {s}ay,</I>
+<TLN n="33"/><I>A Man may weepe vpon his Wedding day.</I>
+</DIV>
+</FRONTMATTER>
+</COL>
+<ACT n="1">
+<SCENE n="1">
+<TLN n="34"/>
+    <LD>
+    A{ct}us Primus. Sc{oe}na Prima.
+    </LD>
+<COL n="1">
+<L/>
+<TLN n="35"/>
+    <SD t="entrance">
+<C>
+<I>
+    Enter the Duke of Norfolke at one doore. At the other,
+<TLN n="36"/>the Duke of Buckingham, and the Lord
+<TLN n="37"/>Aburgauenny.
+      </I>
+</C>
+</SD>
+<L/>
+<TLN n="38"/>
+    <S>
+    <SP norm="Duke of Buckingham">
+      <C>
+    Buckingham.
+      </C>
+    </SP>
+<TLN n="39"/><ORNAMENT drop="3">G</ORNAMENT>Ood morrow, and well met. How haue ye done
+<TLN n="40"/>Since la{{s}t} we {s}aw in France?</S>
+<TLN n="41"/>
+    <S>
+    <SP norm="Duke of Norfolk">Norf.</SP>
+   I thanke your Grace:
+<TLN n="42"/>Healthfull, and euer {s}ince a fre{s}h Admirer
+<TLN n="43"/>Of what I {s}aw there.</S>
+<TLN n="44"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buck.</SP>
+   An vntimely Ague
+<TLN n="45"/>Staid me a Pri{s}oner in my Chamber, when
+<TLN n="46"/>Tho{s}e Sunnes of Glory, tho{s}e two Lights of Men
+<TLN n="47"/>Met in the vale of Andren.</S>
+<TLN n="48"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   'Twixt Guynes and Arde,
+<TLN n="49"/>I was then pre{s}ent, {s}aw them {s}alute on Hor{s}ebacke,
+<TLN n="50"/>Beheld them when they lighted, how they clung
+<TLN n="51"/>In their Embracement, as they grew together,
+<TLN n="52"/>Which had they,
+<TLN n="53"/>What foure Thron'd ones could haue weigh'd
+<TLN n="54"/>Such a compounded one?</S>
+<TLN n="55"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buck.</SP>
+   All the whole time
+<TLN n="56"/>I was my Chambers Pri{s}oner.</S>
+</COL>
+<COL n="2">
+<TLN n="57"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Then you lo{{s}t}
+<TLN n="58"/>The view of earthly glory: Men might {s}ay
+<TLN n="59"/>Till this time Pompe was {s}ingle, but now married
+<TLN n="60"/>To one aboue it {s}elfe. Each following day
+<TLN n="61"/>Became the next dayes ma{{s}t}er, till the la{{s}t}
+<TLN n="62"/>Made former Wonders, it's. To day the French,
+<TLN n="63"/>All Clinquant all in Gold, like Heathen Gods
+<TLN n="64"/>Shone downe the Engli{s}h; and to morrow, they
+<TLN n="65"/>Made Britaine, India: Euery man that {{s}t}ood,
+<TLN n="66"/>Shew'd like a Mine. Their Dwarfi{s}h Pages were
+<TLN n="67"/>As Cherubins, all gilt: the Madams too,
+<TLN n="68"/>Not vs'd to toyle, did almo{{s}t} {s}weat to beare
+<TLN n="69"/>The Pride vpon them, that their very labour
+<TLN n="70"/>Was to them, as a Painting. Now this Ma{s}ke
+<TLN n="71"/>Was cry'de incompareable; and th'en{s}uing night
+<TLN n="72"/>Made it a Foole, and Begger. The two Kings
+<TLN n="73"/>Equall in lu{{s}t}re, were now be{{s}t}, now wor{{s}t}
+<TLN n="74"/>As pre{s}ence did pre{s}ent them: Him in eye,
+<TLN n="75"/>Still him in prai{s}e, and being pre{s}ent both,
+<TLN n="76"/>'Twas {s}aid they {s}aw but one, and no Di{s}cerner
+<TLN n="77"/>Dur{{s}t} wagge his Tongue in cen{s}ure, when the{s}e Sunnes
+<TLN n="78"/>(For {s}o they phra{s}e 'em) by their Heralds challeng'd
+<TLN n="79"/>The Noble Spirits to Armes, they did performe
+<SIG>
+      <C>
+    t 3
+      </C>
+    </SIG>
+<CW>
+      <RA>
+    Beyond
+      </RA>
+    </CW>
+</COL>
+</PAGE>
+<PAGE n="2">
+<RT>
+    <PN>206</PN>
+<C>
+    The Life of King Henry the Eight.
+      </C>
+    </RT>
+<COL n="1">
+<TLN n="80"/>Beyond thoughts Compa{{s}{s}}e, that former fabulous Storie
+<TLN n="81"/>Being now {s}eene, po{{s}{s}}ible enough, got credit
+<TLN n="82"/>That Beuis was beleeu'd.</S>
+<TLN n="83"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   Oh you go farre.</S>
+<TLN n="84"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   As I belong to wor{s}hip, and affect
+<TLN n="85"/>In Honor, Hone{{s}t}y, the tract of eu'ry thing,
+<TLN n="86"/>Would by a good Di{s}cour{s}er loo{s}e {s}ome life,
+<TLN n="87"/>Which A{ct}ions {s}elfe, was tongue too.</S>
+<TLN n="88"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   All was Royall,
+<TLN n="89"/>To the di{s}posing of it nought rebell'd,
+<TLN n="90"/>Order gaue each thing view. The Office did
+<TLN n="91"/>Di{{s}t}in{ct}ly his full Fun{ct}ion: who did guide,
+<TLN n="92"/>I meane who {s}et the Body, and the Limbes
+<TLN n="93"/>Of this great Sport together?</S>
+<TLN n="94"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   As you gue{{s}{s}}e:
+<TLN n="95"/>One certes, that promi{s}es no Element
+<TLN n="96"/>In {s}uch a bu{s}ine{{s}{s}}e.</S>
+<TLN n="97"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   I pray you who, my Lord?</S>
+<TLN n="98"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   All this was ordred by the good Di{s}cretion
+<TLN n="99"/>Of the right Reuerend Cardinall of Yorke.</S>
+<TLN n="100"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   The diuell {s}peed him: No mans Pye is freed
+<TLN n="101"/>From his Ambitious finger. What had he
+<TLN n="102"/>To do in the{s}e fierce Vanities? I wonder,
+<TLN n="103"/>That {s}uch a Keech can with his very bulke
+<TLN n="104"/>Take vp the Rayes o'th'beneficiall Sun,
+<TLN n="105"/>And keepe it from the Earth.</S>
+<TLN n="106"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Surely Sir,
+<TLN n="107"/>There's in him {{s}t}uffe, that put's him to the{s}e ends:
+<TLN n="108"/>For being not propt by Aunce{{s}t}ry, who{s}e grace
+<TLN n="109"/>Chalkes Succe{{s}{s}}ors their way; nor call'd vpon
+<TLN n="110"/>For high feats done to'th'Crowne; neither Allied
+<TLN n="111"/>To eminent Assi{{s}t}ants; but Spider-like
+<TLN n="112"/>Out of his Selfe-drawing Web. O giues vs note,
+<TLN n="113"/>The force of his owne merit makes his way
+<TLN n="114"/>A guift that heauen giues for him, which buyes
+<TLN n="115"/>A place next to the King.</S>
+<TLN n="116"/>
+    <S>
+    <SP norm="Lord Abergavenny">Abur.</SP>
+   I cannot tell
+<TLN n="117"/>What Heauen hath giuen him: let {s}ome Grauer eye
+<TLN n="118"/>Pierce into that, but I can {s}ee his Pride
+<TLN n="119"/>Peepe through each part of him: whence ha's he that,
+<TLN n="120"/>If not from Hell? The Diuell is a Niggard,
+<TLN n="121"/>Or ha's giuen all before, and he begins
+<TLN n="122"/>A new Hell in him{s}elfe.</S>
+<TLN n="123"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   Why the Diuell,
+<TLN n="124"/>Vpon this French going out, tooke he vpon him
+<TLN n="125"/>(Without the priuity o'th'King) t'appoint
+<TLN n="126"/>Who {s}hould attend on him? He makes vp the File
+<TLN n="127"/>Of all the Gentry; for the mo{{s}t} part {s}uch
+<TLN n="128"/>To whom as great a Charge, as little Honor
+<TLN n="129"/>He meant to lay vpon: and his owne Letter
+<TLN n="130"/>The Honourable Boord of Councell, out
+<TLN n="131"/>Mu{{s}t} fetch him in, he Papers.</S>
+<TLN n="132"/>
+    <S>
+    <SP norm="Lord Abergavenny">Abur.</SP>
+   I do know
+<TLN n="133"/>Kin{s}men of mine, three at the lea{{s}t}, that haue
+<TLN n="134"/>By this, {s}o {s}icken'd their Estates, that neuer
+<TLN n="135"/>They {s}hall abound as formerly.</S>
+<TLN n="136"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   O many
+<TLN n="137"/>Haue broke their backes with laying Mannors on 'em
+<TLN n="138"/>For this great Iourney. What did this vanity
+<TLN n="139"/>But mini{{s}t}er communication of
+<TLN n="140"/>A mo{{s}t} poore i{{s}{s}}ue.</S>
+<TLN n="141"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Greeuingly I thinke,
+<TLN n="142"/>The Peace betweene the French and vs, not valewes
+<TLN n="143"/>The Co{{s}t} that did conclude it.</S>
+<TLN n="144"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   Euery man,
+<TLN n="145"/>After the hideous {{s}t}orme that follow'd, was
+</COL>
+<COL n="2">
+<TLN n="146"/>A thing In{s}pir'd, and not con{s}ulting, broke
+<TLN n="147"/>Into a generall Prophe{s}ie; That this Tempe{{s}t}
+<TLN n="148"/>Da{s}hing the Garment of this Peace, aboaded
+<TLN n="149"/>The {s}odaine breach on't.</S>
+<TLN n="150"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Which is budded out,
+<TLN n="151"/>For France hath flaw'd the League, and hath attach'd
+<TLN n="152"/>Our Merchants goods at Burdeux.</S>
+<TLN n="153"/>
+    <S>
+    <SP norm="Lord Abergavenny">Abur.</SP>
+   Is it therefore
+<TLN n="154"/>th'Amba{{s}{s}}ador is {s}ilenc'd?</S>
+<TLN n="155"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Marry is't.</S>
+<TLN n="156"/>
+    <S>
+    <SP norm="Lord Abergavenny">Abur.</SP>
+   A proper Title of a Peace, and purchas'd
+<TLN n="157"/>At a {s}uperfluous rate.</S>
+<TLN n="158"/>
+    <S>
+    <SP norm="Duke of Buckingham">Buc.</SP>
+   Why all this Bu{s}ine{{s}{s}}e
+<TLN n="159"/>Our Reuerend Cardinall carried.</S>
+<TLN n="160"/>
+    <S>
+    <SP norm="Duke of Norfolk">Nor.</SP>
+   Like it your Grace,
+<TLN n="161"/>The State takes notice of the priuate difference
+<TLN n="162"/>Betwixt you, and the Cardinall. I adui{s}e you
+<TLN n="163"/>(And take it from a heart, that wi{s}hes towards you
+<TLN n="164"/>Honor, and plenteous {s}afety) that you reade
+<TLN n="165"/>The Cardinals Malice, and his Potency
+<TLN n="166"/>Together; To con{s}ider further, that
+<TLN n="167"/>What his high Hatred would effect, wants not
+<TLN n="168"/>A Mini{{s}t}er in his Power. You know his Nature,
+<TLN n="169"/>That he's Reuengefull; and I know, his Sword
+<TLN n="170"/>Hath a {s}harpe edge: It's long, and't may be {s}aide
+<TLN n="171"/>It reaches farre, and where 'twill not extend,
+<TLN n="172"/>Thither he darts it. Bo{s}ome vp my coun{s}ell,
+<TLN n="173"/>You'l finde it whole{s}ome. Loe, where comes that Rock
+<TLN n="174"/>That I aduice your {s}hunning.</S>
+<L/>
+<TLN n="175"/>
+    <SD t="entrance">
+<C>
+    Enter Cardinall Wolsey, the Purse borne before him, certaine
+<TLN n="176"/>  of the Guard, and two Secretaries with Papers: The
+<TLN n="177"/> Cardinall in his passage, fixeth his eye on Buck-
+<TLN n="178"/> ham, and Buckingham on him,
+<TLN n="179"/> both full of disdaine.
+      </C>
+</SD>
+<L/>
+<TLN n="180"/>
+    <S>
+    <SP norm="Cardinal">Car.</SP>
+   The Duke of Buckinghams Surueyor? Ha?
+<TLN n="181"/>Where's his Examination?</S>
+<TLN n="182"/>
+    <S>
+    <SP norm="Secretary">Secr.</SP>
+   Heere {s}o plea{s}e you.</S>
+<TLN n="183"/>
+    <S>
+    <SP norm="Cardinal">Car.</SP>
+   Is he in per{s}on, ready?</S>
+<TLN n="184"/>
+    <S>
+    <SP norm="Secretary">Secr.</SP>
+   I, plea{s}e your Grace.</S>
+<TLN n="185"/>
+    <S>
+    <SP norm="Cardinal">Car.</SP>
+   Well, we {s}hall then know more, & Buckingham
+<TLN n="186"/>Shall le{{s}{s}}en this bigge looke.</S>
+<TLN n="187"/>
+    <SD t="exit">
+    Exeunt Cardinall, and his Traine.
+    </SD>
+</SCENE>
+</ACT>
+</COL>
+</PAGE>
+</MODE>
+</work>

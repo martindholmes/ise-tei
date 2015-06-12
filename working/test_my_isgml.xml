@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." default="testSample">
+
+  <!-- note: following properties are passed as parameters via Oxygen:
+      -${pd}:  current project directory path (i.e. where the ise_internal.xpr file lives)
+  -->
+
+  <property name="echo.separator" value="************************************************"/>
+
+  <target name="testSample">
+    <echo message="${echo.separator}"/>
+    <echo message="Generate ISGML for testing from sample file."/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/samples/sample.xml"/>
+      <arg value="-xsl:${pd}/xsl/tei_to_ise.xsl"/> 
+      <arg value="-o:${pd}/temp/sample.txt"/> 
+    </java>
+    
+    <echo message="${echo.separator}"/>
+    <echo message="Run isetools.jar on result."/>
+    
+    <java
+      dir="${pd}"
+      jar="${pd}/isetools.jar"
+      fork="true"
+      >
+      <arg value="validate"/>
+      <arg value="${pd}/temp/sample.txt"/>
+    </java>
+    
+<!--  We may reinstate this later.  -->
+    <!--<echo message="${echo.separator}"/>
+    <echo message="Call conversion script on result."/>
+    
+    <exec executable="/bin/bash" dir="${pd}/../../sgml" failonerror="true" output="${pd}/temp/sample.xml">
+      <arg value="toolchain/texts/sgml-to-mxml.sh"/>
+      <arg value="${pd}/temp/sample.txt"/>
+    </exec>
+    
+    <echo message="${echo.separator}"/>
+    <echo message="Check result for well-formedness."/>
+    
+    <xmlvalidate file="${pd}/temp/sample.xml" lenient="true"/>-->
+    
+    <echo message="${echo.separator}"/>
+    <echo message="Done!"/>
+    
+  </target>
+
+</project>

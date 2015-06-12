@@ -1,0 +1,879 @@
+
+    <work genre="play"
+	xmlns:s="http://internetshakespeare.uvic.ca/#semantic-markup"
+	xmlns:p="http://internetshakespeare.uvic.ca/#pagesetting-markup"
+	xmlns:t="http://internetshakespeare.uvic.ca/#typesetting-markup"
+	xmlns:a="http://internetshakespeare.uvic.ca/#annotative-markup"
+>
+    
+  
+    <iseheader>
+     
+    
+      
+        King Henry the Eighth or All is True.
+      
+      
+      
+      
+    
+    
+      Created this file 2015
+    
+  
+    <meta name="ISE.SourceFormat" content="text/sgml" />
+</iseheader>
+  
+  
+    
+    <p:page n="1">
+
+  
+    
+    <p:rt>
+    <p:pn>
+      <t:ra>
+    205
+      </t:ra>
+    </p:pn>
+  </p:rt>
+  
+    
+    
+    
+    <s:frontmatter>
+    
+      
+    <t:titlehead>
+    
+        The Famous Hi<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>ory of the Life of
+        King HENRY the Eight.
+      
+    </t:titlehead>
+  
+      
+      
+    <s:div name="Prologue">
+    
+        
+<p:l>    <a:ln tln="1"/></p:l>
+  
+    <s:ld>
+    <t:i>THE PROLOGUE</t:i>
+    </s:ld>
+  
+        
+        
+      <p:col n="1">
+  
+        
+<p:l>    <a:ln tln="2"/></p:l>
+  <t:i><t:ornament drop="3">I</t:ornament> Come no more to make you laugh, Things now,</t:i>
+        
+<p:l>    <a:ln tln="3"/></p:l>
+  <t:i>That beare a Weighty, and a Serious Brow,</t:i>
+        
+<p:l>    <a:ln tln="4"/></p:l>
+  <t:i>Sad, high, and working, full of State and Woe:</t:i>
+        
+<p:l>    <a:ln tln="5"/></p:l>
+  <t:i>Such Noble Scœnes, as draw the Eye to flow</t:i>
+        
+<p:l>    <a:ln tln="6"/></p:l>
+  <t:i>We now pre<t:typeform t="long">s</t:typeform>ent. Those that can Pitty, heere</t:i>
+        
+<p:l>    <a:ln tln="7"/></p:l>
+  <t:i>May (if they thinke it well) let fall a Teare,</t:i>
+        
+<p:l>    <a:ln tln="8"/></p:l>
+  <t:i>The Subiect will deserue it. Such as giue</t:i>
+        
+<p:l>    <a:ln tln="9"/></p:l>
+  <t:i>Their Money out of hope they may beleeue,</t:i>
+        
+<p:l>    <a:ln tln="10"/></p:l>
+  <t:i>May heere finde Truth too. Tho<t:typeform t="long">s</t:typeform>e that come to see</t:i>
+        
+<p:l>    <a:ln tln="11"/></p:l>
+  <t:i>Onely a <t:typeform t="long">s</t:typeform>how or two, and <t:typeform t="long">s</t:typeform>o agree,</t:i>
+        
+<p:l>    <a:ln tln="12"/></p:l>
+  <t:i>The Play may pa<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e: If they be <t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>ill, and willing,</t:i>
+        
+<p:l>    <a:ln tln="13"/></p:l>
+  <t:i>Ile vndertake may <t:typeform t="long">s</t:typeform>ee away their <t:typeform t="long">s</t:typeform>hilling</t:i>
+        
+<p:l>    <a:ln tln="14"/></p:l>
+  <t:i>Richly in two <t:typeform t="long">s</t:typeform>hort houres. Onely they</t:i>
+        
+<p:l>    <a:ln tln="15"/></p:l>
+  <t:i>That come to heare a Merry, Bawdy Play,</t:i>
+        
+<p:l>    <a:ln tln="16"/></p:l>
+  <t:i>A noy<t:typeform t="long">s</t:typeform>e of Targets: Or to <t:typeform t="long">s</t:typeform>ee a Fellow</t:i>
+        
+<p:l>    <a:ln tln="17"/></p:l>
+  <t:i>In a long Motley Coate, garded with Yellow,</t:i>
+        
+      </p:col>
+    
+      <p:col n="2">
+  
+        
+<p:l>    <a:ln tln="18"/></p:l>
+  <t:i>Will be deceyu'd. For gentle Hearers, know</t:i>
+        
+<p:l>    <a:ln tln="19"/></p:l>
+  <t:i>To ranke our cho<t:typeform t="long">s</t:typeform>en Truth with <t:typeform t="long">s</t:typeform>uch a <t:typeform t="long">s</t:typeform>how</t:i>
+        
+<p:l>    <a:ln tln="20"/></p:l>
+  <t:i>As Foole, and Fight is, be<t:typeform t="long">s</t:typeform>ide forfeyting</t:i>
+        
+<p:l>    <a:ln tln="21"/></p:l>
+  <t:i>Our owne Braines, and the Opinion that we bring</t:i>
+        
+<p:l>    <a:ln tln="22"/></p:l>
+  <t:i>To make that onely true, we now intend,</t:i>
+        
+<p:l>    <a:ln tln="23"/></p:l>
+  <t:i>Will leaue vs neuer an vnder<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>anding Friend</t:i>
+        
+<p:l>    <a:ln tln="24"/></p:l>
+  <t:i>Therefore, for Goodne<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e sake, and as you are knowne</t:i>
+        
+<p:l>    <a:ln tln="25"/></p:l>
+  <t:i>The Fir<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> and Happie<t:lig setting="{st}">st</t:lig> Hearers of the
+          Towne,</t:i>
+        
+<p:l>    <a:ln tln="26"/></p:l>
+  <t:i>Be <t:typeform t="long">s</t:typeform>ad, as we would make ye. Thinke ye <t:typeform t="long">s</t:typeform>ee</t:i>
+        
+<p:l>    <a:ln tln="27"/></p:l>
+  <t:i>The very Per<t:typeform t="long">s</t:typeform>ons of our Noble Story,</t:i>
+        
+<p:l>    <a:ln tln="28"/></p:l>
+  <t:i>As they were Liuing: Thinke you <t:typeform t="long">s</t:typeform>ee them Great,</t:i>
+        
+<p:l>    <a:ln tln="29"/></p:l>
+  <t:i>And follow'd with the generall throng, and <t:typeform t="long">s</t:typeform>weat</t:i>
+        
+<p:l>    <a:ln tln="30"/></p:l>
+  <t:i>Of thou<t:typeform t="long">s</t:typeform>and Friends: Then, in a moment, <t:typeform t="long">s</t:typeform>ee</t:i>
+        
+<p:l>    <a:ln tln="31"/></p:l>
+  <t:i>How <t:typeform t="long">s</t:typeform>oone this Mightine<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e, meets
+          Mi<t:typeform t="long">s</t:typeform>ery:</t:i>
+        
+<p:l>    <a:ln tln="32"/></p:l>
+  <t:i>And if you can be merry then, Ile <t:typeform t="long">s</t:typeform>ay,</t:i>
+        
+<p:l>    <a:ln tln="33"/></p:l>
+  <t:i>A Man may weepe vpon his Wedding day.</t:i>
+      
+    </s:div>
+  
+    
+    </s:frontmatter>
+  
+    
+      </p:col>
+    
+    
+    
+      
+    <s:act n="1">
+    
+        
+    <s:scene n="1">
+    
+          
+<p:l>    <a:ln tln="34"/></p:l>
+  
+    <s:ld>
+    A<t:lig setting="{ct}">ct</t:lig>us Primus. Scœna Prima.
+    </s:ld>
+  
+          
+
+      <p:col n="1">
+  
+          
+<p:l>    <a:ln tln="35"/></p:l>
+  
+    <s:sd>
+    
+      <t:c>
+    
+      <t:i>
+    Enter the Duke of Norfolke at one doore. At the other,
+            
+<p:l>    <a:ln tln="36"/></p:l>
+  the Duke of Buckingham, and the Lord
+            
+<p:l>    <a:ln tln="37"/></p:l>
+  Aburgauenny.
+      </t:c>
+    
+      </t:i>
+    
+    </s:sd>
+  
+          
+          
+<p:l>    <a:ln tln="38"/></p:l>
+  
+    <s:s>
+    <s:sp>
+      <t:c>
+    Buckingham.
+      </t:c>
+    </s:sp>
+  
+            
+          
+<p:l>    <a:ln tln="39"/></p:l>
+  <t:ornament drop="3">G</t:ornament>Ood morrow, and well met. How haue ye done
+            
+<p:l>    <a:ln tln="40"/></p:l>
+  Since la<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> we <t:typeform t="long">s</t:typeform>aw in France?</s:s>
+  
+          
+<p:l>    <a:ln tln="41"/></p:l>
+  
+    <s:s>
+    <s:sp>Norf.</s:sp>
+   I thanke your Grace:
+            
+<p:l>    <a:ln tln="42"/></p:l>
+  Healthfull, and euer <t:typeform t="long">s</t:typeform>ince a fre<t:typeform t="long">s</t:typeform>h Admirer
+            
+<p:l>    <a:ln tln="43"/></p:l>
+  Of what I <t:typeform t="long">s</t:typeform>aw there.</s:s>
+  
+          
+<p:l>    <a:ln tln="44"/></p:l>
+  
+    <s:s>
+    <s:sp>Buck.</s:sp>
+   An vntimely Ague
+            
+<p:l>    <a:ln tln="45"/></p:l>
+  Staid me a Pri<t:typeform t="long">s</t:typeform>oner in my Chamber, when
+            
+<p:l>    <a:ln tln="46"/></p:l>
+  Tho<t:typeform t="long">s</t:typeform>e Sunnes of Glory, tho<t:typeform t="long">s</t:typeform>e two Lights of Men
+            
+<p:l>    <a:ln tln="47"/></p:l>
+  Met in the vale of Andren.</s:s>
+  
+          
+<p:l>    <a:ln tln="48"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   'Twixt Guynes and Arde,
+            
+<p:l>    <a:ln tln="49"/></p:l>
+  I was then pre<t:typeform t="long">s</t:typeform>ent, <t:typeform t="long">s</t:typeform>aw them <t:typeform t="long">s</t:typeform>alute on Hor<t:typeform t="long">s</t:typeform>ebacke,
+            
+<p:l>    <a:ln tln="50"/></p:l>
+  Beheld them when they lighted, how they clung
+            
+<p:l>    <a:ln tln="51"/></p:l>
+  In their Embracement, as they grew together,
+            
+<p:l>    <a:ln tln="52"/></p:l>
+  Which had they,
+            
+<p:l>    <a:ln tln="53"/></p:l>
+  What foure Thron'd ones could haue weigh'd
+            
+<p:l>    <a:ln tln="54"/></p:l>
+  Such a compounded one?</s:s>
+  
+          
+<p:l>    <a:ln tln="55"/></p:l>
+  
+    <s:s>
+    <s:sp>Buck.</s:sp>
+   All the whole time
+            
+<p:l>    <a:ln tln="56"/></p:l>
+  I was my Chambers Pri<t:typeform t="long">s</t:typeform>oner.</s:s>
+  
+          
+      </p:col>
+    
+      <p:col n="2">
+  
+          
+<p:l>    <a:ln tln="57"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Then you lo<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>
+            
+<p:l>    <a:ln tln="58"/></p:l>
+  The view of earthly glory: Men might <t:typeform t="long">s</t:typeform>ay
+            
+<p:l>    <a:ln tln="59"/></p:l>
+  Till this time Pompe was <t:typeform t="long">s</t:typeform>ingle, but now married
+            
+<p:l>    <a:ln tln="60"/></p:l>
+  To one aboue it <t:typeform t="long">s</t:typeform>elfe. Each following day
+            
+<p:l>    <a:ln tln="61"/></p:l>
+  Became the next dayes ma<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>er, till the la<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>
+            
+<p:l>    <a:ln tln="62"/></p:l>
+  Made former Wonders, it's. To day the French,
+            
+<p:l>    <a:ln tln="63"/></p:l>
+  All Clinquant all in Gold, like Heathen Gods
+            
+<p:l>    <a:ln tln="64"/></p:l>
+  Shone downe the Engli<t:typeform t="long">s</t:typeform>h; and to morrow, they
+            
+<p:l>    <a:ln tln="65"/></p:l>
+  Made Britaine, India: Euery man that <t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>ood,
+            
+<p:l>    <a:ln tln="66"/></p:l>
+  Shew'd like a Mine. Their Dwarfi<t:typeform t="long">s</t:typeform>h Pages were
+            
+<p:l>    <a:ln tln="67"/></p:l>
+  As Cherubins, all gilt: the Madams too,
+            
+<p:l>    <a:ln tln="68"/></p:l>
+  Not vs'd to toyle, did almo<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> <t:typeform t="long">s</t:typeform>weat to beare
+            
+<p:l>    <a:ln tln="69"/></p:l>
+  The Pride vpon them, that their very labour
+            
+<p:l>    <a:ln tln="70"/></p:l>
+  Was to them, as a Painting. Now this Ma<t:typeform t="long">s</t:typeform>ke
+            
+<p:l>    <a:ln tln="71"/></p:l>
+  Was cry'de incompareable; and th'en<t:typeform t="long">s</t:typeform>uing night
+            
+<p:l>    <a:ln tln="72"/></p:l>
+  Made it a Foole, and Begger. The two Kings
+            
+<p:l>    <a:ln tln="73"/></p:l>
+  Equall in lu<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>re, were now be<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>, now wor<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>
+            
+<p:l>    <a:ln tln="74"/></p:l>
+  As pre<t:typeform t="long">s</t:typeform>ence did pre<t:typeform t="long">s</t:typeform>ent them: Him in eye,
+            
+<p:l>    <a:ln tln="75"/></p:l>
+  Still him in prai<t:typeform t="long">s</t:typeform>e, and being pre<t:typeform t="long">s</t:typeform>ent both,
+            
+<p:l>    <a:ln tln="76"/></p:l>
+  'Twas <t:typeform t="long">s</t:typeform>aid they <t:typeform t="long">s</t:typeform>aw but one, and no Di<t:typeform t="long">s</t:typeform>cerner
+            
+<p:l>    <a:ln tln="77"/></p:l>
+  Dur<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> wagge his Tongue in cen<t:typeform t="long">s</t:typeform>ure, when the<t:typeform t="long">s</t:typeform>e Sunnes
+            
+<p:l>    <a:ln tln="78"/></p:l>
+  (For <t:typeform t="long">s</t:typeform>o they phra<t:typeform t="long">s</t:typeform>e 'em) by their Heralds challeng'd
+            
+<p:l>    <a:ln tln="79"/></p:l>
+  The Noble Spirits to Armes, they did performe
+            
+            
+    <p:sig>
+      <t:c>
+    t 3
+      </t:c>
+    </p:sig>
+  
+    <p:cw>
+      <t:ra>
+    Beyond
+      </t:ra>
+    </p:cw>
+  
+            
+            
+      </p:col>
+    
+    </p:page>
+    
+    <p:page n="2">
+
+  
+            
+    <p:rt>
+    <p:pn>206</p:pn>
+  
+      <t:c>
+    The Life of King Henry the Eight.
+      </t:c>
+    </p:rt>
+  
+            
+            
+      <p:col n="1">
+  
+            
+<p:l>    <a:ln tln="80"/></p:l>
+  Beyond thoughts Compa<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e, that former fabulous Storie
+            
+<p:l>    <a:ln tln="81"/></p:l>
+  Being now <t:typeform t="long">s</t:typeform>eene, po<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>ible enough, got credit
+            
+<p:l>    <a:ln tln="82"/></p:l>
+  That Beuis was beleeu'd.</s:s>
+  
+          
+<p:l>    <a:ln tln="83"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   Oh you go farre.</s:s>
+  
+          
+<p:l>    <a:ln tln="84"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   As I belong to wor<t:typeform t="long">s</t:typeform>hip, and affect
+            
+<p:l>    <a:ln tln="85"/></p:l>
+  In Honor, Hone<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>y, the tract of eu'ry thing,
+            
+<p:l>    <a:ln tln="86"/></p:l>
+  Would by a good Di<t:typeform t="long">s</t:typeform>cour<t:typeform t="long">s</t:typeform>er loo<t:typeform t="long">s</t:typeform>e <t:typeform t="long">s</t:typeform>ome life,
+            
+<p:l>    <a:ln tln="87"/></p:l>
+  Which A<t:lig setting="{ct}">ct</t:lig>ions <t:typeform t="long">s</t:typeform>elfe, was tongue too.</s:s>
+  
+          
+<p:l>    <a:ln tln="88"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   All was Royall,
+            
+<p:l>    <a:ln tln="89"/></p:l>
+  To the di<t:typeform t="long">s</t:typeform>posing of it nought rebell'd,
+            
+<p:l>    <a:ln tln="90"/></p:l>
+  Order gaue each thing view. The Office did
+            
+<p:l>    <a:ln tln="91"/></p:l>
+  Di<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>in<t:lig setting="{ct}">ct</t:lig>ly his full Fun<t:lig setting="{ct}">ct</t:lig>ion: who did guide,
+            
+<p:l>    <a:ln tln="92"/></p:l>
+  I meane who <t:typeform t="long">s</t:typeform>et the Body, and the Limbes
+            
+<p:l>    <a:ln tln="93"/></p:l>
+  Of this great Sport together?</s:s>
+  
+          
+<p:l>    <a:ln tln="94"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   As you gue<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e:
+          
+<p:l>    <a:ln tln="95"/></p:l>
+  One certes, that promi<t:typeform t="long">s</t:typeform>es no Element
+            
+<p:l>    <a:ln tln="96"/></p:l>
+  In <t:typeform t="long">s</t:typeform>uch a bu<t:typeform t="long">s</t:typeform>ine<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e.</s:s>
+  
+          
+<p:l>    <a:ln tln="97"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   I pray you who, my Lord?</s:s>
+  
+          
+<p:l>    <a:ln tln="98"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   All this was ordred by the good Di<t:typeform t="long">s</t:typeform>cretion
+            
+<p:l>    <a:ln tln="99"/></p:l>
+  Of the right Reuerend Cardinall of Yorke.</s:s>
+  
+          
+<p:l>    <a:ln tln="100"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   The diuell <t:typeform t="long">s</t:typeform>peed him: No mans Pye is freed
+            
+<p:l>    <a:ln tln="101"/></p:l>
+  From his Ambitious finger. What had he
+            
+<p:l>    <a:ln tln="102"/></p:l>
+  To do in the<t:typeform t="long">s</t:typeform>e fierce Vanities? I wonder,
+            
+<p:l>    <a:ln tln="103"/></p:l>
+  That <t:typeform t="long">s</t:typeform>uch a Keech can with his very bulke
+            
+<p:l>    <a:ln tln="104"/></p:l>
+  Take vp the Rayes o'th'beneficiall Sun,
+            
+<p:l>    <a:ln tln="105"/></p:l>
+  And keepe it from the Earth.</s:s>
+  
+          
+<p:l>    <a:ln tln="106"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Surely Sir,
+            
+<p:l>    <a:ln tln="107"/></p:l>
+  There's in him <t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>uffe, that put's him to the<t:typeform t="long">s</t:typeform>e ends:
+            
+<p:l>    <a:ln tln="108"/></p:l>
+  For being not propt by Aunce<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>ry, who<t:typeform t="long">s</t:typeform>e grace
+            
+<p:l>    <a:ln tln="109"/></p:l>
+  Chalkes Succe<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>ors their way; nor call'd vpon
+            
+<p:l>    <a:ln tln="110"/></p:l>
+  For high feats done to'th'Crowne; neither Allied
+            
+<p:l>    <a:ln tln="111"/></p:l>
+  To eminent Assi<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>ants; but Spider-like
+            
+<p:l>    <a:ln tln="112"/></p:l>
+  Out of his Selfe-drawing Web. O giues vs note,
+            
+<p:l>    <a:ln tln="113"/></p:l>
+  The force of his owne merit makes his way
+            
+<p:l>    <a:ln tln="114"/></p:l>
+  A guift that heauen giues for him, which buyes
+            
+<p:l>    <a:ln tln="115"/></p:l>
+  A place next to the King.</s:s>
+  
+          
+<p:l>    <a:ln tln="116"/></p:l>
+  
+    <s:s>
+    <s:sp>Abur.</s:sp>
+   I cannot tell
+            
+<p:l>    <a:ln tln="117"/></p:l>
+  What Heauen hath giuen him: let <t:typeform t="long">s</t:typeform>ome Grauer eye
+            
+<p:l>    <a:ln tln="118"/></p:l>
+  Pierce into that, but I can <t:typeform t="long">s</t:typeform>ee his Pride
+            
+<p:l>    <a:ln tln="119"/></p:l>
+  Peepe through each part of him: whence ha's he that,
+            
+<p:l>    <a:ln tln="120"/></p:l>
+  If not from Hell? The Diuell is a Niggard,
+            
+<p:l>    <a:ln tln="121"/></p:l>
+  Or ha's giuen all before, and he begins
+            
+<p:l>    <a:ln tln="122"/></p:l>
+  A new Hell in him<t:typeform t="long">s</t:typeform>elfe.</s:s>
+  
+          
+<p:l>    <a:ln tln="123"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   Why the Diuell,
+            
+<p:l>    <a:ln tln="124"/></p:l>
+  Vpon this French going out, tooke he vpon him
+            
+<p:l>    <a:ln tln="125"/></p:l>
+  (Without the priuity o'th'King) t'appoint
+            
+<p:l>    <a:ln tln="126"/></p:l>
+  Who <t:typeform t="long">s</t:typeform>hould attend on him? He makes vp the File
+            
+<p:l>    <a:ln tln="127"/></p:l>
+  Of all the Gentry; for the mo<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> part <t:typeform t="long">s</t:typeform>uch
+            
+<p:l>    <a:ln tln="128"/></p:l>
+  To whom as great a Charge, as little Honor
+            
+<p:l>    <a:ln tln="129"/></p:l>
+  He meant to lay vpon: and his owne Letter
+            
+<p:l>    <a:ln tln="130"/></p:l>
+  The Honourable Boord of Councell, out
+            
+<p:l>    <a:ln tln="131"/></p:l>
+  Mu<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> fetch him in, he Papers.</s:s>
+  
+          
+<p:l>    <a:ln tln="132"/></p:l>
+  
+    <s:s>
+    <s:sp>Abur.</s:sp>
+   I do know
+            
+<p:l>    <a:ln tln="133"/></p:l>
+  Kin<t:typeform t="long">s</t:typeform>men of mine, three at the lea<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>, that haue
+            
+<p:l>    <a:ln tln="134"/></p:l>
+  By this, <t:typeform t="long">s</t:typeform>o <t:typeform t="long">s</t:typeform>icken'd their Estates, that neuer
+            
+<p:l>    <a:ln tln="135"/></p:l>
+  They <t:typeform t="long">s</t:typeform>hall abound as formerly.</s:s>
+  
+          
+<p:l>    <a:ln tln="136"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   O many
+            
+<p:l>    <a:ln tln="137"/></p:l>
+  Haue broke their backes with laying Mannors on 'em
+            
+<p:l>    <a:ln tln="138"/></p:l>
+  For this great Iourney. What did this vanity
+            
+<p:l>    <a:ln tln="139"/></p:l>
+  But mini<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>er communication of
+            
+<p:l>    <a:ln tln="140"/></p:l>
+  A mo<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> poore i<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>ue.</s:s>
+  
+          
+<p:l>    <a:ln tln="141"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Greeuingly I thinke,
+            
+<p:l>    <a:ln tln="142"/></p:l>
+  The Peace betweene the French and vs, not valewes
+            
+<p:l>    <a:ln tln="143"/></p:l>
+  The Co<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig> that did conclude it.</s:s>
+  
+          
+<p:l>    <a:ln tln="144"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   Euery man,
+            
+<p:l>    <a:ln tln="145"/></p:l>
+  After the hideous <t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>orme that follow'd, was
+            
+            
+      </p:col>
+    
+      <p:col n="2">
+  
+            
+            
+<p:l>    <a:ln tln="146"/></p:l>
+  A thing In<t:typeform t="long">s</t:typeform>pir'd, and not con<t:typeform t="long">s</t:typeform>ulting, broke
+            
+<p:l>    <a:ln tln="147"/></p:l>
+  Into a generall Prophe<t:typeform t="long">s</t:typeform>ie; That this Tempe<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>
+            
+<p:l>    <a:ln tln="148"/></p:l>
+  Da<t:typeform t="long">s</t:typeform>hing the Garment of this Peace, aboaded
+            
+<p:l>    <a:ln tln="149"/></p:l>
+  The <t:typeform t="long">s</t:typeform>odaine breach on't.</s:s>
+  
+          
+<p:l>    <a:ln tln="150"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Which is budded out,
+            
+<p:l>    <a:ln tln="151"/></p:l>
+  For France hath flaw'd the League, and hath attach'd
+            
+<p:l>    <a:ln tln="152"/></p:l>
+  Our Merchants goods at Burdeux.</s:s>
+  
+          
+<p:l>    <a:ln tln="153"/></p:l>
+  
+    <s:s>
+    <s:sp>Abur.</s:sp>
+   Is it therefore
+            
+<p:l>    <a:ln tln="154"/></p:l>
+  th'Amba<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>ador is <t:typeform t="long">s</t:typeform>ilenc'd?</s:s>
+  
+          
+<p:l>    <a:ln tln="155"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Marry is't.</s:s>
+  
+          
+<p:l>    <a:ln tln="156"/></p:l>
+  
+    <s:s>
+    <s:sp>Abur.</s:sp>
+   A proper Title of a Peace, and purchas'd
+            
+<p:l>    <a:ln tln="157"/></p:l>
+  At a <t:typeform t="long">s</t:typeform>uperfluous rate.</s:s>
+  
+          
+<p:l>    <a:ln tln="158"/></p:l>
+  
+    <s:s>
+    <s:sp>Buc.</s:sp>
+   Why all this Bu<t:typeform t="long">s</t:typeform>ine<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>e
+            
+<p:l>    <a:ln tln="159"/></p:l>
+  Our Reuerend Cardinall carried.</s:s>
+  
+          
+<p:l>    <a:ln tln="160"/></p:l>
+  
+    <s:s>
+    <s:sp>Nor.</s:sp>
+   Like it your Grace,
+            
+<p:l>    <a:ln tln="161"/></p:l>
+  The State takes notice of the priuate difference
+            
+<p:l>    <a:ln tln="162"/></p:l>
+  Betwixt you, and the Cardinall. I adui<t:typeform t="long">s</t:typeform>e you
+            
+<p:l>    <a:ln tln="163"/></p:l>
+  (And take it from a heart, that wi<t:typeform t="long">s</t:typeform>hes towards you
+            
+<p:l>    <a:ln tln="164"/></p:l>
+  Honor, and plenteous <t:typeform t="long">s</t:typeform>afety) that you reade
+            
+<p:l>    <a:ln tln="165"/></p:l>
+  The Cardinals Malice, and his Potency
+            
+<p:l>    <a:ln tln="166"/></p:l>
+  Together; To con<t:typeform t="long">s</t:typeform>ider further, that
+            
+<p:l>    <a:ln tln="167"/></p:l>
+  What his high Hatred would effect, wants not
+            
+<p:l>    <a:ln tln="168"/></p:l>
+  A Mini<t:lig setting="{{s}t}"><t:typeform t="long">s</t:typeform>t</t:lig>er in his Power. You know his Nature,
+            
+<p:l>    <a:ln tln="169"/></p:l>
+  That he's Reuengefull; and I know, his Sword
+            
+<p:l>    <a:ln tln="170"/></p:l>
+  Hath a <t:typeform t="long">s</t:typeform>harpe edge: It's long, and't may be <t:typeform t="long">s</t:typeform>aide
+            
+<p:l>    <a:ln tln="171"/></p:l>
+  It reaches farre, and where 'twill not extend,
+            
+<p:l>    <a:ln tln="172"/></p:l>
+  Thither he darts it. Bo<t:typeform t="long">s</t:typeform>ome vp my coun<t:typeform t="long">s</t:typeform>ell,
+            
+<p:l>    <a:ln tln="173"/></p:l>
+  You'l finde it whole<t:typeform t="long">s</t:typeform>ome. Loe, where comes that Rock
+            
+<p:l>    <a:ln tln="174"/></p:l>
+  That I aduice your <t:typeform t="long">s</t:typeform>hunning.</s:s>
+  
+          
+          
+<p:l>    <a:ln tln="175"/></p:l>
+  
+    <s:sd>
+    
+      <t:c>
+    Enter Cardinall Wolsey, the Purse borne before him, certaine
+            
+<p:l>    <a:ln tln="176"/></p:l>
+    of the Guard, and two Secretaries with Papers: The
+            
+<p:l>    <a:ln tln="177"/></p:l>
+   Cardinall in his passage, fixeth his eye on Buck-
+            
+<p:l>    <a:ln tln="178"/></p:l>
+   ham, and Buckingham on him,
+            
+<p:l>    <a:ln tln="179"/></p:l>
+   both full of disdaine.
+      </t:c>
+    
+    </s:sd>
+  
+          
+          
+<p:l>    <a:ln tln="180"/></p:l>
+  
+    <s:s>
+    <s:sp>Car.</s:sp>
+   The Duke of Buckinghams Surueyor? Ha?
+            
+<p:l>    <a:ln tln="181"/></p:l>
+  Where's his Examination?</s:s>
+  
+          
+<p:l>    <a:ln tln="182"/></p:l>
+  
+    <s:s>
+    <s:sp>Secr.</s:sp>
+   Heere <t:typeform t="long">s</t:typeform>o plea<t:typeform t="long">s</t:typeform>e you.</s:s>
+  
+          
+<p:l>    <a:ln tln="183"/></p:l>
+  
+    <s:s>
+    <s:sp>Car.</s:sp>
+   Is he in per<t:typeform t="long">s</t:typeform>on, ready?</s:s>
+  
+          
+<p:l>    <a:ln tln="184"/></p:l>
+  
+    <s:s>
+    <s:sp>Secr.</s:sp>
+   I, plea<t:typeform t="long">s</t:typeform>e your Grace.</s:s>
+  
+          
+<p:l>    <a:ln tln="185"/></p:l>
+  
+    <s:s>
+    <s:sp>Car.</s:sp>
+   Well, we <t:typeform t="long">s</t:typeform>hall then know more, &amp; Buckingham
+            
+<p:l>    <a:ln tln="186"/></p:l>
+  Shall le<t:lig setting="{{s}{s}}"><t:typeform t="long">s</t:typeform><t:typeform t="long">s</t:typeform></t:lig>en this bigge looke.</s:s>
+  
+          
+<p:l>    <a:ln tln="187"/></p:l>
+  
+    <s:sd>
+    Exeunt Cardinall, and his Traine.
+    </s:sd>
+  
+        
+    </s:scene>
+  
+      
+    </s:act>
+  
+    
+  
+      </p:col>
+    
+      </p:page>
+    
+
+    </work>
+Unassigned tags:
+Unmatched tags:
+  

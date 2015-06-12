@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta charset="UTF-8" />
+      <title>King Henry the Eighth or All is True.</title><style type="text/css">
+          
+          html, body{
+            margin: 0;
+            padding: 0;
+            font-family: georgia, serif;
+          }
+          
+          div.meta{
+            float: left;
+            width: 20em;
+            padding: 1em;
+            background-color: #d0d0ff;
+            margin: 0;
+            position: fixed;
+          }
+          
+          table.stats, table.stats td{
+            border: solid 1pt black;
+            border-collapse: collapse;
+          }
+          
+          table.stats td{
+            padding: 0.2em;
+            text-align: right;
+          }
+          
+          table.stats thead td{
+            font-weight: bold;
+            text-align: center;
+          }
+          
+          div.play{
+            margin: 0 0 0 22em;
+            padding: 1em;
+            border: solid 1px black;
+          }
+
+          /* Elements in text. */
+          
+          div.front, div.body, div.back, div.div, div.sp, div.l, div.stage{
+            display: block;
+          }
+          
+          span.tln{
+            display: none;
+            font-size: 80%;
+            margin-left: -3em;
+            float: left;
+          }
+          
+          span.tln.showing{
+            display: block;
+          }
+          
+          span.speaker{
+            font-style: italic;
+            padding: 0 2em;
+          }
+          
+          /*The first l in a speech will follow the 
+          speaker element, so it shouldn't be 
+          block. */
+          span.speaker + div.l{
+            display: inline;
+          }
+          
+          div.sp div.l::first-of-type{
+            display: inline;
+          }
+          
+          div.act, div.prologue, div.epilogue, div.scene{
+            border-top: solid 1pt gray;
+            border-bottom: solid 1pt gray;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 1em;
+          }
+          
+          div.act, div.prologue, div.epilogue{
+            padding-left: 4em;
+          }
+          
+          div.scene:first-of-type, div.scene:last-of-type{
+            border-width: 0;
+          }
+          
+          div.docTitle{
+            text-align: center;
+            font-size: 300%;
+          }
+          
+          h2, h3, h4, h5, h6{
+            text-align: center;
+          }
+          
+          div.stage{
+            font-style: italic;
+            margin: 1em 0;
+          }
+         
+          /* Breaks. */
+          
+          cb[n="2"], pb{
+          display: block;
+          border-bottom: solid 1px black;
+          }
+          
+          cb[n="2"]{
+          width: 50%;
+          margin-left: 25%;
+          }
+          
+          /* Inline textual features. */
+          span.gOld{
+            display: none;
+            background-color: #ffff00;
+          }
+          span.ligature{
+            letter-spacing: -0.1em;
+          }
+          span.gModern{
+          }
+          
+          *[class~="simple:allcaps"]{
+            text-transform: capitalize;
+          }
+          
+          *[class~="simple:blackletter"]{
+            font-weight: bold;
+            font-family: monospace;
+          }
+          
+          *[class~="simple:bold"]{
+            font-weight: bold;
+          }
+          
+          *[class~="simple:bottombraced"]{
+            text-decoration: underline;
+          }
+          
+          *[class~="simple:boxed"]{
+            border: solid 1pt black;
+            padding: 0.2em;
+          }
+          
+          *[class~="simple:centre"]{
+            display: block;
+            text-align: center;
+          }
+          
+          *[class~="simple:cursive"]{
+            font-family: cursive;
+          }
+          
+          *[class~="simple:display"]{
+            display: block;
+          }
+          
+          *[class~="simple:doublestrikethrough"]{
+            text-decoration: line-through;
+          }
+          
+          *[class~="simple:doubleunderline"]{
+            text-decoration: underline;
+            border-bottom: double 1pt black;
+          }
+          
+          *[class~="simple:dropcap"]{
+            display: inline-block;
+            float: left;
+            font-size: 200%;
+            vertical-align: top;
+            padding: 0.25em;
+            margin-right: 0.1em;
+            border: solid 1pt black;
+          }
+          
+          *[class~="simple:float"]{
+            display: block;
+            float: left;
+          }
+          
+          *[class~="simple:hyphen"]{
+            content: "-";
+          }
+          
+          *[class~="simple:italic"]{
+            font-style: italic;
+          }
+          
+          *[class~="simple:larger"]{
+            font-size: 120%;
+          }
+          
+          *[class~="simple:leftbraced"]{
+            border-left: solid 1pt black;
+          }
+          
+          *[class~="simple:letterspace"]{
+          letter-spacing: 1ex;
+          }
+          
+          *[class~="simple:normalstyle"]{
+            font-style: normal;
+            font-weight: normal;
+          }
+          
+          *[class~="simple:normalweight"]{
+            font-weight: normal;
+          }
+          
+          *[class~="simple:right"]{
+            text-align: right;
+          }
+          
+          *[class~="simple:rotateleft"]{
+            background-color: #ffff00;
+          }
+          
+          *[class~="simple:rotateright"]{
+            background-color: #00ffff;
+          }
+          
+          *[class~="simple:smallcaps"]{
+            font-variant: small-caps;
+          }
+          
+          [rendition~="simple:smaller"]{
+            font-size: 80%;
+          }
+          
+          *[class~="simple:strikethrough"]{
+            text-decoration: line-through;
+          }
+          
+          *[class~="simple:subscript"]{
+            font-size: 70%;
+            vertical-align: sub;
+          }
+          
+          *[class~="simple:superscript"]{
+            font-size: 70%;
+            vertical-align: super;
+          }
+          
+          *[class~="simple:topbraced"]{
+            border-top: solid 1pt black;
+          }
+          
+          *[class~="simple:typewriter"]{
+            font-family: monospace;
+          }
+          
+          *[class~="simple:underline"]{
+            text-decoration: underline;
+          }
+          
+          *[class~="simple:wavyunderline"]{
+            text-decoration: underline;
+          }
+        </style><script type="text/javascript">
+          function showHideGlyphs(sender){
+            var olds = document.getElementsByClassName('gOld');
+            var moderns = document.getElementsByClassName('gModern');
+            var oldStyle = sender.checked? 'inline':'none';
+            var modernStyle = sender.checked? 'none':'inline';
+            for (var i=0; i<olds.length; i++){
+              olds[i].style.display = oldStyle;
+            }
+            for (var i=0; i<moderns.length; i++){
+              moderns[i].style.display = modernStyle;
+            }
+          }
+</script></head>
+   <body>
+      <div class="meta">
+         <form>
+            <p style="text-indent: -2em; margin-left: 2em;"><input type="checkbox" onclick="showHideGlyphs(this)" /> Show ligatures and other special glyphs
+            </p>
+         </form>
+         <h3>Stats</h3>
+         <table class="stats">
+            <tr>
+               <td>Major divisions encoded:</td>
+               <td>2</td>
+            </tr>
+            <tr>
+               <td>Scenes encoded:</td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>Speeches encoded:</td>
+               <td>31</td>
+            </tr>
+            <tr>
+               <td>Lines encoded:</td>
+               <td>175</td>
+            </tr>
+            <tr>
+               <td>Special chars encoded:</td>
+               <td>151</td>
+            </tr>
+         </table>
+         <h3>Speakers, speeches and lines</h3>
+         <table class="stats">
+            <thead>
+               <tr>
+                  <td>Speaker (id)</td>
+                  <td>Speeches</td>
+                  <td>Lines</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Cardinal (h8_cardinal)</td>
+                  <td>3</td>
+                  <td>5</td>
+               </tr>
+               <tr>
+                  <td>Duke of Buckingham (h8_buckingham)</td>
+                  <td>11</td>
+                  <td>44</td>
+               </tr>
+               <tr>
+                  <td>Duke of Norfolk (h8_norfolk)</td>
+                  <td>11</td>
+                  <td>77</td>
+               </tr>
+               <tr>
+                  <td>Lord Abergavenny (h8_abergavenny)</td>
+                  <td>4</td>
+                  <td>15</td>
+               </tr>
+               <tr>
+                  <td>Secretary (h8_secretary)</td>
+                  <td>2</td>
+                  <td>2</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="play">
+         
+         205
+         
+         
+         
+         <div class="front">
+            
+            <div class="docTitle">
+               The Famous Hi<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>ory of the Life of<br class="lb" />
+               <span class="hi simple:smaller">King HENRY the Eight.</span>
+               
+            </div>
+            
+            
+            <div class="div prologue simple:italic">
+               <span class="tln">1</span><h2 class="head">THE PROLOGUE</h2>
+               
+               
+               <span class="tln">2</span><div class="l"><span class="hi simple:dropcap">I</span> Come no more to make you laugh, Things now,
+               </div>
+               <span class="tln">3</span><div class="l">That beare a Weighty, and a Serious Brow,</div>
+               <span class="tln">4</span><div class="l">Sad, high, and working, full of State and Woe:</div>
+               <span class="tln showing">5</span><div class="l">Such Noble Sc<span class="g" title="LATIN SMALL LIGATURE OE (œ)"><span class="gOld ligature">œ</span><span class="gModern">oe</span></span>nes, as draw the Eye to flow
+               </div>
+               <span class="tln">6</span><div class="l">We now pre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ent. Those that can Pitty, heere
+               </div>
+               <span class="tln">7</span><div class="l">May (if they thinke it well) let fall a Teare,</div>
+               <span class="tln">8</span><div class="l">The Subiect will deserue it. Such as giue</div>
+               <span class="tln">9</span><div class="l">Their Money out of hope they may beleeue,</div>
+               <span class="tln showing">10</span><div class="l">May heere finde Truth too. Tho<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e that come to see
+               </div>
+               <span class="tln">11</span><div class="l">Onely a <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>how or two, and <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>o agree,
+               </div>
+               <span class="tln">12</span><div class="l">The Play may pa<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e: If they be <span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>ill, and willing,
+               </div>
+               <span class="tln">13</span><div class="l">Ile vndertake may <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee away their <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hilling
+               </div>
+               <span class="tln">14</span><div class="l">Richly in two <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hort houres. Onely they
+               </div>
+               <span class="tln showing">15</span><div class="l">That come to heare a Merry, Bawdy Play,</div>
+               <span class="tln">16</span><div class="l">A noy<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e of Targets: Or to <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee a Fellow
+               </div>
+               <span class="tln">17</span><div class="l">In a long Motley Coate, garded with Yellow,</div>
+               
+               <span class="tln">18</span><div class="l">Will be deceyu'd. For gentle Hearers, know</div>
+               <span class="tln">19</span><div class="l">To ranke our cho<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>en Truth with <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uch a <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>how
+               </div>
+               <span class="tln showing">20</span><div class="l">As Foole, and Fight is, be<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ide forfeyting
+               </div>
+               <span class="tln">21</span><div class="l">Our owne Braines, and the Opinion that we bring</div>
+               <span class="tln">22</span><div class="l">To make that onely true, we now intend,</div>
+               <span class="tln">23</span><div class="l">Will leaue vs neuer an vnder<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>anding Friend
+               </div>
+               <span class="tln">24</span><div class="l">Therefore, for Goodne<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e sake, and as you are knowne
+               </div>
+               <span class="tln showing">25</span><div class="l">The Fir<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> and Happie<span class="g" title="LATIN SMALL LIGATURE ST (ﬆ)"><span class="gOld ligature">ﬆ</span><span class="gModern">st</span></span> Hearers of the
+                  Towne,
+               </div>
+               <span class="tln">26</span><div class="l">Be <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ad, as we would make ye. Thinke ye <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee
+               </div>
+               <span class="tln">27</span><div class="l">The very Per<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ons of our Noble Story,
+               </div>
+               <span class="tln">28</span><div class="l">As they were Liuing: Thinke you <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee them Great,
+               </div>
+               <span class="tln">29</span><div class="l">And follow'd with the generall throng, and <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>weat
+               </div>
+               <span class="tln showing">30</span><div class="l">Of thou<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>and Friends: Then, in a moment, <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee
+               </div>
+               <span class="tln">31</span><div class="l">How <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>oone this Mightine<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e, meets
+                  Mi<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ery:
+               </div>
+               <span class="tln">32</span><div class="l">And if you can be merry then, Ile <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ay,
+               </div>
+               <span class="tln">33</span><div class="l">A Man may weepe vpon his Wedding day.</div>
+               
+            </div>
+            
+         </div>
+         
+         
+         
+         <div class="body">
+            
+            <div class="div act">
+               
+               <div class="div scene">
+                  <span class="tln">34</span><h3 class="head">A<span class="g" title="LATIN SMALL LIGATURE CT (ƈt)"><span class="gOld ligature">ƈt</span><span class="gModern">ct</span></span>us Primus. Sc<span class="g" title="LATIN SMALL LIGATURE OE (œ)"><span class="gOld ligature">œ</span><span class="gModern">oe</span></span>na Prima.
+                  </h3>
+                  
+                  
+                  <br class="lb" />
+                  <span class="tln showing">35</span><div class="stage entrance simple:centre simple:italic">Enter the Duke of Norfolke at one doore. At the other,<br class="lb" />
+                     <span class="tln">36</span>the Duke of Buckingham, and the Lord<br class="lb" />
+                     <span class="tln">37</span>Aburgauenny.
+                  </div>
+                  <br class="lb" />
+                  <span class="tln">38</span><div class="sp" title=""><span class="speaker simple:centre">Buckingham.</span>
+                     
+                     <span class="tln">39</span><div class="l"><span class="hi simple:dropcap">G</span>Ood morrow, and well met. How haue ye done
+                     </div>
+                     <span class="tln showing">40</span><div class="l">Since la<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> we <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aw in France?
+                     </div>
+                  </div>
+                  <span class="tln">41</span><div class="sp" title=""><span class="speaker">Norf.</span> 
+                     <div class="l">I thanke your Grace:</div>
+                     <span class="tln">42</span><div class="l">Healthfull, and euer <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ince a fre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>h Admirer
+                     </div>
+                     <span class="tln">43</span><div class="l">Of what I <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aw there.
+                     </div>
+                  </div>
+                  <span class="tln">44</span><div class="sp" title=""><span class="speaker">Buck.</span> 
+                     <div class="l">An vntimely Ague</div>
+                     <span class="tln showing">45</span><div class="l">Staid me a Pri<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>oner in my Chamber, when
+                     </div>
+                     <span class="tln">46</span><div class="l">Tho<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e Sunnes of Glory, tho<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e two Lights of Men
+                     </div>
+                     <span class="tln">47</span><div class="l">Met in the vale of Andren.</div>
+                  </div>
+                  <span class="tln">48</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">'Twixt Guynes and Arde,</div>
+                     <span class="tln">49</span><div class="l">I was then pre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ent, <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aw them <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>alute on Hor<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ebacke,
+                     </div>
+                     <span class="tln showing">50</span><div class="l">Beheld them when they lighted, how they clung</div>
+                     <span class="tln">51</span><div class="l">In their Embracement, as they grew together,</div>
+                     <span class="tln">52</span><div class="l">Which had they,</div>
+                     <span class="tln">53</span><div class="l">What foure Thron'd ones could haue weigh'd</div>
+                     <span class="tln">54</span><div class="l">Such a compounded one?</div>
+                  </div>
+                  <span class="tln showing">55</span><div class="sp" title=""><span class="speaker">Buck.</span> 
+                     <div class="l">All the whole time</div>
+                     <span class="tln">56</span><div class="l">I was my Chambers Pri<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>oner.
+                     </div>
+                  </div>
+                  
+                  <span class="tln">57</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Then you lo<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span></div>
+                     <span class="tln">58</span><div class="l">The view of earthly glory: Men might <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ay
+                     </div>
+                     <span class="tln">59</span><div class="l">Till this time Pompe was <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ingle, but now married
+                     </div>
+                     <span class="tln showing">60</span><div class="l">To one aboue it <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>elfe. Each following day
+                     </div>
+                     <span class="tln">61</span><div class="l">Became the next dayes ma<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>er, till the la<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span></div>
+                     <span class="tln">62</span><div class="l">Made former Wonders, it's. To day the French,</div>
+                     <span class="tln">63</span><div class="l">All Clinquant all in Gold, like Heathen Gods</div>
+                     <span class="tln">64</span><div class="l">Shone downe the Engli<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>h; and to morrow, they
+                     </div>
+                     <span class="tln showing">65</span><div class="l">Made Britaine, India: Euery man that <span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>ood,
+                     </div>
+                     <span class="tln">66</span><div class="l">Shew'd like a Mine. Their Dwarfi<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>h Pages were
+                     </div>
+                     <span class="tln">67</span><div class="l">As Cherubins, all gilt: the Madams too,</div>
+                     <span class="tln">68</span><div class="l">Not vs'd to toyle, did almo<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>weat to beare
+                     </div>
+                     <span class="tln">69</span><div class="l">The Pride vpon them, that their very labour</div>
+                     <span class="tln showing">70</span><div class="l">Was to them, as a Painting. Now this Ma<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ke
+                     </div>
+                     <span class="tln">71</span><div class="l">Was cry'de incompareable; and th'en<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uing night
+                     </div>
+                     <span class="tln">72</span><div class="l">Made it a Foole, and Begger. The two Kings</div>
+                     <span class="tln">73</span><div class="l">Equall in lu<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>re, were now be<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>, now wor<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span></div>
+                     <span class="tln">74</span><div class="l">As pre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ence did pre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ent them: Him in eye,
+                     </div>
+                     <span class="tln showing">75</span><div class="l">Still him in prai<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e, and being pre<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ent both,
+                     </div>
+                     <span class="tln">76</span><div class="l">'Twas <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aid they <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aw but one, and no Di<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>cerner
+                     </div>
+                     <span class="tln">77</span><div class="l">Dur<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> wagge his Tongue in cen<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ure, when the<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e Sunnes
+                     </div>
+                     <span class="tln">78</span><div class="l">(For <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>o they phra<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e 'em) by their Heralds challeng'd
+                     </div>
+                     <span class="tln">79</span><div class="l">The Noble Spirits to Armes, they did performe</div>
+                     
+                     t 3Beyond
+                     
+                     
+                     206The Life of King Henry the Eight.
+                     
+                     
+                     <span class="tln showing">80</span><div class="l">Beyond thoughts Compa<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e, that former fabulous Storie
+                     </div>
+                     <span class="tln">81</span><div class="l">Being now <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>eene, po<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>ible enough, got credit
+                     </div>
+                     <span class="tln">82</span><div class="l">That Beuis was beleeu'd.</div>
+                  </div>
+                  <span class="tln">83</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">Oh you go farre.</div>
+                  </div>
+                  <span class="tln">84</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">As I belong to wor<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hip, and affect
+                     </div>
+                     <span class="tln showing">85</span><div class="l">In Honor, Hone<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>y, the tract of eu'ry thing,
+                     </div>
+                     <span class="tln">86</span><div class="l">Would by a good Di<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>cour<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>er loo<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ome life,
+                     </div>
+                     <span class="tln">87</span><div class="l">Which A<span class="g" title="LATIN SMALL LIGATURE CT (ƈt)"><span class="gOld ligature">ƈt</span><span class="gModern">ct</span></span>ions <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>elfe, was tongue too.
+                     </div>
+                  </div>
+                  <span class="tln">88</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">All was Royall,</div>
+                     <span class="tln">89</span><div class="l">To the di<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>posing of it nought rebell'd,
+                     </div>
+                     <span class="tln showing">90</span><div class="l">Order gaue each thing view. The Office did</div>
+                     <span class="tln">91</span><div class="l">Di<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>in<span class="g" title="LATIN SMALL LIGATURE CT (ƈt)"><span class="gOld ligature">ƈt</span><span class="gModern">ct</span></span>ly his full Fun<span class="g" title="LATIN SMALL LIGATURE CT (ƈt)"><span class="gOld ligature">ƈt</span><span class="gModern">ct</span></span>ion: who did guide,
+                     </div>
+                     <span class="tln">92</span><div class="l">I meane who <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>et the Body, and the Limbes
+                     </div>
+                     <span class="tln">93</span><div class="l">Of this great Sport together?</div>
+                  </div>
+                  <span class="tln">94</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">As you gue<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e:
+                     </div>
+                     <span class="tln showing">95</span><div class="l">One certes, that promi<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>es no Element
+                     </div>
+                     <span class="tln">96</span><div class="l">In <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uch a bu<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ine<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e.
+                     </div>
+                  </div>
+                  <span class="tln">97</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">I pray you who, my Lord?</div>
+                  </div>
+                  <span class="tln">98</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">All this was ordred by the good Di<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>cretion
+                     </div>
+                     <span class="tln">99</span><div class="l">Of the right Reuerend Cardinall of Yorke.</div>
+                  </div>
+                  <span class="tln showing">100</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">The diuell <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>peed him: No mans Pye is freed
+                     </div>
+                     <span class="tln">101</span><div class="l">From his Ambitious finger. What had he</div>
+                     <span class="tln">102</span><div class="l">To do in the<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e fierce Vanities? I wonder,
+                     </div>
+                     <span class="tln">103</span><div class="l">That <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uch a Keech can with his very bulke
+                     </div>
+                     <span class="tln">104</span><div class="l">Take vp the Rayes o'th'beneficiall Sun,</div>
+                     <span class="tln showing">105</span><div class="l">And keepe it from the Earth.</div>
+                  </div>
+                  <span class="tln">106</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Surely Sir,</div>
+                     <span class="tln">107</span><div class="l">There's in him <span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>uffe, that put's him to the<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e ends:
+                     </div>
+                     <span class="tln">108</span><div class="l">For being not propt by Aunce<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>ry, who<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e grace
+                     </div>
+                     <span class="tln">109</span><div class="l">Chalkes Succe<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>ors their way; nor call'd vpon
+                     </div>
+                     <span class="tln showing">110</span><div class="l">For high feats done to'th'Crowne; neither Allied</div>
+                     <span class="tln">111</span><div class="l">To eminent Assi<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>ants; but Spider-like
+                     </div>
+                     <span class="tln">112</span><div class="l">Out of his Selfe-drawing Web. O giues vs note,</div>
+                     <span class="tln">113</span><div class="l">The force of his owne merit makes his way</div>
+                     <span class="tln">114</span><div class="l">A guift that heauen giues for him, which buyes</div>
+                     <span class="tln showing">115</span><div class="l">A place next to the King.</div>
+                  </div>
+                  <span class="tln">116</span><div class="sp" title=""><span class="speaker">Abur.</span> 
+                     <div class="l">I cannot tell</div>
+                     <span class="tln">117</span><div class="l">What Heauen hath giuen him: let <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ome Grauer eye
+                     </div>
+                     <span class="tln">118</span><div class="l">Pierce into that, but I can <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ee his Pride
+                     </div>
+                     <span class="tln">119</span><div class="l">Peepe through each part of him: whence ha's he that,</div>
+                     <span class="tln showing">120</span><div class="l">If not from Hell? The Diuell is a Niggard,</div>
+                     <span class="tln">121</span><div class="l">Or ha's giuen all before, and he begins</div>
+                     <span class="tln">122</span><div class="l">A new Hell in him<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>elfe.
+                     </div>
+                  </div>
+                  <span class="tln">123</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">Why the Diuell,</div>
+                     <span class="tln">124</span><div class="l">Vpon this French going out, tooke he vpon him</div>
+                     <span class="tln showing">125</span><div class="l">(Without the priuity o'th'King) t'appoint</div>
+                     <span class="tln">126</span><div class="l">Who <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hould attend on him? He makes vp the File
+                     </div>
+                     <span class="tln">127</span><div class="l">Of all the Gentry; for the mo<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> part <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uch
+                     </div>
+                     <span class="tln">128</span><div class="l">To whom as great a Charge, as little Honor</div>
+                     <span class="tln">129</span><div class="l">He meant to lay vpon: and his owne Letter</div>
+                     <span class="tln showing">130</span><div class="l">The Honourable Boord of Councell, out</div>
+                     <span class="tln">131</span><div class="l">Mu<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> fetch him in, he Papers.
+                     </div>
+                  </div>
+                  <span class="tln">132</span><div class="sp" title=""><span class="speaker">Abur.</span> 
+                     <div class="l">I do know</div>
+                     <span class="tln">133</span><div class="l">Kin<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>men of mine, three at the lea<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>, that haue
+                     </div>
+                     <span class="tln">134</span><div class="l">By this, <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>o <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>icken'd their Estates, that neuer
+                     </div>
+                     <span class="tln showing">135</span><div class="l">They <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hall abound as formerly.
+                     </div>
+                  </div>
+                  <span class="tln">136</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">O many</div>
+                     <span class="tln">137</span><div class="l">Haue broke their backes with laying Mannors on 'em</div>
+                     <span class="tln">138</span><div class="l">For this great Iourney. What did this vanity</div>
+                     <span class="tln">139</span><div class="l">But mini<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>er communication of
+                     </div>
+                     <span class="tln showing">140</span><div class="l">A mo<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> poore i<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>ue.
+                     </div>
+                  </div>
+                  <span class="tln">141</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Greeuingly I thinke,</div>
+                     <span class="tln">142</span><div class="l">The Peace betweene the French and vs, not valewes</div>
+                     <span class="tln">143</span><div class="l">The Co<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span> that did conclude it.
+                     </div>
+                  </div>
+                  <span class="tln">144</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">Euery man,</div>
+                     <span class="tln showing">145</span><div class="l">After the hideous <span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>orme that follow'd, was
+                     </div>
+                     
+                     
+                     
+                     <span class="tln">146</span><div class="l">A thing In<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>pir'd, and not con<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ulting, broke
+                     </div>
+                     <span class="tln">147</span><div class="l">Into a generall Prophe<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ie; That this Tempe<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span></div>
+                     <span class="tln">148</span><div class="l">Da<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hing the Garment of this Peace, aboaded
+                     </div>
+                     <span class="tln">149</span><div class="l">The <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>odaine breach on't.
+                     </div>
+                  </div>
+                  <span class="tln showing">150</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Which is budded out,</div>
+                     <span class="tln">151</span><div class="l">For France hath flaw'd the League, and hath attach'd</div>
+                     <span class="tln">152</span><div class="l">Our Merchants goods at Burdeux.</div>
+                  </div>
+                  <span class="tln">153</span><div class="sp" title=""><span class="speaker">Abur.</span> 
+                     <div class="l">Is it therefore</div>
+                     <span class="tln">154</span><div class="l">th'Amba<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>ador is <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ilenc'd?
+                     </div>
+                  </div>
+                  <span class="tln showing">155</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Marry is't.</div>
+                  </div>
+                  <span class="tln">156</span><div class="sp" title=""><span class="speaker">Abur.</span> 
+                     <div class="l">A proper Title of a Peace, and purchas'd</div>
+                     <span class="tln">157</span><div class="l">At a <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>uperfluous rate.
+                     </div>
+                  </div>
+                  <span class="tln">158</span><div class="sp" title=""><span class="speaker">Buc.</span> 
+                     <div class="l">Why all this Bu<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ine<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>e
+                     </div>
+                     <span class="tln">159</span><div class="l">Our Reuerend Cardinall carried.</div>
+                  </div>
+                  <span class="tln showing">160</span><div class="sp" title=""><span class="speaker">Nor.</span> 
+                     <div class="l">Like it your Grace,</div>
+                     <span class="tln">161</span><div class="l">The State takes notice of the priuate difference</div>
+                     <span class="tln">162</span><div class="l">Betwixt you, and the Cardinall. I adui<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e you
+                     </div>
+                     <span class="tln">163</span><div class="l">(And take it from a heart, that wi<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hes towards you
+                     </div>
+                     <span class="tln">164</span><div class="l">Honor, and plenteous <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>afety) that you reade
+                     </div>
+                     <span class="tln showing">165</span><div class="l">The Cardinals Malice, and his Potency</div>
+                     <span class="tln">166</span><div class="l">Together; To con<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ider further, that
+                     </div>
+                     <span class="tln">167</span><div class="l">What his high Hatred would effect, wants not</div>
+                     <span class="tln">168</span><div class="l">A Mini<span class="g" title="LATIN SMALL LIGATURE LONG S T (ﬅ)"><span class="gOld ligature">ﬅ</span><span class="gModern">st</span></span>er in his Power. You know his Nature,
+                     </div>
+                     <span class="tln">169</span><div class="l">That he's Reuengefull; and I know, his Sword</div>
+                     <span class="tln showing">170</span><div class="l">Hath a <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>harpe edge: It's long, and't may be <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>aide
+                     </div>
+                     <span class="tln">171</span><div class="l">It reaches farre, and where 'twill not extend,</div>
+                     <span class="tln">172</span><div class="l">Thither he darts it. Bo<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ome vp my coun<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ell,
+                     </div>
+                     <span class="tln">173</span><div class="l">You'l finde it whole<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>ome. Loe, where comes that Rock
+                     </div>
+                     <span class="tln">174</span><div class="l">That I aduice your <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hunning.
+                     </div>
+                  </div>
+                  
+                  <br class="lb" />
+                  <span class="tln showing">175</span><div class="stage entrance simple:centre">Enter Cardinall Wolsey, the Purse borne before him, certaine<br class="lb" />
+                     <span class="tln">176</span>  of the Guard, and two Secretaries with Papers: The<br class="lb" />
+                     <span class="tln">177</span> Cardinall in his passage, fixeth his eye on Buck-<br class="lb" />
+                     <span class="tln">178</span> ham, and Buckingham on him,<br class="lb" />
+                     <span class="tln">179</span> both full of disdaine.
+                  </div>
+                  <br class="lb" />
+                  <span class="tln showing">180</span><div class="sp" title=""><span class="speaker">Car.</span> 
+                     <div class="l">The Duke of Buckinghams Surueyor? Ha?</div>
+                     <span class="tln">181</span><div class="l">Where's his Examination?</div>
+                  </div>
+                  <span class="tln">182</span><div class="sp" title=""><span class="speaker">Secr.</span> 
+                     <div class="l">Heere <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>o plea<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e you.
+                     </div>
+                  </div>
+                  <span class="tln">183</span><div class="sp" title=""><span class="speaker">Car.</span> 
+                     <div class="l">Is he in per<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>on, ready?
+                     </div>
+                  </div>
+                  <span class="tln">184</span><div class="sp" title=""><span class="speaker">Secr.</span> 
+                     <div class="l">I, plea<span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>e your Grace.
+                     </div>
+                  </div>
+                  <span class="tln showing">185</span><div class="sp" title=""><span class="speaker">Car.</span> 
+                     <div class="l">Well, we <span class="g" title="LATIN SMALL LETTER LONG S (ſ)"><span class="gOld">ſ</span><span class="gModern">s</span></span>hall then know more, &amp; Buckingham
+                     </div>
+                     <span class="tln">186</span><div class="l">Shall le<span class="g" title="LATIN SMALL LIGATURE LONG S LONG S (ſſ)"><span class="gOld ligature">ſſ</span><span class="gModern">ss</span></span>en this bigge looke.
+                     </div>
+                  </div>
+                  <span class="tln">187</span><div class="stage exit">Exeunt Cardinall, and his Traine.</div>
+                  
+               </div>
+               
+            </div>
+            
+         </div>
+         
+      </div>
+   </body>
+</html>
