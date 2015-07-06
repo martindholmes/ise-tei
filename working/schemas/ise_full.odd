@@ -64,7 +64,7 @@
                 (Eustace Chapuys)  (
             ) </gloss>
                         </valItem>
-                        <valItem ident="#cardinal">
+                        <valItem ident="#wolsey">
                            <gloss>Cardinal Wolsey</gloss>
                         </valItem>
                         <valItem ident="#chamberlain">
@@ -219,6 +219,9 @@
                         </valItem>
                         <valItem ident="#vaux">
                            <gloss>Nicholas Vaux  (Sir) </gloss>
+                        </valItem>
+                        <valItem ident="#prologue">
+                           <gloss>Prologue</gloss>
                         </valItem>
                      </valList>
                   </attDef>

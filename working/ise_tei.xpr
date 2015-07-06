@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="16.1">
+<project version="15.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="16.1" xml:space="preserve">
+            <serialized version="15.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
                                     <String>ISE Basic</String>
                                 </field>
@@ -224,9 +221,6 @@
                                             <field name="outputFile">
                                                 <File>${cfd}/${cfn}.htm</File>
                                             </field>
-                                            <field name="outputResource">
-                                                <String>${cfd}/${cfn}.htm</String>
-                                            </field>
                                             <field name="openOtherLocationInBrowser">
                                                 <Boolean>false</Boolean>
                                             </field>
@@ -321,9 +315,6 @@
                                 </field>
                             </documentTypeDescriptor>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
                                     <String>ISE Full</String>
                                 </field>
@@ -534,9 +525,6 @@
                                             <field name="outputFile">
                                                 <File>${cfd}/${cfn}.htm</File>
                                             </field>
-                                            <field name="outputResource">
-                                                <String>${cfd}/${cfn}.htm</String>
-                                            </field>
                                             <field name="openOtherLocationInBrowser">
                                                 <Boolean>false</Boolean>
                                             </field>
@@ -631,9 +619,6 @@
                                 </field>
                             </documentTypeDescriptor>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
                                     <String>ISE Intermediate</String>
                                 </field>
@@ -843,9 +828,6 @@
                                             </field>
                                             <field name="outputFile">
                                                 <File>${cfd}/${cfn}.htm</File>
-                                            </field>
-                                            <field name="outputResource">
-                                                <String>${cfd}/${cfn}.htm</String>
                                             </field>
                                             <field name="openOtherLocationInBrowser">
                                                 <Boolean>false</Boolean>
@@ -1356,6 +1338,10 @@
                         </documentTypeEntry-array>
                     </entry>
                     <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -1407,9 +1393,6 @@
                                 </field>
                                 <field name="outputFile">
                                     <File>${cfd}/${cfn}.htm</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${cfd}/${cfn}.htm</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>

@@ -408,7 +408,7 @@
             <div type="prologue">
                     <lb type="tln" n="1"/><stage type="exit"> [Enter Prologue]</stage>
                     <lb type="tln" n="2"/><sp who="#prologue"><speaker>Prologue</speaker>
-                         <l>I come no more to make you laugh. Things now</l>
+                         <lg><l>I come no more to make you laugh. Things now</l>
                     <lb type="tln" n="3"/><l>That bear a weighty and a serious brow;</l>
                     <lb type="tln" n="4"/><l>Sad, high, and working, full of state and woe.</l>
                     <lb type="tln" n="5"/><l>Such noble scenes as draw the eye to flow,</l>
@@ -439,8 +439,8 @@
                     <lb type="tln" n="30"/><l>Of thousand friends; then, in a moment, see</l>
                     <lb type="tln" n="31"/><l>How soon this mightiness meets misery;</l>
                     <lb type="tln" n="32"/><l>And if you can be merry then, I'll say</l>
-                    <lb type="tln" n="33"/><l>A man may weep upon his wedding day.</l></sp>
-                <stage type="exit">[Exit]</stage>            
+                    <lb type="tln" n="33"/><l>A man may weep upon his wedding day.</l></lg></sp>
+                <stage type="exit">[Exit]</stage>                     
             </div>
             
             <div type="act" n="1">
@@ -3432,67 +3432,67 @@
                         <lb type="tln" n="2030"/><l>But pared my present havings to bestow</l>
                         <lb type="tln" n="2031"/><l>My bounties upon you.</l></lg></sp>
 
-<L n="204"/><lb type="tln" n="2032"/><SP norm="Wolsey">Wolsey
-What should this mean?
+<lb type="tln" n="2032"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+<lg><l>What should this mean?</l></lg></sp>
 
-<L n="205"/><lb type="tln" n="2033"/><SP norm="Surrey">Surrey
-The lord increase this business.
+<lb type="tln" n="2033"/><sp who="#surrey"><speaker>Surrey</speaker>
+<lg><l>The lord increase this business.</l></lg></sp>
 
-<L n="206"/><lb type="tln" n="2034"/><SP norm="King Henry">King Henry
-Have I not made you
-<L n="207"/><lb type="tln" n="2035"/>The prime man of the state? I pray you tell me,
-<L n="208"/><lb type="tln" n="2036"/>If what I now pronounce you have found true,
-<L n="209"/><lb type="tln" n="2037"/>And if you may confess it, say withal
-<L n="210"/><lb type="tln" n="2038"/>If you are bound to us or no. What say you?
+<lb type="tln" n="2034"/><sp who="#henry"><speaker>King Henry</speaker>
+<lg><l>Have I not made you</l>
+<lb type="tln" n="2035"/><l>The prime man of the state? I pray you tell me,</l>
+<lb type="tln" n="2036"/><l>If what I now pronounce you have found true,</l>
+<lb type="tln" n="2037"/><l>And if you may confess it, say withal</l>
+<lb type="tln" n="2038"/><l>If you are bound to us or no. What say you?</l></lg></sp>
 
-<L n="211"/><lb type="tln" n="2039"/><SP norm="Wolsey">Wolsey
+<lb type="tln" n="2039"/><SP norm="Wolsey">Wolsey
 My sovereign, I confess your royal graces,
-<L n="212"/><lb type="tln" n="2040"/>Showered on me daily, have been more than could
-<L n="213"/><lb type="tln" n="2041"/>My studied purposes requite, which went
-<L n="214"/><lb type="tln" n="2042"/>Beyond all man's endeavors. My endeavors
-<L n="215"/><lb type="tln" n="2043"/>Have ever come too short of my desires,
-<L n="216"/><lb type="tln" n="2044"/>Yet filled with my abilities. Mine own ends
-<L n="217"/><lb type="tln" n="2045"/>Have been mine so, that evermore they pointed
-<L n="218"/><lb type="tln" n="2046"/>To'th'good of your most sacred person and
-<L n="219"/><lb type="tln" n="2047"/>The profit of the state. For your great graces
-<L n="220"/><lb type="tln" n="2048"/>Heaped upon me (poor undeserver), I
-<L n="221"/><lb type="tln" n="2049"/>Can nothing render but allegiant thanks,
-<L n="222"/><lb type="tln" n="2050"/>My prayers to heaven for you; my loyalty
-<L n="223"/><lb type="tln" n="2051"/>Which ever has and ever shall be growing
-<L n="224"/><lb type="tln" n="2052"/>Till death (that winter), kill it.
+<lb type="tln" n="2040"/>Showered on me daily, have been more than could
+<lb type="tln" n="2041"/>My studied purposes requite, which went
+<lb type="tln" n="2042"/>Beyond all man's endeavors. My endeavors
+<lb type="tln" n="2043"/>Have ever come too short of my desires,
+<lb type="tln" n="2044"/>Yet filled with my abilities. Mine own ends
+<lb type="tln" n="2045"/>Have been mine so, that evermore they pointed
+<lb type="tln" n="2046"/>To'th'good of your most sacred person and
+<lb type="tln" n="2047"/>The profit of the state. For your great graces
+<lb type="tln" n="2048"/>Heaped upon me (poor undeserver), I
+<lb type="tln" n="2049"/>Can nothing render but allegiant thanks,
+<lb type="tln" n="2050"/>My prayers to heaven for you; my loyalty
+<lb type="tln" n="2051"/>Which ever has and ever shall be growing
+<lb type="tln" n="2052"/>Till death (that winter), kill it.
 
-<L n="225"/><lb type="tln" n="2053"/><SP norm="King Henry">King Henry
+<lb type="tln" n="2053"/><SP norm="King Henry">King Henry
 Fairly answered.
-<L n="226"/><lb type="tln" n="2054"/>A loyal and obedient subject is
-<L n="227"/><lb type="tln" n="2055"/>Therein illustrated; the honor of it
-<L n="228"/><lb type="tln" n="2056"/>Does pay the act of it, as i'th'contrary
-<L n="229"/><lb type="tln" n="2057"/>The foulness is the punishment. I presume
-<L n="230"/><lb type="tln" n="2058"/>That as my hand has opened bounty to you,
-<L n="231"/><lb type="tln" n="2059"/>My heart dropped love, my power rained honor, more
-<L n="232"/><lb type="tln" n="2060"/>On you than any. So your hand and heart,
-<L n="233"/><lb type="tln" n="2061"/>YYour brain and every function of your power,
-<L n="234"/><lb type="tln" n="2062"/>Should, notwithstanding that your bond of duty
-<L n="235"/><lb type="tln" n="2063"/>As 'twer in love's particular, be more
-<L n="236"/><lb type="tln" n="2064"/>To me your friend than any.
+<lb type="tln" n="2054"/>A loyal and obedient subject is
+<lb type="tln" n="2055"/>Therein illustrated; the honor of it
+<lb type="tln" n="2056"/>Does pay the act of it, as i'th'contrary
+<lb type="tln" n="2057"/>The foulness is the punishment. I presume
+<lb type="tln" n="2058"/>That as my hand has opened bounty to you,
+<lb type="tln" n="2059"/>My heart dropped love, my power rained honor, more
+<lb type="tln" n="2060"/>On you than any. So your hand and heart,
+<lb type="tln" n="2061"/>YYour brain and every function of your power,
+<lb type="tln" n="2062"/>Should, notwithstanding that your bond of duty
+<lb type="tln" n="2063"/>As 'twer in love's particular, be more
+<lb type="tln" n="2064"/>To me your friend than any.
 
-<L n="237"/><lb type="tln" n="2065"/><SP norm="Wolsey">Wolsey
+<lb type="tln" n="2065"/><SP norm="Wolsey">Wolsey
 I do profess
-<L n="238"/><lb type="tln" n="2066"/>That for your highness' good I ever labored
-<L n="239"/><lb type="tln" n="2067"/>More then mine own; that am, have, and will be
-<L n="240"/><lb type="tln" n="2068"/>(Though all the world should cracke their duty to you,
-<L n="241"/><lb type="tln" n="2069"/>And throw it from their soul, though perils did
-<L n="242"/><lb type="tln" n="2070"/>Abound, as thick as thought could make 'em, and
-<L n="243"/><lb type="tln" n="2071"/>Appear in forms more horrid) yet my duty,
-<L n="244"/><lb type="tln" n="2072"/>As doth a rock against the chiding flood,
-<L n="245"/><lb type="tln" n="2073"/>Should the approach of this wild river break
-<L n="246"/><lb type="tln" n="2074"/>And stand unshaken yours.
+<lb type="tln" n="2066"/>That for your highness' good I ever labored
+<lb type="tln" n="2067"/>More then mine own; that am, have, and will be
+<lb type="tln" n="2068"/>(Though all the world should cracke their duty to you,
+<lb type="tln" n="2069"/>And throw it from their soul, though perils did
+<lb type="tln" n="2070"/>Abound, as thick as thought could make 'em, and
+<lb type="tln" n="2071"/>Appear in forms more horrid) yet my duty,
+<lb type="tln" n="2072"/>As doth a rock against the chiding flood,
+<lb type="tln" n="2073"/>Should the approach of this wild river break
+<lb type="tln" n="2074"/>And stand unshaken yours.
 
-<L n="247"/><lb type="tln" n="2075"/><SP norm="King Henry">King Henry
+<lb type="tln" n="2075"/><SP norm="King Henry">King Henry
 'Tis nobly spoken.
-<L n="248"/><lb type="tln" n="2076"/>Take notice, lords, he has a loyal breast,
-<L n="249"/><lb type="tln" n="2077"/>For you have seen him open't. Read o'er this,
-<L n="250"/><lb type="tln" n="2078"/>And after this, and then to breakfast with
-<L n="251"/><lb type="tln" n="2079"/>What appetite you have.
+<lb type="tln" n="2076"/>Take notice, lords, he has a loyal breast,
+<lb type="tln" n="2077"/>For you have seen him open't. Read o'er this,
+<lb type="tln" n="2078"/>And after this, and then to breakfast with
+<lb type="tln" n="2079"/>What appetite you have.
 
 <L n="251.1"/><lb type="tln" n="2080"/><SD t="exit, other">Exit King, frowning upon the Cardinal, the Nobles <lb type="tln" n="2081"/>throng after him, smiling and whispering.</stage>
 

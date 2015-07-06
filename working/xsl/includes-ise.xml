@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../package/schemas/ise_full.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>[Title of the play]</title>
+      </titleStmt>
+      <editionStmt><p></p></editionStmt>
+      <publicationStmt><p></p></publicationStmt>
+      <sourceDesc><p></p></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <charDecl xml:id="iseChars">
+        <glyph xml:id="asLigature">
+          <glyphName>LATIN SMALL LIGATURE AS</glyphName>
+          <mapping type="standard">as</mapping>
+          <mapping type="isgml">{as}</mapping>
+        </glyph>
+        <glyph xml:id="ctLigature">
+          <glyphName>LATIN SMALL LIGATURE CT</glyphName>
+          <mapping type="semblance">ƈt</mapping>
+          <mapping type="standard">ct</mapping>
+          <mapping type="isgml">{ct}</mapping>
+        </glyph>
+        <glyph xml:id="ffLigature">
+          <glyphName>LATIN SMALL LIGATURE FF</glyphName>
+          <mapping type="Unicode">ﬀ</mapping>
+          <mapping type="isgml">{ff}</mapping>
+        </glyph>
+        <glyph xml:id="ffiLigature">
+          <glyphName>LATIN SMALL LIGATURE FFI</glyphName>
+          <mapping type="Unicode">ﬃ</mapping>
+          <mapping type="isgml">{ffi}</mapping>
+        </glyph>
+        <glyph xml:id="fflLigature">
+          <glyphName>LATIN SMALL LIGATURE FFL</glyphName>
+          <mapping type="Unicode">ﬄ</mapping>
+          <mapping type="isgml">{ffl}</mapping>
+        </glyph>
+        <glyph xml:id="fiLigature">
+          <glyphName>LATIN SMALL LIGATURE FI</glyphName>
+          <mapping type="Unicode">ﬁ</mapping>
+          <mapping type="isgml">{fi}</mapping>
+        </glyph>
+        <glyph xml:id="flLigature">
+          <glyphName>LATIN SMALL LIGATURE FL</glyphName>
+          <mapping type="Unicode">ﬂ</mapping>
+          <mapping type="isgml">{fl}</mapping>
+        </glyph>
+        <glyph xml:id="frLigature">
+          <glyphName>LATIN SMALL LIGATURE FR</glyphName>
+          <mapping type="isgml">{fr}</mapping>
+        </glyph>
+        <glyph xml:id="ijLigature">
+          <glyphName>LATIN SMALL LIGATURE IJ</glyphName>
+          <mapping type="Unicode">ĳ</mapping>
+          <mapping type="isgml">{ij}</mapping>
+        </glyph>
+        <glyph xml:id="IJLigature">
+          <glyphName>LATIN CAPITAL LIGATURE IJ</glyphName>
+          <mapping type="Unicode">Ĳ</mapping>
+          <mapping type="isgml">{IJ}</mapping>
+        </glyph>
+        <glyph xml:id="longS">
+          <glyphName>LATIN SMALL LETTER LONG S</glyphName>
+          <mapping type="Unicode">ſ</mapping>
+          <mapping type="isgml">{s}</mapping>
+        </glyph>
+        <glyph xml:id="isLigature">
+          <glyphName>LATIN SMALL LIGATURE IS</glyphName>
+          <mapping type="isgml">{is}</mapping>
+        </glyph>
+        <glyph xml:id="ppLigature">
+          <glyphName>LATIN SMALL LIGATURE PP</glyphName>
+          <mapping type="isgml">{pp}</mapping>
+        </glyph>
+        <glyph xml:id="longShLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S H</glyphName>
+          <mapping type="standard">ſh</mapping>
+          <mapping type="isgml">{{s}h}</mapping>
+        </glyph>
+        <glyph xml:id="longSiLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S I</glyphName>
+          <mapping type="standard">ſi</mapping>
+          <mapping type="isgml">{{s}i}</mapping>
+        </glyph>
+        <glyph xml:id="longSlLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S L</glyphName>
+          <mapping type="standard">ſl</mapping>
+          <mapping type="isgml">{{s}l}</mapping>
+        </glyph>
+        <glyph xml:id="longSpLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S P</glyphName>
+          <mapping type="standard">ſp</mapping>
+          <mapping type="isgml">{{s}p}</mapping>
+        </glyph>
+        <glyph xml:id="longStLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S T</glyphName>
+          <mapping type="Unicode">ﬅ</mapping>
+          <mapping type="isgml">{{s}t}</mapping>
+        </glyph>
+        <glyph xml:id="longSSLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S LONG S</glyphName>
+          <mapping type="standard">ſſ</mapping>
+          <mapping type="isgml">{{s}{s}}</mapping>
+        </glyph>
+        <glyph xml:id="longSSiLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S LONG S I</glyphName>
+          <mapping type="standard">ſſi</mapping>
+          <mapping type="isgml">{{s}{s}i}</mapping>
+        </glyph>
+        <glyph xml:id="longSSlLigature">
+          <glyphName>LATIN SMALL LIGATURE LONG S LONG S L</glyphName>
+          <mapping type="standard">ſſl</mapping>
+          <mapping type="isgml">{{s}{s}l}</mapping>
+        </glyph>
+        <glyph xml:id="OELigature">
+          <glyphName>LATIN CAPITAL LIGATURE OE</glyphName>
+          <mapping type="Unicode">Œ</mapping>
+          <mapping type="isgml">{OE}</mapping>
+        </glyph>
+        <glyph xml:id="oeLigature">
+          <glyphName>LATIN SMALL LIGATURE OE</glyphName>
+          <mapping type="Unicode">œ</mapping>
+          <mapping type="isgml">{oe}</mapping>
+        </glyph>
+        <glyph xml:id="stLigature">
+          <glyphName>LATIN SMALL LIGATURE ST</glyphName>
+          <mapping type="Unicode">ﬆ</mapping>
+          <mapping type="isgml">{st}</mapping>
+        </glyph>
+        <glyph xml:id="usLigature">
+          <glyphName>LATIN SMALL LIGATURE US</glyphName>
+          <mapping type="standard">us</mapping>
+          <mapping type="isgml">{us}</mapping>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change>Created this file on ....</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <docTitle>
+        <titlePart type="main">The Famous Hiﬅory of the Life of<lb/>
+        King HENRY the Eight.</titlePart>
+      </docTitle>
+      <castList>
+        <castItem xml:id="h8_abergavenny">
+          <role>Lord Abergavenny</role>
+        </castItem>
+        <castItem xml:id="h8_acolyte">
+          <role>Acolyte</role>
+        </castItem>
+        <castItem xml:id="h8_anne">
+          <role>Anne Bollen</role>
+        </castItem>
+        <castItem xml:id="h8_bishop">
+          <role>Bishop of Canterbury</role>
+        </castItem>
+        <castItem xml:id="h8_brandon">
+          <role>Brandon</role>
+        </castItem>
+        <castItem xml:id="h8_buckingham">
+          <role>Duke of Buckingham</role>
+        </castItem>
+        <castItem xml:id="h8_butts">
+          <role>Doctor Butts</role>
+        </castItem>
+        <castItem xml:id="h8_campeius">
+          <role>Cardinal</role>
+        </castItem>
+        <castItem xml:id="h8_capuchius">
+          <role>Ambassador</role>
+        </castItem>
+        <castItem xml:id="h8_cardinal">
+          <role>Cardinal</role>
+        </castItem>
+        <castItem xml:id="h8_chamberlain">
+          <role>Lord Chamberlain</role>
+        </castItem>
+        <castItem xml:id="h8_chancellor">
+          <role>Lord Chancellor</role>
+        </castItem>
+        <castItem xml:id="h8_cranmer">
+          <role>Archbishop</role>
+        </castItem>
+        <castItem xml:id="h8_crier">
+          <role>Crier</role>
+        </castItem>
+        <castItem xml:id="h8_cromwell">
+          <role>Thomas Cromwell</role>
+        </castItem>
+        <castItem xml:id="h8_denny">
+          <role>Sir Anthony Denny</role>
+        </castItem>
+        <castItem xml:id="h8_gardiner">
+          <role>Gardiner</role>
+        </castItem>
+        <castItem xml:id="h8_garter">
+          <role>Garter King at Arms</role>
+        </castItem>
+        <castItem xml:id="h8_gentleman">
+          <role>Gentleman</role>
+        </castItem>
+        <castItem xml:id="h8_gentlewoman">
+          <role>Gentlewoman</role>
+        </castItem>
+        <castItem xml:id="h8_griffith">
+          <role>Griffith</role>
+        </castItem>
+        <castItem xml:id="h8_guards">
+          <role>Guards</role>
+        </castItem>
+        <castItem xml:id="h8_guildford">
+          <role>Sir Henry Guildford</role>
+        </castItem>
+        <castItem xml:id="h8_katherine">
+          <role>Queen</role>
+        </castItem>
+        <castItem xml:id="h8_keeper">
+          <role>Keeper of the Council Chamber</role>
+        </castItem>
+        <castItem xml:id="h8_king">
+          <role>King</role>
+        </castItem>
+        <castItem xml:id="h8_lords">
+          <role>Lords</role>
+        </castItem>
+        <castItem xml:id="h8_lovell">
+          <role>Sir Thomas Lovell</role>
+        </castItem>
+        <castItem xml:id="h8_messenger">
+          <role>Messenger</role>
+        </castItem>
+        <castItem xml:id="h8_norfolk">
+          <role>Duke of Norfolk</role>
+        </castItem>
+        <castItem xml:id="h8_oldlady">
+          <role>Old Lady</role>
+        </castItem>
+        <castItem xml:id="h8_page">
+          <role>Page</role>
+        </castItem>
+        <castItem xml:id="h8_patience">
+          <role>Patience</role>
+        </castItem>
+        <castItem xml:id="h8_pman">
+          <role>Porter's Man</role>
+        </castItem>
+        <castItem xml:id="h8_porter">
+          <role>Porter</role>
+        </castItem>
+        <castItem xml:id="h8_sandys">
+          <role>Lord Sandys</role>
+        </castItem>
+        <castItem xml:id="h8_scribe">
+          <role>Scribe</role>
+        </castItem>
+        <castItem xml:id="h8_secretary">
+          <role>Secretary</role>
+        </castItem>
+        <castItem xml:id="h8_sergeant">
+          <role>Sergeant at Arms</role>
+        </castItem>
+        <castItem xml:id="h8_servant">
+          <role>Servant</role>
+        </castItem>
+        <castItem xml:id="h8_somerset">
+          <role>Sir Charles Somerset</role>
+        </castItem>
+        <castItem xml:id="h8_suffolk">
+          <role>Duke of Suffolk</role>
+        </castItem>
+        <castItem xml:id="h8_surrey">
+          <role>Earl of Surrey</role>
+        </castItem>
+        <castItem xml:id="h8_surveyor">
+          <role>Surveyor</role>
+        </castItem>
+        <castItem xml:id="h8_vaux">
+          <role>Sir Nicholas Vaux</role>
+        </castItem>
+        <castItem xml:id="h8_wolsey">
+          <role>Cardinal Wolsey</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="act">
+        <head></head>
+      </div>
+    </body>
+  </text>
+</TEI>
