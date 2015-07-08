@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2015-06-10T08:44:35Z. .
+Schema generated from ODD source 2015-07-07T16:41:59Z. .
 TEI Edition: Version 2.8.1a. Last updated on
 	10th June 2015, revision 13257
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.1a./
@@ -200,6 +200,19 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.1a./
          </attribute>
       </optional>
    </define>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="ise_all-att.ascribed-who-deprecated-constraint-1">
+      <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns="http://www.tei-c.org/ns/1.0"
+                context="tei:*[@who]">
+                              <sch:let name="bools"
+                  value="for $i in tokenize(@who, '\s+') return count(//tei:person[@xml:id=substring-after($i, '#')]) gt 0"/>
+                              <sch:assert test="every $i in $bools satisfies $i=true()">
+                      The @who attribute must point to one or more person elements in the particDesc.
+                    </sch:assert>
+                           </sch:rule>
+   </pattern>
    <define name="att.canonical.attributes">
       <ref name="att.canonical.attribute.key"/>
       <ref name="att.canonical.attribute.ref"/>
@@ -418,7 +431,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.datable-calendar-calendar-constraint-1">
+            id="ise_all-att.datable-calendar-calendar-constraint-2">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -612,7 +625,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.global-corresppointer-constraint-2">
+            id="ise_all-att.global-corresppointer-constraint-3">
       <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@corresp]">
                         <let name="results"
               value="for $t in tokenize(normalize-space(@corresp),'\s+') return starts-with($t,'#') and not(id(substring($t,2)))"/>
@@ -789,7 +802,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.typed-subtypeTyped-constraint-3">
+            id="ise_all-att.typed-subtypeTyped-constraint-4">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -812,7 +825,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.pointing-targetLang-targetLang-constraint-4">
+            id="ise_all-att.pointing-targetLang-targetLang-constraint-5">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -898,7 +911,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.spanning-spanTo-spanTo-2-constraint-5">
+            id="ise_all-att.spanning-spanTo-spanTo-2-constraint-6">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -938,7 +951,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.styleDef-schemeVersion-schemeVersionRequiresScheme-constraint-6">
+            id="ise_all-att.styleDef-schemeVersion-schemeVersionRequiresScheme-constraint-7">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -2715,7 +2728,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ise_all-list-gloss-list-must-have-labels-constraint-7">
+                  id="ise_all-list-gloss-list-must-have-labels-constraint-8">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -2874,7 +2887,7 @@ Elements]</a:documentation>
 Elements 7.2.5. Speech Contents]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ise_all-lb-lbtypeandn-constraint-8">
+                  id="ise_all-lb-lbtypeandn-constraint-9">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:lb">
                         <assert test="not(@type) or (@type and @n)">If you use the @type attribute 
                to specify that this is a TLN linebreak, you must specify the TLN 
@@ -3124,7 +3137,7 @@ relatedItem element must be empty</sch:report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ise_all-relatedItem-targetorcontent1-constraint-8">
+                  id="ise_all-relatedItem-targetorcontent1-constraint-9">
             <rule context="tei:relatedItem">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3188,7 +3201,7 @@ relatedItem element must be empty</sch:report>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ise_all-lg-atleast1oflggapl-constraint-9">
+                  id="ise_all-lg-atleast1oflggapl-constraint-10">
             <rule context="tei:lg">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3264,8 +3277,6 @@ relatedItem element must be empty</sch:report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Capuchius
                 (Eustace Chapuys)  (
             ) ) </a:documentation>
-               <value>#cardinal</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Wolsey) </a:documentation>
                <value>#chamberlain</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Chamberlain) </a:documentation>
                <value>#chancellor</value>
@@ -3346,6 +3357,8 @@ relatedItem element must be empty</sch:report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter's Man) </a:documentation>
                <value>#porter</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter) </a:documentation>
+               <value>#prologue</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prologue) </a:documentation>
                <value>#rochester</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Rochester) </a:documentation>
                <value>#sandys</value>
@@ -3372,6 +3385,8 @@ relatedItem element must be empty</sch:report>
             ) ) </a:documentation>
                <value>#vaux</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nicholas Vaux  (Sir) ) </a:documentation>
+               <value>#wolsey</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Wolsey) </a:documentation>
             </choice>
          </attribute>
          <empty/>
@@ -5099,7 +5114,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ise_all-subst-substContents1-constraint-10">
+                  id="ise_all-subst-substContents1-constraint-11">
             <rule context="tei:subst">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="child::tei:add and child::tei:del">
@@ -6108,7 +6123,7 @@ Suggested values include: 1] simple:allcaps; 2] simple:blackletter; 3] simple:bo
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="ise_all-att.global.rendition-rendition-renditionpointer-constraint-9">
+            id="ise_all-att.global.rendition-rendition-renditionpointer-constraint-10">
       <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@rendition]">
                               <let name="results"
               value="for $val in tokenize(normalize-space(@rendition),'\s+') return        starts-with($val,'simple:')        or        (starts-with($val,'#') and //tei:rendition[@xml:id=substring($val,2)])"/>

@@ -64,9 +64,6 @@
                 (Eustace Chapuys)  (
             ) </gloss>
                         </valItem>
-                        <valItem ident="#wolsey">
-                           <gloss>Cardinal Wolsey</gloss>
-                        </valItem>
                         <valItem ident="#chamberlain">
                            <gloss>Lord Chamberlain</gloss>
                         </valItem>
@@ -182,6 +179,9 @@
                         <valItem ident="#porter">
                            <gloss>Porter</gloss>
                         </valItem>
+                        <valItem ident="#prologue">
+                           <gloss>Prologue</gloss>
+                        </valItem>
                         <valItem ident="#rochester">
                            <gloss>Bishop of Rochester</gloss>
                         </valItem>
@@ -220,8 +220,8 @@
                         <valItem ident="#vaux">
                            <gloss>Nicholas Vaux  (Sir) </gloss>
                         </valItem>
-                        <valItem ident="#prologue">
-                           <gloss>Prologue</gloss>
+                        <valItem ident="#wolsey">
+                           <gloss>Cardinal Wolsey</gloss>
                         </valItem>
                      </valList>
                   </attDef>
@@ -753,6 +753,27 @@
                      </valList>
                   </attDef>
                </attList>
+            </classSpec>
+        
+            <!--    We add a Schematron constraint to @who to make sure its values point to 
+        existing <person> elements. -->
+            <classSpec type="atts" ident="att.ascribed" module="tei" mode="change">
+               <attList>
+                  <attDef ident="who" mode="change">
+                     <constraintSpec scheme="isoschematron" ident="deprecated">
+                        <constraint>
+                           <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@who]">
+                              <sch:let name="bools"
+                                       value="for $i in tokenize(@who, '\s+') return count(//tei:person[@xml:id=substring-after($i, '#')]) gt 0"/>
+                              <sch:assert test="every $i in $bools satisfies $i=true()">
+                      The @who attribute must point to one or more person elements in the particDesc.
+                    </sch:assert>
+                           </sch:rule>
+                        </constraint>
+                     </constraintSpec>
+                  </attDef>
+               </attList>
+          
             </classSpec>
         
          </schemaSpec>
