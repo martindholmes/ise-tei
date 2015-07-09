@@ -38,3 +38,17 @@ list[rend="numbered"]{
 item{
   display: list-item;
 }
+
+emph{
+  font-weight: bold;
+  display: inline;
+}
+
+idno{
+  font-family: monospace;
+}
+
+p{
+  display: block;
+  margin: 1em;
+}

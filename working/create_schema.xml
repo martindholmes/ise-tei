@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project basedir="." default="doAll" name="schemas">
+<project basedir="." default="doAll" name="create.schema">
 
   <!-- note: following properties are passed as parameters via Oxygen:
       -${pd}:  current project directory path (i.e. where the ise.xpr file lives)
       -${teiFramework}:  path to the active TEI Framework directory
+      -${sourceParticDescFile}: a TEI file (usually the user's own play file) containing 
+                                a <particDesc> which will be used to generate the 
+                                values for the @who attribute on speeches.
   -->
 
   <property name="echo.separator" value="************************************************"/>
@@ -12,37 +15,25 @@
      file which has a <particDesc>. -->
   <property name="sourceParticDescFile" value="${sourceParticDescFile}"/>
 
-  <target name="createSchemas">
+  <target name="create.schema">
     <echo message="${echo.separator}"/>
-    <echo message="Create ODD files for three schema levels."/>
+    <echo message="Rebuild the ODD file based on source file and includes"/>
     <java classname="net.sf.saxon.Transform">
       <arg value="-s:${pd}/schemas/ise_root.odd"/>
-      <arg value="-xsl:${pd}/xsl/build_ise_schemas.xsl"/> 
+      <arg value="-xsl:${pd}/xsl/build_ise_schema.xsl"/> 
       <arg value="sourceParticDescFile=${sourceParticDescFile}"/>
     </java>
     
     <echo message="${echo.separator}"/>
-    <echo message="Create schemas from ODD files."/>
+    <echo message="Create schema from ODD file."/>
     <echo message="Using this as defaultSource: ${teiFramework}/xml/tei/odd/p5subset.xml"/>
-    <echo message="Using this as inputFile: ${pd}/schemas/ise_full.odd"/>
+    <echo message="Using this as inputFile: ${pd}/schemas/ise_tei.odd"/>
     <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
       <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
-      <property name="inputFile" value="${pd}/schemas/ise_full.odd"/>
-      <property name="outputFile" value="${pd}/schemas/ise_full.rng"/>
+      <property name="inputFile" value="${pd}/schemas/ise_tei.odd"/>
+      <property name="outputFile" value="${pd}/schemas/ise_tei.rng"/>
       <property name="profile" value="default"/>
       <property name="lang" value="en"/>
-    </ant>
-    
-    <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
-      <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
-      <property name="inputFile" value="${pd}/schemas/ise_intermediate.odd"/>
-      <property name="outputFile" value="${pd}/schemas/ise_intermediate.rng"/>
-    </ant>
-    
-    <ant antfile="${teiFramework}/xml/tei/stylesheet/relaxng/build-to.xml" dir="${teiFramework}/xml/tei/stylesheet/relaxng">
-      <property name="defaultSource" value="${teiFramework}/xml/tei/odd/p5subset.xml"/>
-      <property name="inputFile" value="${pd}/schemas/ise_basic.odd"/>
-      <property name="outputFile" value="${pd}/schemas/ise_basic.rng"/>
     </ant>
   </target>
   
@@ -60,7 +51,7 @@
   
   
   <target name="doAll">
-    <antcall target="createSchemas"/>
+    <antcall target="create.schema"/>
     <!--<antcall target="cleanup"/>-->
   </target>
 

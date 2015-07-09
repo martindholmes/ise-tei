@@ -33,20 +33,23 @@
               <item>Make sure this file (instructions.xml) is open in Oxygen, and 
               you're looking at it.</item>
               <item>Press the red triangle button you see on the Oxygen toolbar.</item>
-              <item>When asked, provide an id for your file. This must be in a format
-                suitable for an @xml:id attribute, so:
-                  <list rend="bulleted">
-                    <item>it must begin with a letter</item>
-                    <item>it must not contain spaces or punctuation</item>
-                    <item>it should be short but distinctive</item>
-                    <item>lower-case is preferred</item>
-                  </list>
-                Examples: 
-                <list rend="bulleted">
-                  <item>h8          (for Henry VIII)</item>
-                 <item>iyknmykn   (If You Know Not Me, You Know Nobody)</item>
-                 <item>rt           (The Revengers Tragedy)</item>
-                </list>
+              <item>When asked, provide an id for your file. This must be in a format suitable for
+              an @xml:id attribute, so: <list rend="bulleted">
+              <item>it must begin with a letter</item>
+              <item>it must not contain spaces or punctuation</item>
+              <item>it should be short but distinctive</item>
+              <item>lower-case is preferred</item>
+              </list> Examples: <list rend="bulleted">
+              <item>h8 (for Henry VIII)</item>
+              <item>iyknmykn (If You Know Not Me, You Know Nobody)</item>
+              <item>rt (The Revengers Tragedy)</item>
+              </list> <p> <emph>Now type your id here:</emph> <idno xml:id="playId"
+              >yourPlayId</idno> </p> </item>
+              <item>When asked, provide a short (modern) title for the play. This will 
+              be used as the title in the play metadata.
+              <p>
+              <emph>Type the title of the play here:</emph> <idno xml:id="playTitle">Your Play Title</idno>
+              </p>
               </item>
               <item>A new file should be created for you, with a filename based
                 on the @xml:id. Open that file and you can begin editing.</item>

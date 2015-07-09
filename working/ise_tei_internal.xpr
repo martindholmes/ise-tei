@@ -268,10 +268,10 @@
                                             <action-array>
                                                 <action>
                                                     <field name="id">
-                                                        <String>schemas.rebuild</String>
+                                                        <String>schema.rebuild</String>
                                                     </field>
                                                     <field name="name">
-                                                        <String>Rebuild schemas</String>
+                                                        <String>Rebuild schema</String>
                                                     </field>
                                                     <field name="description">
                                                         <String>Rebuild project schemas to incorporate list of characters.</String>
@@ -298,7 +298,7 @@
                                                                     <serializableOrderedMap>
                                                                         <entry>
                                                                             <String>scenarioNames</String>
-                                                                            <String>ISE Rebuild Schemas</String>
+                                                                            <String>ISE Rebuild Schema</String>
                                                                         </entry>
                                                                     </serializableOrderedMap>
                                                                 </field>
@@ -375,7 +375,7 @@
                                                     <menuEntry-array>
                                                         <menuItem>
                                                             <field name="actionID">
-                                                                <String>schemas.rebuild</String>
+                                                                <String>schema.rebuild</String>
                                                             </field>
                                                         </menuItem>
                                                         <menuItem>
@@ -421,7 +421,7 @@
                                                     <toolbarEntry-array>
                                                         <toolbarItem>
                                                             <field name="actionID">
-                                                                <String>schemas.rebuild</String>
+                                                                <String>schema.rebuild</String>
                                                             </field>
                                                         </toolbarItem>
                                                         <toolbarItem>
@@ -689,7 +689,7 @@
                                                 <null/>
                                             </field>
                                             <field name="name">
-                                                <String>ISE Rebuild Schemas</String>
+                                                <String>ISE Rebuild Schema</String>
                                             </field>
                                             <field name="baseURL">
                                                 <null/>

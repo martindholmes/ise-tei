@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Internet Shakespeare Editions: pilot TEI schema</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Published by the ISE and the HCMC, no restrictions on use.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born-digital document</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <schemaSpec ident="ise_all" start="TEI">
+            <moduleRef key="header"
+                       include="authority availability calendar calendarDesc catDesc catRef category change classDecl correction distributor edition editionStmt editorialDecl encodingDesc fileDesc funder hyphenation idno licence listPrefixDef normalization notesStmt prefixDef principal profileDesc projectDesc publicationStmt punctuation rendition revisionDesc sourceDesc sponsor styleDefDecl taxonomy teiHeader titleStmt"/>
+            <moduleRef key="core"
+                       include="abbr author bibl biblScope cb choice cit corr date desc editor email expan foreign gap gb graphic head hi imprint item l label lb lg list listBibl milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt sic sp speaker stage title unclear"/>
+            <elementSpec ident="sp" module="core" mode="change">
+               <attList>
+                  <attDef ident="who" mode="replace" usage="req">
+                     <datatype minOccurs="1" maxOccurs="unbounded">
+                        <ref xmlns="http://relaxng.org/ns/structure/1.0" name="data.enumerated"/>
+                     </datatype>
+                     <valList type="closed">
+                        <valItem ident="#abergavenny">
+                           <gloss>Lord Abergavenny</gloss>
+                        </valItem>
+                        <valItem ident="#acolyte">
+                           <gloss>Acolyte</gloss>
+                        </valItem>
+                        <valItem ident="#anne">
+                           <gloss>Anne Bullen
+               (Anne Boleyn)  (
+              )  (Anne Bollen)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#asaph">
+                           <gloss>Bishop of Saint Asaph</gloss>
+                        </valItem>
+                        <valItem ident="#barons">
+                           <gloss>Barons of the Cinque Ports</gloss>
+                        </valItem>
+                        <valItem ident="#brandon">
+                           <gloss>Brandon</gloss>
+                        </valItem>
+                        <valItem ident="#buckingham">
+                           <gloss>Duke of Buckingham</gloss>
+                        </valItem>
+                        <valItem ident="#butts">
+                           <gloss>Doctor Butts</gloss>
+                        </valItem>
+                        <valItem ident="#campeius">
+                           <gloss>Cardinal Campeius
+               (Lorenzo Campeggio)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#canterbury">
+                           <gloss>Bishop of Canterbury</gloss>
+                        </valItem>
+                        <valItem ident="#capuchius">
+                           <gloss>Lord Capuchius
+                (Eustace Chapuys)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#chamberlain">
+                           <gloss>Lord Chamberlain</gloss>
+                        </valItem>
+                        <valItem ident="#chancellor">
+                           <gloss>Lord Chancellor</gloss>
+                        </valItem>
+                        <valItem ident="#cranmer">
+                           <gloss>Archbishop Cranmer</gloss>
+                        </valItem>
+                        <valItem ident="#crier">
+                           <gloss>Crier</gloss>
+                        </valItem>
+                        <valItem ident="#cromwell">
+                           <gloss>Thomas Cromwell</gloss>
+                        </valItem>
+                        <valItem ident="#denny">
+                           <gloss>Sir Anthony Denny</gloss>
+                        </valItem>
+                        <valItem ident="#dorset">
+                           <gloss>Marquis Dorset</gloss>
+                        </valItem>
+                        <valItem ident="#duchess">
+                           <gloss>Duchess of Norfolk</gloss>
+                        </valItem>
+                        <valItem ident="#ely">
+                           <gloss>Bishop of Ely</gloss>
+                        </valItem>
+                        <valItem ident="#gardiner">
+                           <gloss>Gardiner
+               (Stephen Gardiner)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#garter">
+                           <gloss>Garter
+               (Garter King at Arms)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#gentleman1">
+                           <gloss>1 Gentleman</gloss>
+                        </valItem>
+                        <valItem ident="#gentleman2">
+                           <gloss>2 Gentleman</gloss>
+                        </valItem>
+                        <valItem ident="#gentleman3">
+                           <gloss>3 Gentleman</gloss>
+                        </valItem>
+                        <valItem ident="#gentlewoman">
+                           <gloss>Gentlewoman</gloss>
+                        </valItem>
+                        <valItem ident="#griffith">
+                           <gloss>Griffith</gloss>
+                        </valItem>
+                        <valItem ident="#guards">
+                           <gloss>Guards</gloss>
+                        </valItem>
+                        <valItem ident="#guildford">
+                           <gloss>Guildford
+             (Sir Henry Guildford)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#henry">
+                           <gloss>King Henry</gloss>
+                        </valItem>
+                        <valItem ident="#katherine">
+                           <gloss>Katharine</gloss>
+                        </valItem>
+                        <valItem ident="#keeper">
+                           <gloss>Keeper
+             (Keeper of the Council Chamber)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#lincoln">
+                           <gloss>Bishop of Lincoln</gloss>
+                        </valItem>
+                        <valItem ident="#london">
+                           <gloss>Bishop of London
+             (Stokeley)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#lords">
+                           <gloss>Lords</gloss>
+                        </valItem>
+                        <valItem ident="#lovell">
+                           <gloss>Sir Thomas Lovell</gloss>
+                        </valItem>
+                        <valItem ident="#marchioness">
+                           <gloss>Marchioness of Dorset</gloss>
+                        </valItem>
+                        <valItem ident="#mayor">
+                           <gloss>Mayor of London</gloss>
+                        </valItem>
+                        <valItem ident="#messenger">
+                           <gloss>Messenger</gloss>
+                        </valItem>
+                        <valItem ident="#norfolk">
+                           <gloss>Duke of Norfolk</gloss>
+                        </valItem>
+                        <valItem ident="#oldlady">
+                           <gloss>Old Lady</gloss>
+                        </valItem>
+                        <valItem ident="#page">
+                           <gloss>Page</gloss>
+                        </valItem>
+                        <valItem ident="#patience">
+                           <gloss>Patience"</gloss>
+                        </valItem>
+                        <valItem ident="#personages">
+                           <gloss>Personages</gloss>
+                        </valItem>
+                        <valItem ident="#pman">
+                           <gloss>Porter's Man</gloss>
+                        </valItem>
+                        <valItem ident="#porter">
+                           <gloss>Porter</gloss>
+                        </valItem>
+                        <valItem ident="#prologue">
+                           <gloss>Prologue</gloss>
+                        </valItem>
+                        <valItem ident="#rochester">
+                           <gloss>Bishop of Rochester</gloss>
+                        </valItem>
+                        <valItem ident="#sandys">
+                           <gloss>Lord Sandys</gloss>
+                        </valItem>
+                        <valItem ident="#scribe">
+                           <gloss>Scribe</gloss>
+                        </valItem>
+                        <valItem ident="#secretary1">
+                           <gloss>Secretary</gloss>
+                        </valItem>
+                        <valItem ident="#secretary2">
+                           <gloss>Secretary</gloss>
+                        </valItem>
+                        <valItem ident="#sergeant">
+                           <gloss>Sergeant at Arms</gloss>
+                        </valItem>
+                        <valItem ident="#servant">
+                           <gloss>Servant</gloss>
+                        </valItem>
+                        <valItem ident="#somerset">
+                           <gloss>Charles Somerset  (Sir) </gloss>
+                        </valItem>
+                        <valItem ident="#suffolk">
+                           <gloss>Suffolk  (Duke) </gloss>
+                        </valItem>
+                        <valItem ident="#surrey">
+                           <gloss>Surrey  (Earl of) </gloss>
+                        </valItem>
+                        <valItem ident="#surveyor">
+                           <gloss>Surveyor
+               (Sur.)  (
+            ) </gloss>
+                        </valItem>
+                        <valItem ident="#vaux">
+                           <gloss>Nicholas Vaux  (Sir) </gloss>
+                        </valItem>
+                        <valItem ident="#wolsey">
+                           <gloss>Cardinal Wolsey</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <moduleRef key="tei"/>
+            <moduleRef key="textstructure"
+                       include="TEI back body closer div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur opener text titlePage titlePart trailer"/>
+            <moduleRef key="drama"
+                       include="actor caption castGroup castItem castList role roleDesc spGrp"/>
+            <moduleRef key="transcr"
+                       include="am ex facsimile fw space subst supplied surface surfaceGrp zone"/>
+        
+            <moduleRef key="figures" include="figure"/>
+            <moduleRef key="corpus" include="particDesc"/>
+        
+            <!--     We presumably need <ab> for speeches which are not definitively prose or verse, a distinction the ISE makes.   -->
+            <moduleRef key="linking" include="ab"/>
+
+            <moduleRef key="gaiji" include="char charDecl charName g glyph glyphName mapping"/>
+            <elementSpec ident="g" module="gaiji" mode="change">
+               <attList>
+                  <attDef ident="rendition" mode="delete"/>
+                  <attDef ident="style" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="ref" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="ise:IJLigature">
+                           <gloss>LATIN CAPITAL LIGATURE IJ (Ĳ {IJ})</gloss>
+                        </valItem>
+                        <valItem ident="ise:OELigature">
+                           <gloss>LATIN CAPITAL LIGATURE OE (Œ {OE})</gloss>
+                        </valItem>
+                        <valItem ident="ise:asLigature">
+                           <gloss>LATIN SMALL LIGATURE AS (as {as})</gloss>
+                        </valItem>
+                        <valItem ident="ise:ctLigature">
+                           <gloss>LATIN SMALL LIGATURE CT (ƈt ct {ct})</gloss>
+                        </valItem>
+                        <valItem ident="ise:ffLigature">
+                           <gloss>LATIN SMALL LIGATURE FF (ﬀ {ff})</gloss>
+                        </valItem>
+                        <valItem ident="ise:ffiLigature">
+                           <gloss>LATIN SMALL LIGATURE FFI (ﬃ {ffi})</gloss>
+                        </valItem>
+                        <valItem ident="ise:fflLigature">
+                           <gloss>LATIN SMALL LIGATURE FFL (ﬄ {ffl})</gloss>
+                        </valItem>
+                        <valItem ident="ise:fiLigature">
+                           <gloss>LATIN SMALL LIGATURE FI (ﬁ {fi})</gloss>
+                        </valItem>
+                        <valItem ident="ise:flLigature">
+                           <gloss>LATIN SMALL LIGATURE FL (ﬂ {fl})</gloss>
+                        </valItem>
+                        <valItem ident="ise:frLigature">
+                           <gloss>LATIN SMALL LIGATURE FR ({fr})</gloss>
+                        </valItem>
+                        <valItem ident="ise:ijLigature">
+                           <gloss>LATIN SMALL LIGATURE IJ (ĳ {ij})</gloss>
+                        </valItem>
+                        <valItem ident="ise:isLigature">
+                           <gloss>LATIN SMALL LIGATURE IS ({is})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longS">
+                           <gloss>LATIN SMALL LETTER LONG S (ſ {s})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSSLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S LONG S (ſſ {{s}{s}})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSSiLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S LONG S I (ſſi {{s}{s}i})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSSlLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S LONG S L (ſſl {{s}{s}l})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longShLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S H (ſh {{s}h})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSiLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S I (ſi {{s}i})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSlLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S L (ſl {{s}l})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longSpLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S P (ſp {{s}p})</gloss>
+                        </valItem>
+                        <valItem ident="ise:longStLigature">
+                           <gloss>LATIN SMALL LIGATURE LONG S T (ﬅ {{s}t})</gloss>
+                        </valItem>
+                        <valItem ident="ise:oeLigature">
+                           <gloss>LATIN SMALL LIGATURE OE (œ {oe})</gloss>
+                        </valItem>
+                        <valItem ident="ise:ppLigature">
+                           <gloss>LATIN SMALL LIGATURE PP ({pp})</gloss>
+                        </valItem>
+                        <valItem ident="ise:stLigature">
+                           <gloss>LATIN SMALL LIGATURE ST (ﬆ {st})</gloss>
+                        </valItem>
+                        <valItem ident="ise:usLigature">
+                           <gloss>LATIN SMALL LIGATURE US (us {us})</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <moduleRef key="namesdates"
+                       include="addName affiliation age faith forename genName listPerson nameLink nationality occupation persName person placeName roleName socecStatus state surname trait"/>
+
+            <elementSpec ident="cb" module="core" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change" usage="opt">
+                     <valList type="semi" mode="replace">
+                        <valItem ident="fullWidth">
+                           <gloss>A "column" which is the full width of the page. Typically used to signify that 
+                  a sequence of narrower columns has been interrupted by a full width section.</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+
+            <elementSpec ident="div" module="core" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList type="semi" mode="replace">
+<!--     NOTE: We exclude prologue and epilogue elements from the drama module because they are not in Simple,
+                so we use @type on <div> instead. -->
+                        <valItem ident="act">
+                           <gloss>Act in a drama</gloss>
+                        </valItem>
+                        <valItem ident="epilogue">
+                           <gloss>Epilogue in a drama</gloss>
+                        </valItem>
+                        <valItem ident="prologue">
+                           <gloss>Prologue in a drama</gloss>
+                        </valItem>
+                        <valItem ident="scene">
+                           <gloss>Scene in a drama</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <!--        MDH: The following material is adapted from the TEI Simple ODD file, and should be updated 
+                  when changes are made to Simple. exactMatch processing instructions have been removed;
+                  I don't see what they're for, other than allowing latitude it would be better to preclude. -->
+            <classSpec type="atts" ident="att.global" mode="change">
+               <constraintSpec ident="corresppointer" scheme="isoschematron">
+                  <constraint>
+                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="tei:*[@corresp]">
+                        <let name="results"
+                             value="for $t in tokenize(normalize-space(@corresp),'\s+') return starts-with($t,'#') and not(id(substring($t,2)))"/>
+                        <report test="some $x in $results  satisfies $x"> Error: Every
+                  local pointer in "<value-of select="@corresp"/>" must point to
+                  an ID in this document (<value-of select="$results"/>)</report>
+                     </rule>
+                  </constraint>
+               </constraintSpec>
+            </classSpec>
+        
+            <classRef key="att.global.analytic"/>
+            <classRef key="att.global.facs"/>
+            <classRef key="att.milestoneUnit"/>
+            <classRef key="att.global.linking"/>
+            <classRef key="att.global.rendition"/>
+            <classSpec type="atts" ident="att.datcat" mode="delete"/>
+            <classSpec type="atts" ident="att.declarable" mode="delete"/>
+            <classSpec type="atts" ident="att.divLike" mode="change">
+               <attList>
+                  <attDef ident="org" mode="delete"/>
+                  <attDef ident="sample" mode="delete"/>
+               </attList>
+            </classSpec>
+        
+            <classSpec module="tei"
+                       type="atts"
+                       ident="att.global.linking"
+                       mode="change">
+               <attList>
+                  <attDef ident="synch" mode="delete"/>
+                  <attDef ident="copyOf" mode="delete"/>
+                  <attDef ident="exclude" mode="delete"/>
+                  <attDef ident="select" mode="delete"/>
+               </attList>
+            </classSpec>
+        
+            <classSpec module="tei"
+                       ident="att.global.rendition"
+                       type="atts"
+                       mode="change">
+               <attList>
+                  <attDef ident="rend" mode="delete"/>
+                  <attDef ident="style" mode="delete"/>
+                  <attDef ident="rendition" mode="change">
+                     <constraintSpec ident="renditionpointer" scheme="isoschematron">
+                        <constraint>
+                           <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="tei:*[@rendition]">
+                              <let name="results"
+                                   value="for $val in tokenize(normalize-space(@rendition),'\s+') return        starts-with($val,'simple:')        or        (starts-with($val,'#') and //tei:rendition[@xml:id=substring($val,2)])"/>
+                              <assert test="every $x in $results satisfies $x"> Error: Each of
+                      the rendition values in "<value-of select="@rendition"/>"
+                      must point to a local ID or to a token in the Simple scheme
+                      (<value-of select="$results"/>)</assert>
+                           </rule>
+                        </constraint>
+                     </constraintSpec>
+                     <valList type="semi" mode="replace">
+                        <valItem ident="simple:allcaps">
+                           <desc>all capitals</desc>
+                        </valItem>
+                        <valItem ident="simple:blackletter">
+                           <desc>black letter or gothic typeface</desc>
+                        </valItem>
+                        <valItem ident="simple:bold">
+                           <desc>bold typeface</desc>
+                        </valItem>
+                        <valItem ident="simple:bottombraced">
+                           <desc>marked with a brace under the bottom of the text</desc>
+                        </valItem>
+                        <valItem ident="simple:boxed">
+                           <desc>border around the text</desc>
+                        </valItem>
+                        <valItem ident="simple:centre">
+                           <desc>centred</desc>
+                        </valItem>
+                        <valItem ident="simple:cursive">
+                           <desc>cursive typeface</desc>
+                        </valItem>
+                        <valItem ident="simple:display">
+                           <desc>block display</desc>
+                        </valItem>
+                        <valItem ident="simple:doublestrikethrough">
+                           <desc>strikethrough with double line</desc>
+                        </valItem>
+                        <valItem ident="simple:doubleunderline">
+                           <desc>underlined with double line</desc>
+                        </valItem>
+                        <valItem ident="simple:dropcap">
+                           <desc>initial letter larger or decorated</desc>
+                        </valItem>
+                        <valItem ident="simple:float">
+                           <desc>floated out of main flow</desc>
+                        </valItem>
+                        <valItem ident="simple:hyphen">
+                           <desc>with a hyphen here (eg in line break)</desc>
+                        </valItem>
+                        <valItem ident="simple:inline">
+                           <desc>inline rendering</desc>
+                        </valItem>
+                        <valItem ident="simple:italic">
+                           <desc>italic typeface</desc>
+                        </valItem>
+                        <valItem ident="simple:justify">
+                           <desc>justified</desc>
+                        </valItem>
+                        <valItem ident="simple:larger">
+                           <desc>larger type</desc>
+                        </valItem>
+                        <valItem ident="simple:left">
+                           <desc>aligned to the left or left-justified</desc>
+                        </valItem>
+                        <valItem ident="simple:leftbraced">
+                           <desc>marked with a brace on the left side of the text</desc>
+                        </valItem>
+                        <valItem ident="simple:letterspace">
+                           <desc>letter-spaced</desc>
+                        </valItem>
+                        <valItem ident="simple:normalstyle">
+                           <desc>upright shape and default weight of typeface</desc>
+                        </valItem>
+                        <valItem ident="simple:normalweight">
+                           <desc>normal typeface weight</desc>
+                        </valItem>
+                        <valItem ident="simple:right">
+                           <desc>aligned to the right or right-justified</desc>
+                        </valItem>
+                        <valItem ident="simple:rightbraced">
+                           <desc>marked with a brace to the right of the text</desc>
+                        </valItem>
+                        <valItem ident="simple:rotateleft">
+                           <desc>rotated to the left</desc>
+                        </valItem>
+                        <valItem ident="simple:rotateright">
+                           <desc>rotated to the right</desc>
+                        </valItem>
+                        <valItem ident="simple:smallcaps">
+                           <desc>small caps</desc>
+                        </valItem>
+                        <valItem ident="simple:smaller">
+                           <desc>smaller type</desc>
+                        </valItem>
+                        <valItem ident="simple:strikethrough">
+                           <desc>strike through</desc>
+                        </valItem>
+                        <valItem ident="simple:subscript">
+                           <desc>subscript</desc>
+                        </valItem>
+                        <valItem ident="simple:superscript">
+                           <desc>superscript</desc>
+                        </valItem>
+                        <valItem ident="simple:topbraced">
+                           <desc>marked with a brace above the text</desc>
+                        </valItem>
+                        <valItem ident="simple:typewriter">
+                           <desc>fixed-width typeface, like typewriter</desc>
+                        </valItem>
+                        <valItem ident="simple:underline">
+                           <desc>underlined with single line</desc>
+                        </valItem>
+                        <valItem ident="simple:wavyunderline">
+                           <desc>underlined with wavy line</desc>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </classSpec>
+        
+            <elementSpec ident="lb" module="core" mode="change">
+               <constraintSpec ident="lbtypeandn" scheme="isoschematron">
+                  <constraint>
+                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="tei:lb">
+                        <assert test="not(@type) or (@type and @n)">If you use the @type attribute 
+               to specify that this is a TLN linebreak, you must specify the TLN 
+               number in the @n attribute.</assert>
+                     </rule>
+                  </constraint>
+               </constraintSpec>
+               <attList>
+                  <attDef ident="type" usage="opt" mode="replace">
+                     <valList type="closed">
+                        <valItem ident="tln">
+                           <gloss>Through line number</gloss>
+                           <desc>Hinman Through Line Numbers (TLN). Add the line number itself using the @n attribute.</desc>
+                        </valItem>
+                     </valList>
+                  </attDef>
+                  <attDef ident="n" usage="opt" mode="change">
+                     <datatype>
+                        <ref xmlns="http://relaxng.org/ns/structure/1.0" name="decimal"/>
+                     </datatype>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <elementSpec ident="TEI" module="textstructure" mode="change">
+               <attList>
+                  <attDef ident="rend" mode="replace">
+                     <valList type="closed">
+                        <valItem ident="ise">
+                           <gloss>Conforms to the ISE TEI schema (usually a customized version)</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <elementSpec ident="fw" module="transcr" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change" usage="opt">
+                     <valList type="closed" mode="replace">
+                        <valItem ident="catch">
+                           <gloss>A catch-word.</gloss>
+                        </valItem>
+                        <valItem ident="footer">
+                           <gloss>A running footer at the bottom of the page, which may contain other <gi>fw</gi> components.</gloss>
+                        </valItem>
+                        <valItem ident="header">
+                           <gloss>A running header at the top of the page, which may contain other <gi>fw</gi> components.</gloss>
+                        </valItem>
+                        <valItem ident="pageNum">
+                           <gloss>A page number or foliation symbol, typically in a header or footer.</gloss>
+                        </valItem>
+                        <valItem ident="sig">
+                           <gloss>a signature or gathering symbol.</gloss>
+                        </valItem>
+                        <valItem ident="title">
+                           <gloss>A running title in the running header or footer.</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <elementSpec ident="figure" module="figures" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change" usage="req">
+                     <valList type="closed" mode="replace">
+                        <valItem ident="ornament">
+                           <gloss>An ornamental figure on the page.</gloss>
+                        </valItem>
+                        <valItem ident="rule">
+                           <gloss>A horizontal rule or line.</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <elementSpec ident="stage" module="core" mode="change">
+               <attList>
+                  <attDef ident="type" usage="req" mode="change">
+                     <valList type="closed" mode="replace">
+                <!--action, delivery, entrance, exit, location, optional, other, setting, sound, uncertain, whoto -->
+                        <valItem ident="action">
+                           <gloss>action</gloss>
+                        </valItem>
+                        <valItem ident="delivery">
+                           <gloss>delivery</gloss>
+                        </valItem>
+                        <valItem ident="entrance">
+                           <gloss>entrance</gloss>
+                        </valItem>
+                        <valItem ident="exit">
+                           <gloss>exit</gloss>
+                        </valItem>
+                        <valItem ident="location">
+                           <gloss>location</gloss>
+                        </valItem>
+                        <valItem ident="optional">
+                           <gloss>optional</gloss>
+                        </valItem>
+                        <valItem ident="other">
+                           <gloss>other</gloss>
+                        </valItem>
+                        <valItem ident="setting">
+                           <gloss>setting</gloss>
+                        </valItem>
+                        <valItem ident="sound">
+                           <gloss>sound</gloss>
+                        </valItem>
+                        <valItem ident="uncertain">
+                           <gloss>uncertain</gloss>
+                        </valItem>
+                        <valItem ident="whoto">
+                           <gloss>whoto</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+        
+            <!--     This stuff comes direct from TEI Simple.   -->
+            <classSpec type="atts" mode="change" ident="att.placement">
+               <attList>
+                  <attDef ident="place" mode="change">
+                     <valList type="closed" mode="replace">
+                        <valItem ident="above">
+                           <desc>above the line</desc>
+                        </valItem>
+                        <valItem ident="below">
+                           <desc>below the line</desc>
+                        </valItem>
+                        <valItem ident="top">
+                           <desc>at the top of the page</desc>
+                        </valItem>
+                        <valItem ident="top-right">
+                           <desc>at the top right of the page</desc>
+                        </valItem>
+                        <valItem ident="top-left">
+                           <desc>at the top left of the page</desc>
+                        </valItem>
+                        <valItem ident="top-centre">
+                           <desc>at the top center of the page</desc>
+                        </valItem>
+                        <valItem ident="bottom-right">
+                           <desc>at the bottom right of the page</desc>
+                        </valItem>
+                        <valItem ident="bottom-left">
+                           <desc>at the bottom left of the page</desc>
+                        </valItem>
+                        <valItem ident="bottom-centre">
+                           <desc>at the bottom centre of the page</desc>
+                        </valItem>
+                        <valItem ident="bottom">
+                           <desc>at the foot of the page</desc>
+                        </valItem>
+                        <valItem ident="tablebottom">
+                           <desc>underneath a table</desc>
+                        </valItem>
+                        <valItem ident="margin-right">
+                           <desc>in the right-hand margin</desc>
+                        </valItem>
+                        <valItem ident="margin-outer">
+                           <desc>in the outer margin</desc>
+                        </valItem>
+                        <valItem ident="margin-inner">
+                           <desc>in the inner margin</desc>
+                        </valItem>
+                        <valItem ident="margin-left">
+                           <desc>in the left-hand margin</desc>
+                        </valItem>
+                        <valItem ident="opposite">
+                           <desc>on the opposite, i.e. facing, page.</desc>
+                        </valItem>
+                        <valItem ident="overleaf">
+                           <desc>on the other side of the leaf.</desc>
+                        </valItem>
+                        <valItem ident="overstrike">
+                           <desc>superimposed on top of the current context</desc>
+                        </valItem>
+                        <valItem ident="end">
+                           <desc>at the end of the volume.</desc>
+                        </valItem>
+                        <valItem ident="divend">
+                           <desc>at the end the current division.</desc>
+                        </valItem>
+                        <valItem ident="parend">
+                           <desc>at the end the current paragraph.</desc>
+                        </valItem>
+                        <valItem ident="inline">
+                           <desc>within the body of the text.</desc>
+                        </valItem>
+                        <valItem ident="inspace">
+                           <desc>in a predefined space, for example left by an earlier
+                    scribe.</desc>
+                        </valItem>
+                        <valItem ident="block">
+                           <desc>formatted as an indented paragraph</desc>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </classSpec>
+        
+            <!--    We add a Schematron constraint to @who to make sure its values point to 
+        existing <person> elements. -->
+            <classSpec type="atts" ident="att.ascribed" module="tei" mode="change">
+               <attList>
+                  <attDef ident="who" mode="change">
+                     <constraintSpec scheme="isoschematron" ident="deprecated">
+                        <constraint>
+                           <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@who]">
+                              <sch:let name="bools"
+                                       value="for $i in tokenize(@who, '\s+') return count(//tei:person[@xml:id=substring-after($i, '#')]) gt 0"/>
+                              <sch:assert test="every $i in $bools satisfies $i=true()">
+                      The @who attribute must point to one or more person elements in the particDesc.
+                    </sch:assert>
+                           </sch:rule>
+                        </constraint>
+                     </constraintSpec>
+                  </attDef>
+               </attList>
+          
+            </classSpec>
+        
+         </schemaSpec>
+      </body>
+  </text>
+</TEI>

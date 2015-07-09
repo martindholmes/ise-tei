@@ -259,14 +259,8 @@
           <attList>
             <attDef ident="rend" mode="replace">
               <valList type="closed">
-                <valItem ident="ise:basic">
-                  <gloss>Conforms to the basic ISE schema (text structure)</gloss>
-                </valItem>
-                <valItem ident="ise:intermediate">
-                  <gloss>Conforms to structural and textual feature components of the ISE schema</gloss>
-                </valItem>
-                <valItem ident="ise:full">
-                  <gloss>Conforms to the full ISE schema</gloss>
+                <valItem ident="ise">
+                  <gloss>Conforms to the ISE TEI schema (usually a customized version)</gloss>
                 </valItem>
               </valList>
             </attDef>
