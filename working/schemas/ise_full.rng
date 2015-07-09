@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2015-07-07T16:41:59Z. .
+Schema generated from ODD source 2015-07-09T09:11:13Z. .
 TEI Edition: Version 2.8.1a. Last updated on
 	10th June 2015, revision 13257
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.1a./
@@ -3247,147 +3247,151 @@ relatedItem element must be empty</sch:report>
          <ref name="att.global.attributes"/>
          <attribute name="who">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <choice>
-               <value>#abergavenny</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Abergavenny) </a:documentation>
-               <value>#acolyte</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Acolyte) </a:documentation>
-               <value>#anne</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Anne Bullen
+            <list>
+               <oneOrMore>
+                  <choice>
+                     <value>#abergavenny</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Abergavenny) </a:documentation>
+                     <value>#acolyte</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Acolyte) </a:documentation>
+                     <value>#anne</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Anne Bullen
                (Anne Boleyn)  (
               )  (Anne Bollen)  (
             ) ) </a:documentation>
-               <value>#asaph</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Saint Asaph) </a:documentation>
-               <value>#barons</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Barons of the Cinque Ports) </a:documentation>
-               <value>#brandon</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Brandon) </a:documentation>
-               <value>#buckingham</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duke of Buckingham) </a:documentation>
-               <value>#butts</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Doctor Butts) </a:documentation>
-               <value>#campeius</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Campeius
+                     <value>#asaph</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Saint Asaph) </a:documentation>
+                     <value>#barons</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Barons of the Cinque Ports) </a:documentation>
+                     <value>#brandon</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Brandon) </a:documentation>
+                     <value>#buckingham</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duke of Buckingham) </a:documentation>
+                     <value>#butts</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Doctor Butts) </a:documentation>
+                     <value>#campeius</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Campeius
                (Lorenzo Campeggio)  (
             ) ) </a:documentation>
-               <value>#canterbury</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Canterbury) </a:documentation>
-               <value>#capuchius</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Capuchius
+                     <value>#canterbury</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Canterbury) </a:documentation>
+                     <value>#capuchius</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Capuchius
                 (Eustace Chapuys)  (
             ) ) </a:documentation>
-               <value>#chamberlain</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Chamberlain) </a:documentation>
-               <value>#chancellor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Chancellor) </a:documentation>
-               <value>#cranmer</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Archbishop Cranmer) </a:documentation>
-               <value>#crier</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Crier) </a:documentation>
-               <value>#cromwell</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Thomas Cromwell) </a:documentation>
-               <value>#denny</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sir Anthony Denny) </a:documentation>
-               <value>#dorset</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Marquis Dorset) </a:documentation>
-               <value>#duchess</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duchess of Norfolk) </a:documentation>
-               <value>#ely</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Ely) </a:documentation>
-               <value>#gardiner</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gardiner
+                     <value>#chamberlain</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Chamberlain) </a:documentation>
+                     <value>#chancellor</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Chancellor) </a:documentation>
+                     <value>#cranmer</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Archbishop Cranmer) </a:documentation>
+                     <value>#crier</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Crier) </a:documentation>
+                     <value>#cromwell</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Thomas Cromwell) </a:documentation>
+                     <value>#denny</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sir Anthony Denny) </a:documentation>
+                     <value>#dorset</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Marquis Dorset) </a:documentation>
+                     <value>#duchess</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duchess of Norfolk) </a:documentation>
+                     <value>#ely</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Ely) </a:documentation>
+                     <value>#gardiner</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gardiner
                (Stephen Gardiner)  (
             ) ) </a:documentation>
-               <value>#garter</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Garter
+                     <value>#garter</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Garter
                (Garter King at Arms)  (
             ) ) </a:documentation>
-               <value>#gentleman1</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(1 Gentleman) </a:documentation>
-               <value>#gentleman2</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(2 Gentleman) </a:documentation>
-               <value>#gentleman3</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(3 Gentleman) </a:documentation>
-               <value>#gentlewoman</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gentlewoman) </a:documentation>
-               <value>#griffith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Griffith) </a:documentation>
-               <value>#guards</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Guards) </a:documentation>
-               <value>#guildford</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Guildford
+                     <value>#gentleman1</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(1 Gentleman) </a:documentation>
+                     <value>#gentleman2</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(2 Gentleman) </a:documentation>
+                     <value>#gentleman3</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(3 Gentleman) </a:documentation>
+                     <value>#gentlewoman</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gentlewoman) </a:documentation>
+                     <value>#griffith</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Griffith) </a:documentation>
+                     <value>#guards</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Guards) </a:documentation>
+                     <value>#guildford</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Guildford
              (Sir Henry Guildford)  (
             ) ) </a:documentation>
-               <value>#henry</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(King Henry) </a:documentation>
-               <value>#katherine</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Katharine) </a:documentation>
-               <value>#keeper</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Keeper
+                     <value>#henry</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(King Henry) </a:documentation>
+                     <value>#katherine</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Katharine) </a:documentation>
+                     <value>#keeper</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Keeper
              (Keeper of the Council Chamber)  (
             ) ) </a:documentation>
-               <value>#lincoln</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Lincoln) </a:documentation>
-               <value>#london</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of London
+                     <value>#lincoln</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Lincoln) </a:documentation>
+                     <value>#london</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of London
              (Stokeley)  (
             ) ) </a:documentation>
-               <value>#lords</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lords) </a:documentation>
-               <value>#lovell</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sir Thomas Lovell) </a:documentation>
-               <value>#marchioness</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Marchioness of Dorset) </a:documentation>
-               <value>#mayor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mayor of London) </a:documentation>
-               <value>#messenger</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Messenger) </a:documentation>
-               <value>#norfolk</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duke of Norfolk) </a:documentation>
-               <value>#oldlady</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Old Lady) </a:documentation>
-               <value>#page</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Page) </a:documentation>
-               <value>#patience</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Patience") </a:documentation>
-               <value>#personages</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Personages) </a:documentation>
-               <value>#pman</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter's Man) </a:documentation>
-               <value>#porter</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter) </a:documentation>
-               <value>#prologue</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prologue) </a:documentation>
-               <value>#rochester</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Rochester) </a:documentation>
-               <value>#sandys</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Sandys) </a:documentation>
-               <value>#scribe</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Scribe) </a:documentation>
-               <value>#secretary1</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Secretary) </a:documentation>
-               <value>#secretary2</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Secretary) </a:documentation>
-               <value>#sergeant</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sergeant at Arms) </a:documentation>
-               <value>#servant</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Servant) </a:documentation>
-               <value>#somerset</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Charles Somerset  (Sir) ) </a:documentation>
-               <value>#suffolk</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Suffolk  (Duke) ) </a:documentation>
-               <value>#surrey</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Surrey  (Earl of) ) </a:documentation>
-               <value>#surveyor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Surveyor
+                     <value>#lords</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lords) </a:documentation>
+                     <value>#lovell</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sir Thomas Lovell) </a:documentation>
+                     <value>#marchioness</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Marchioness of Dorset) </a:documentation>
+                     <value>#mayor</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mayor of London) </a:documentation>
+                     <value>#messenger</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Messenger) </a:documentation>
+                     <value>#norfolk</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Duke of Norfolk) </a:documentation>
+                     <value>#oldlady</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Old Lady) </a:documentation>
+                     <value>#page</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Page) </a:documentation>
+                     <value>#patience</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Patience") </a:documentation>
+                     <value>#personages</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Personages) </a:documentation>
+                     <value>#pman</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter's Man) </a:documentation>
+                     <value>#porter</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Porter) </a:documentation>
+                     <value>#prologue</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prologue) </a:documentation>
+                     <value>#rochester</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Bishop of Rochester) </a:documentation>
+                     <value>#sandys</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lord Sandys) </a:documentation>
+                     <value>#scribe</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Scribe) </a:documentation>
+                     <value>#secretary1</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Secretary) </a:documentation>
+                     <value>#secretary2</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Secretary) </a:documentation>
+                     <value>#sergeant</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sergeant at Arms) </a:documentation>
+                     <value>#servant</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Servant) </a:documentation>
+                     <value>#somerset</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Charles Somerset  (Sir) ) </a:documentation>
+                     <value>#suffolk</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Suffolk  (Duke) ) </a:documentation>
+                     <value>#surrey</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Surrey  (Earl of) ) </a:documentation>
+                     <value>#surveyor</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Surveyor
                (Sur.)  (
             ) ) </a:documentation>
-               <value>#vaux</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nicholas Vaux  (Sir) ) </a:documentation>
-               <value>#wolsey</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Wolsey) </a:documentation>
-            </choice>
+                     <value>#vaux</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nicholas Vaux  (Sir) ) </a:documentation>
+                     <value>#wolsey</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Cardinal Wolsey) </a:documentation>
+                  </choice>
+               </oneOrMore>
+            </list>
          </attribute>
          <empty/>
       </element>

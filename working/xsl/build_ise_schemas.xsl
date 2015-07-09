@@ -70,6 +70,9 @@
     <elementSpec ident="sp" module="core" mode="change">
       <attList>
         <attDef ident="who" mode="replace" usage="req">
+          <datatype minOccurs="1" maxOccurs="unbounded">
+            <ref xmlns="http://relaxng.org/ns/structure/1.0" name="data.enumerated"/>
+          </datatype>
           <valList type="closed">
             <xsl:choose>
               <xsl:when test="$sourceParticDesc">
