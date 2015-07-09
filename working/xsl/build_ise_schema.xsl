@@ -26,7 +26,7 @@
   <xsl:variable name="includes" select="doc('includes.xml')"/>
   
   <xsl:template match="/">
-    <xsl:result-document href="schemas/ise.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
+    <xsl:result-document href="schemas/ise_tei.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
       <xsl:apply-templates/>
     </xsl:result-document>
   </xsl:template>
