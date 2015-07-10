@@ -985,14 +985,6 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>6/daisy/daisy.framework/Daisy</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/docbook/docbook4.framework/DocBook 4</String>
                                 </field>
                                 <field name="enable">
@@ -1042,22 +1034,6 @@
                             <documentTypeEntry>
                                 <field name="documentTypeID">
                                     <String>6/mathml/mathml.framework/MathML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/maven/maven.framework/Maven Project</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/maven/maven.framework/Maven Settings</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -1161,7 +1137,7 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>6/schematron/schematron15.framework/Schematron 1.5 (deprecated)</String>
+                                    <String>6/schematron/schematron15.framework/Schematron 1.5</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -1185,22 +1161,6 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>4/tei/teip5jtei.framework/TEI JTEI</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/tei/teip5odd.framework/TEI ODD</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/tei/teip5odd.framework/TEI ODD</String>
                                 </field>
                                 <field name="enable">
@@ -1209,23 +1169,7 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>4/tei/teip4.framework/TEI P4 (deprecated)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/tei/teip4.framework/TEI P4 (deprecated)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/tei/teip5.framework/TEI P5</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -1432,6 +1376,10 @@
                                 </field>
                             </scenario>
                         </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
                     </entry>
                 </serializableOrderedMap>
             </serialized>

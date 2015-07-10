@@ -202,7 +202,7 @@
             <occupation>Physician</occupation>
           </person>
           
-          <person xml:id="cardinal">
+          <person xml:id="wolsey">
             <persName>Cardinal Wolsey</persName>
             <nationality>English</nationality>
             <occupation>Cleric</occupation>
@@ -394,6 +394,10 @@
             <persName>Servant</persName>
             <nationality>English</nationality>
             <occupation>Servant</occupation>
+          </person>
+          
+          <person xml:id="prologue">
+            <persName>Prologue</persName>
           </person>
             
           

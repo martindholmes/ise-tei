@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full" xml:id="h8">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -390,11 +390,12 @@
                 <occupation>Nobleman</occupation>
             </person>
             
-            <person xml:id="wolsey">
+            <person xml:id="cardinal">
                 <persName>Cardinal Wolsey</persName>
                 <nationality>English</nationality>
                 <occupation>Cleric</occupation>
             </person>
+           <!-- this should be xml:id="wolsey" but I can't make it work. Once I can, it will change throughout -->
             
         </listPerson>
       </particDesc>
@@ -652,22 +653,22 @@
                     <lb type="tln" n="178"/>ham, and Buckingham on him,
                     <lb type="tln" n="179"/>both full of disdain.</stage>
                     
-                    <lb type="tln" n="180"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="180"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>The Duke of Buckingham's surveyor, ha?</l>
                     <lb type="tln" n="181"/><l>Where's his examination?</l></lg></sp>
                     
-                    <stage type="delivery">[<persName n="#secretary1">Secretary</persName> hands paper to <persName n="#wolsey">Wolsey</persName>]</stage>
+                    <stage type="delivery">[<persName n="#secretary1">Secretary</persName> hands paper to <persName n="#cardinal">Wolsey</persName>]</stage>
                 
                     <lb type="tln" n="182"/><sp who="#secretary1"><speaker>Secretary</speaker>
                         <lg><l>Here so please you.</l></lg></sp>
                     
-                    <lb type="tln" n="183"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="183"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Is he in person ready?</l></lg></sp>
                     
                     <lb type="tln" n="184"/><sp who="#secretary1"><speaker>Secretary</speaker>
                         <lg><l>Ay, please your grace.</l></lg></sp>
                         
-                    <lb type="tln" n="185"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="185"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Well, we shall then know more, and Buckingham</l>
                     <lb type="tln" n="186"/><l>Shall lessen this big look.</l></lg></sp>
                     
@@ -939,7 +940,7 @@
                     <lb type="tln" n="368"/><l>You that are blamed for it alike with us,</l>
                     <lb type="tln" n="369"/><l>Know you of this taxation?</l></lg></sp>
                     
-                    <lb type="tln" n="370"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="370"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Please you, sir,</l>
                     <lb type="tln" n="371"/><l>I know but of a single part in aught</l>
                     <lb type="tln" n="372"/><l>Pertains to th'state, and front but in that file</l>
@@ -982,7 +983,7 @@
                         <lg><l>By my life,</l>
                     <lb type="tln" n="402"/><l>This is against our pleasure!</l></lg></sp>
                     
-                    <lb type="tln" n="403"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="403"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>And for me,</l> 
                     <lb type="tln" n="404"/><l>I have no further gone in this than by</l>
                     <lb type="tln" n="405"/><l>A single voice, and that not past me, but</l>
@@ -1024,7 +1025,7 @@
                     <lb type="tln" n="438"/><l>I put it to your care.</l></lg></sp>
  
  <!-- embedded stage directions throw off formatting -->
-                    <lb type="tln" n="439"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="439"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l><stage type="delivery" n="to Secretary">[To Secretary]</stage> A word with you.</l>
                     <lb type="tln" n="440"/><l>Let there be letters writ to every shire</l>
                     <lb type="tln" n="441"/><l>Of the king's grace and pardon. The grieved commons</l>
@@ -1062,7 +1063,7 @@
                     <lb type="tln" n="466"/><l>The fore-recited practices, whereof</l>
                     <lb type="tln" n="467"/><l>We cannot feel too little, hear too much.</l></lg></sp>
                     
-                    <lb type="tln" n="468"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="468"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Stand forth and with bold spirit relate what you,</l>
                     <lb type="tln" n="469"/><l>Most like a careful subject, have collected</l>
                     <lb type="tln" n="470"/><l>Out of the Duke of Buckingham.</l></lg></sp>
@@ -1080,7 +1081,7 @@
                     <lb type="tln" n="477"/><l>Lord Abergavenny, to whom by oath he menaced</l>
                     <lb type="tln" n="478"/><l>Revenge upon the cardinal.</l></lg></sp>
                     
-                    <lb type="tln" n="479"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="479"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Please, your highness, note</l>
                     <lb type="tln" n="480"/><l>This dangerous conception in this point</l>
                     <lb type="tln" n="481"/><l>Not friended by his wish to your high person.</l>
@@ -1189,7 +1190,7 @@
                     <lb type="tln" n="551"/><sp who="#henry"><speaker>King Henry</speaker>
                         <lg><l>A giant traitor.</l></lg></sp> 
                    
-                    <lb type="tln" n="552"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="552"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Now Madame, may his highness live in freedom</l>
                     <lb type="tln" n="553"/><l>And this man out of prison.</l></lg></sp>
                     
@@ -1452,7 +1453,7 @@
                     
                     <lb type="tln" n="710"/><stage type="other" n="entrance, sound">Hautboys. Enter Cardinal Wolsey, and takes his state.</stage>
                     
-                    <lb type="tln" n="711"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="711"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Welcome, my fair guests! That noble lady</l>
                     <lb type="tln" n="712"/><l>Or gentleman that is not freely merry</l>
                     <lb type="tln" n="713"/><l>Is not my friend. This, to confirm my welcome</l>
@@ -1463,7 +1464,7 @@
                     <lb type="tln" n="716"/><l>Let me have such a bowl may hold my thanks</l>
                     <lb type="tln" n="717"/><l>And save me so much talking.</l></lg></sp>
                     
-                    <lb type="tln" n="718"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="718"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>My Lord Sandys,</l>
                     <lb type="tln" n="719"/><l>I am beholden to you. Cheer your neighbours!</l>
                     <lb type="tln" n="720"/><l>Ladies you are not merry! Gentlemen,</l>
@@ -1491,13 +1492,13 @@
                     <lb type="tln" n="732"/><sp who="#sandys"><speaker>Sandys</speaker>
                         <lg><l>I told your grace they would talk anon.</l></lg></sp>
                     
-                    <lb type="tln" n="733"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="733"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>What's that?</l></lg></sp>
                     
                     <lb type="tln" n="734"/><sp who="#chamberlain"><speaker>Chamberlain</speaker>
                         <lg><l>Look out there, some of ye!</l></lg></sp>
                     
-                    <lb type="tln" n="735"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="735"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>What warlike voice,</l>
                     <lb type="tln" n="736"/><l>And to what end is this? Nay, ladies, fear not;</l>
                     <lb type="tln" n="737"/><l>By all the laws of war y'are privileged.</l></lg></sp>
@@ -1513,7 +1514,7 @@
                     <lb type="tln" n="742"/><l>And hither make as great ambassadors</l>
                     <lb type="tln" n="743"/><l>From foreign princes.</l></lg></sp>
                     
-                    <lb type="tln" n="744"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="744"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Good lord chamberlain,</l>
                     <lb type="tln" n="745"/><l>Go, give 'em welcome. You can speak the French tongue;</l>
                     <lb type="tln" n="746"/><l>And pray receive 'em nobly, and conduct 'em</l>
@@ -1542,7 +1543,7 @@
                     <lb type="tln" n="764"/><l>Crave leave to view these ladies, and entreat</l>
                     <lb type="tln" n="765"/><l>An hour of revels with 'em.</l></lg></sp>
                     
-                    <lb type="tln" n="766"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="766"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Say, lord chamberlain,</l>
                     <lb type="tln" n="767"/><l>They have done my poor house grace,</l>
                     <lb type="tln" n="768"/><l>For which I pay 'em a thousand thanks,</l>
@@ -1556,13 +1557,13 @@
                     
                     <lb type="tln" n="773"/><stage type="other">Music, dance.</stage>
                     
-                    <lb type="tln" n="774"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="774"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <l>My lord.</l></sp>
                     
                     <lb type="tln" n="775"/><sp who="#chamberlain"><speaker>Chamberlain</speaker>
                         <lg><l>Your grace.</l></lg></sp>
                     
-                    <lb type="tln" n="776"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="776"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Pray tell 'em thus much from me:</l>
                     <lb type="tln" n="777"/><l>There should be one amongst 'em by his person</l>
                     <lb type="tln" n="778"/><l>More worthy this place then myself, to whom</l>
@@ -1574,7 +1575,7 @@
                     <lb type="tln" n="781"/><sp who="#chamberlain"><speaker>Chamberlain</speaker>
                         <lg><l>I will, my lord.</l></lg></sp>
                     
-                    <lb type="tln" n="782"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="782"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>What say they?</l></lg></sp>
                     
                     <lb type="tln" n="783"/><sp who="#chamberlain"><speaker>Chamberlain</speaker>
@@ -1582,7 +1583,7 @@
                     <lb type="tln" n="784"/><l>There is indeed; which they would have your grace</l>
                     <lb type="tln" n="785"/><l>Find out, and he will take it.</l></lg></sp>
                     
-                    <lb type="tln" n="786"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="786"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Let me see then,</l>
                     <lb type="tln" n="787"/><l>By all your good leaves, gentlemen, here I'll make</l>
                     <lb type="tln" n="788"/><l>My royal choice.</l></lg></sp>
@@ -1593,7 +1594,7 @@
                     <lb type="tln" n="791"/><l>You are a churchman, or I'll tell you, cardinal,</l>
                     <lb type="tln" n="792"/><l>I should judge now unhappily.</l></lg></sp>
                     
-                    <lb type="tln" n="793"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="793"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>I am glad</l>
                     <lb type="tln" n="794"/><l>Your grace is grown so pleasant.</l></lg></sp>
                     
@@ -1612,21 +1613,21 @@
                     <lb type="tln" n="802"/><l>And not to kiss you. A health, gentlemen!</l>
                     <lb type="tln" n="803"/><l>Let it go 'round.</l></lg></sp>
                     
-                    <lb type="tln" n="804"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="804"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Sir Thomas Lovell, is the banquet ready</l>
                     <lb type="tln" n="805"/><l>I'th'privy chamber?</l></lg></sp>
                     
                     <lb type="tln" n="806"/><sp who="#lovell"><speaker>Lovell</speaker>
                         <lg><l>Yes, my lord.</l></lg></sp>
                     
-                    <lb type="tln" n="807"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="807"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Your grace,</l>
                     <lb type="tln" n="808"/><l>I fear, with dancing is a little heated.</l></lg></sp>
                     
                     <lb type="tln" n="809"/><sp who="#henry"><speaker>King Henry</speaker>
                         <lg><l>I fear too much.</l></lg></sp>
                     
-                    <lb type="tln" n="810"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="810"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>There's fresher air, my lord,</l>
                     <lb type="tln" n="811"/><l>In the next chamber.</l></lg></sp>
                     
@@ -2103,7 +2104,7 @@
                         <lb type="tln" n="1120"/><l>Use us, and it. My good lord, have great care </l>
                         <lb type="tln" n="1121"/><l>I be not found a talker.</l></lg></sp>
                     
-                    <lb type="tln" n="1122"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1122"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Sir, you cannot;</l> 
                         <lb type="tln" n="1123"/><l>I would your grace would give us but an hour </l>
                         <lb type="tln" n="1124"/><l>Of private conference.</l></lg></sp>
@@ -2128,7 +2129,7 @@
                     
                     <lb type="tln" n="1132"/><stage type="exit">Exeunt Norfolk and Suffolk.</stage>
                     
-                    <lb type="tln" n="1133"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1133"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Your grace has given a precedent of wisdom</l> 
                         <lb type="tln" n="1134"/><l>Above all princes, in committing freely </l>
                         <lb type="tln" n="1135"/><l>Your scruple to the voice of Christendom.</l> 
@@ -2160,7 +2161,7 @@
                         <lg><l>Two equal men; the queen shall be acquainted</l> 
                         <lb type="tln" n="1156"/><l>Forthwith for what you come. Where's Gardiner?</l></lg></sp>
                     
-                    <lb type="tln" n="1157"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1157"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>I know your majesty has always loved her</l>  
                         <lb type="tln" n="1158"/><l>So dear in heart not to deny her that </l>
                         <lb type="tln" n="1159"/><l>A woman of less place might ask by law, </l>
@@ -2174,7 +2175,7 @@
                     
                     <lb type="tln" n="1165"/> <stage type="entrance">Enter Gardiner.</stage>
                     
-                    <lb type="tln" n="1166"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1166"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Give me your hand. Much joy and favor to you; </l>
                         <lb type="tln" n="1167"/><l>You are the king's now.</l></lg></sp>
                     
@@ -2191,20 +2192,20 @@
                         <lg><l>My lord of York, was not one Doctor Pace </l>
                         <lb type="tln" n="1173"/><l>In this man's place before him?</l></lg></sp>
                     
-                    <lb type="tln" n="1174"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1174"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Yes, he was.</l></lg></sp>
                     
                     <lb type="tln" n="1175"/><sp who="#campeius"><speaker>Campeius</speaker>
                         <lg><l>Was he not held a learned man?</l></lg></sp>
                     
-                    <lb type="tln" n="1176"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1176"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Yes, surely.</l></lg></sp>
                     
                     <lb type="tln" n="1177"/><sp who="#campeius"><speaker>Campeius</speaker>
                         <lg><l>Believe me, there's an ill opinion spread, then,</l> 
                         <lb type="tln" n="1178"/><l>Even of yourself, lord cardinal.</l></lg></sp>
                     
-                    <lb type="tln" n="1179"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1179"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>How? of me?</l></lg></sp>
                     
                     <lb type="tln" n="1180"/><sp who="#campeius"><speaker>Campeius</speaker>
@@ -2213,7 +2214,7 @@
                         <lb type="tln" n="1182"/><l>Kept him a foreign man still, which so grieved him </l>
                         <lb type="tln" n="1183"/><l>That he ran mad and died.</l></lg></sp>
                     
-                    <lb type="tln" n="1184"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1184"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Heaven's peace be with him;</l> 
                         <lb type="tln" n="1185"/><l>That's Christian care enough. for living murmurers</l>
                         <lb type="tln" n="1186"/><l>There's places of rebuke. He was a fool,</l> 
@@ -2464,7 +2465,7 @@
                     <lb type="tln" n="1348"/>the Scribes. The Lords sit next the Bishops. The rest of the 
                     <lb type="tln" n="1349"/>Attendants stand in convenient order about the stage.</stage>
 
-                    <lb type="tln" n="1350"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1350"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Whilst our commission from Rome is read</l> 
                     <lb type="tln" n="1351"/><l>Let silence be commanded.</l></lg></sp>
 
@@ -2474,7 +2475,7 @@
                     <lb type="tln" n="1354"/><l>And on all sides th'authority allowed;</l>
                     <lb type="tln" n="1355"/><l>You may then spare that time.</l></lg></sp>
     
-                    <lb type="tln" n="1356"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1356"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Be't so; proceed.</l></lg></sp>
 
                     <stage type="whoto">[Scribe to Crier]</stage>
@@ -2548,7 +2549,7 @@
                     <lb type="tln" n="1409"/><l>I will implore. If not, i'th' name of God,</l>
                     <lb type="tln" n="1410"/><l>Your pleasure be fulfilled.</l></lg></sp>
 
-                    <lb type="tln" n="1411"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1411"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>You have here, lady,</l>
                     <lb type="tln" n="1412"/><l>And of your choice these reverend fathers, men</l>
                     <lb type="tln" n="1413"/><l>Of singular integrity, and learning;</l>
@@ -2568,7 +2569,7 @@
                     <lb type="tln" n="1424"/><sp who="#katherine"><speaker>Katharine</speaker>
                         <lg><l>Lord cardinal, to you I speak.</l></lg></sp>
 
-                    <lb type="tln" n="1425"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1425"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Your pleasure, madam.</l></lg></sp>
 
                     <lb type="tln" n="1426"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -2577,7 +2578,7 @@
                     <lb type="tln" n="1428"/><l>The daughter of a king, my drops of tears</l>
                     <lb type="tln" n="1429"/><l>I'll turn to sparks of fire.</l></lg></sp>
 
-                    <lb type="tln" n="1430"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1430"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Be patient yet.</l></lg></sp>
 
                     <lb type="tln" n="1431"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -2593,7 +2594,7 @@
                     <lb type="tln" n="1440"/><l>I hold my most malicious foe, and think not</l>
                     <lb type="tln" n="1441"/><l>At all a friend to truth.</l></lg></sp>
 
-                    <lb type="tln" n="1442"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1442"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>I do profess</l>
                     <lb type="tln" n="1443"/><l>You speak not like yourself who, ever yet,</l>
                     <lb type="tln" n="1444"/><l>Have stood to charity and displayed th'effects</l>
@@ -2676,7 +2677,7 @@
                     <lb type="tln" n="1505"/><l>And like her true nobility she has</l>
                     <lb type="tln" n="1506"/><l>Carried herself towards me.</l></lg></sp>
 
-                    <lb type="tln" n="1507"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1507"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Most gracious sir,</l>
                     <lb type="tln" n="1508"/><l>In humblest manner I require your highness</l>
                     <lb type="tln" n="1509"/><l>That it shall please you to declare in hearing</l>
@@ -2857,7 +2858,7 @@
                     
                     <lb type="tln" n="1644"/><stage type="entrance">Enter the two Cardinals, Wolsey and Campieus.</stage>
                     
-                    <lb type="tln" n="1645"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1645"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Peace to your highness.</l></lg></sp>
                     
                     <lb type="tln" n="1646"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -2865,7 +2866,7 @@
                         <lb type="tln" n="1647"/><l>(I would be all), against the worst may happen.</l>
                         <lb type="tln" n="1648"/><l>What are your pleasures with me, reverent lords?</l></lg></sp>
                     
-                    <lb type="tln" n="1649"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1649"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>May it please you, noble madam to withdraw</l>
                         <lb type="tln" n="1650"/><l>Into your private chamber. We shall give you</l>
                         <lb type="tln" n="1651"/><l>The full cause of our coming.</l></lg></sp>
@@ -2883,7 +2884,7 @@
                         <lb type="tln" n="1661"/><l>Seek me out, and that way I am wife in.</l>
                         <lb type="tln" n="1662"/><l>Out with it boldly; truth loves open dealing.</l></lg></sp>
                     
-                    <lb type="tln" n="1663"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1663"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l><foreign xml:lang="la">Tanta est erga te mentis integritas Regina serenissima.</foreign></l></lg></sp>
                     
                     <lb type="tln" n="1664"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -2897,7 +2898,7 @@
                         <lb type="tln" n="1671"/><l>The willingest sin I ever yet committed,</l>
                         <lb type="tln" n="1672"/><l>May be absolved in English.</l></lg></sp>
                     
-                    <lb type="tln" n="1673"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1673"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Noble lady,</l>
                         <lb type="tln" n="1674"/><l>I am sorry my integrity should breed,</l>
                         <lb type="tln" n="1675"/><l>(And service to his majesty and you)</l>
@@ -2936,7 +2937,7 @@
                         <lb type="tln" n="1704"/><l>Let me have time and counsel for my cause.</l>
                         <lb type="tln" n="1705"/><l>Alas, I am a woman friendless, hopeless.</l></lg></sp>
                     
-                    <lb type="tln" n="1706"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1706"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Madam,</l>
                         <lb type="tln" n="1707"/><l>You wrong the king's love with these fears,</l>
                         <lb type="tln" n="1708"/><l>Your hopes and friends are infinite.</l></lg></sp>
@@ -2967,7 +2968,7 @@
                         <lb type="tln" n="1725"/><l>For if the trial of the law o'ertake ye,</l>
                         <lb type="tln" n="1726"/><l>You'll part away disgraced.</l></lg></sp>
                     
-                    <lb type="tln" n="1727"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1727"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>He tels you rightly.</l></lg></sp>
                     
                     <lb type="tln" n="1728"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -2991,7 +2992,7 @@
                         <lb type="tln" n="1741"/><l>Take heed, for heaven's sake take heed, least at once</l>
                         <lb type="tln" n="1742"/><l>The burden of my sorrows fall upon ye.</l></lg></sp>
                     
-                    <lb type="tln" n="1743"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1743"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Madam, this is a mere distraction;</l>
                         <lb type="tln" n="1744"/><l>You turn the good we offer into envy.</l></lg></sp>
                     
@@ -3026,7 +3027,7 @@
                         <lb type="tln" n="1768"/><l>And to that woman (when she has done most),</l>
                         <lb type="tln" n="1769"/><l>Yet will I add an honor: a great patience.</l></lg></sp>
                     
-                    <lb type="tln" n="1770"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1770"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Madam, you wander from the good</l>
                         <lb type="tln" n="1771"/><l>We aim at.</l></lg></sp>
                     
@@ -3037,7 +3038,7 @@
                         <lb type="tln" n="1775"/><l>Your master wed me to; nothing but death</l>
                         <lb type="tln" n="1776"/><l>Shall e'er divorce my dignities.</l></lg></sp>
                     
-                    <lb type="tln" n="1777"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1777"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                        <lg><l>Pray, hear me.</l></lg></sp>
                     
                     <lb type="tln" n="1778"/><sp who="#katherine"><speaker>Katharine</speaker>
@@ -3053,7 +3054,7 @@
                         <lb type="tln" n="1787"/><l>That once was mistress of the field and flourished,</l>
                         <lb type="tln" n="1788"/><l>I'll hang my head and perish.</l></lg></sp>
                     
-                    <lb type="tln" n="1789"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1789"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>If your grace</l>
                         <lb type="tln" n="1790"/><l>Could but be brought to know our ends are honest,</l>
                         <lb type="tln" n="1791"/><l>You'd feel more comfort. Why should we, (good lady),</l>
@@ -3270,14 +3271,14 @@
                     <lb type="tln" n="1926"/><sp who="#norfolk"><speaker>Norfolk</speaker>
                         <lg><l>Observe, observe; he's moody.</l></lg></sp>
 
-                    <lb type="tln" n="1927"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1927"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>The packet, Cromwell,</l>
                         <lb type="tln" n="1928"/><l>Gave't you the king?</l></lg></sp>
 
                     <lb type="tln" n="1929"/><sp who="#cromwell"><speaker>Cromwell</speaker>
                         <lg><l>To his own hand, in's bedchamber.</l></lg></sp>
 
-                    <lb type="tln" n="1930"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1930"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Looked he o'th'inside of the paper?</l></lg></sp>
 
                     <lb type="tln" n="1931"/><sp who="#cromwell"><speaker>Cromwell</speaker>
@@ -3287,13 +3288,13 @@
                         <lb type="tln" n="1934"/><l>Was in his countenance. You he bade</l>
                         <lb type="tln" n="1935"/><l>Attend him here this morning.</l></lg></sp>
 
-                    <lb type="tln" n="1936"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1936"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Is he ready to come abroad?</l></lg></sp>
 
                     <lb type="tln" n="1937"/><sp who="#cromwell"><speaker>Cromwell</speaker>
                         <lg><l>I think by this he is.</l></lg></sp>
 
-                    <lb type="tln" n="1938"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1938"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Leave me a while.</l>
 
                     <stage type="exit">Exit Cromwell.</stage>
@@ -3316,7 +3317,7 @@
                         <lg><l>Sharp enough,</l>
                         <lb type="tln" n="1949"/><l>Lord, for thy justice.</l></lg></sp>
 
-                    <lb type="tln" n="1950"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="1950"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>The late queen's gentlewoman?</l>
                         <lb type="tln" n="1951"/><l>A knight's daughter</l>
                         <lb type="tln" n="1952"/><l>To be her mistress's mistress? The queen's queen?</l>
@@ -3333,7 +3334,7 @@
                     <lb type="tln" n="1962"/><sp who="#norfolk"><speaker>Norfolk</speaker>
                     <lg><l>He is vexed at something.</l></lg></sp>
 
-                    <lb type="tln" n="1963"/><stage type="mixed">Enter King, reading of a <name type="property">Schedule</name>.</stage>
+                    <lb type="tln" n="1963"/><stage type="other">Enter King, reading of a <name type="property">Schedule</name>.</stage>
 
                     <lb type="tln" n="1964"/><sp who="#surrey"><speaker>Surrey</speaker>
                         <lg><l>I would 'twer something that would fret the string,</l>
@@ -3387,10 +3388,10 @@
 <!-- not sure why there is a blank tln here but am keeping it -->
                         <lb type="tln" n="2000"/>
 
-                    <stage type="mixed">King takes his <name type="property">Seat</name>, whispers [to] Lovell, who goes 
+                    <stage type="other">King takes his <name type="property">Seat</name>, whispers [to] Lovell, who goes 
                         <lb type="tln" n="2001"/>to the Cardinal.</stage>
 
-                    <lb type="tln" n="2002"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="2002"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Heaven forgive me,</l>
                         <lb type="tln" n="2003"/><l>Ever God bless your highness.</l></lg></sp>
 
@@ -3404,7 +3405,7 @@
                         <lb type="tln" n="2010"/><l>I deem you an ill husband and am galled</l>
                         <lb type="tln" n="2011"/><l>To have you therein my companion.</l></lg></sp>
                     
-                    <lb type="tln" n="2012"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="2012"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>Sir,</l>
                         <lb type="tln" n="2013"/><l>For holy offices I have a time; a time</l>
                         <lb type="tln" n="2014"/><l>To think upon the part of business which</l>
@@ -3416,7 +3417,7 @@
                     <lb type="tln" n="2019"/><sp who="#henry"><speaker>King Henry</speaker>
                         <lg><l>You have said well.</l></lg></sp>
 
-                    <lb type="tln" n="2020"/><sp who="#wolsey"><speaker>Wolsey</speaker>
+                    <lb type="tln" n="2020"/><sp who="#cardinal"><speaker>Wolsey</speaker>
                         <lg><l>And ever may your highness yoke together,</l>
                         <lb type="tln" n="2021"/><l>(As I will lend you cause), my doing well</l>
                         <lb type="tln" n="2022"/><l>With my well saying.</l></lg></sp>
@@ -3432,465 +3433,465 @@
                         <lb type="tln" n="2030"/><l>But pared my present havings to bestow</l>
                         <lb type="tln" n="2031"/><l>My bounties upon you.</l></lg></sp>
 
-<lb type="tln" n="2032"/><sp who="#wolsey"><speaker>Wolsey</speaker>
-<lg><l>What should this mean?</l></lg></sp>
+                    <lb type="tln" n="2032"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>What should this mean?</l></lg></sp>
 
-<lb type="tln" n="2033"/><sp who="#surrey"><speaker>Surrey</speaker>
-<lg><l>The lord increase this business.</l></lg></sp>
+                    <lb type="tln" n="2033"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>The lord increase this business.</l></lg></sp>
 
-<lb type="tln" n="2034"/><sp who="#henry"><speaker>King Henry</speaker>
-<lg><l>Have I not made you</l>
-<lb type="tln" n="2035"/><l>The prime man of the state? I pray you tell me,</l>
-<lb type="tln" n="2036"/><l>If what I now pronounce you have found true,</l>
-<lb type="tln" n="2037"/><l>And if you may confess it, say withal</l>
-<lb type="tln" n="2038"/><l>If you are bound to us or no. What say you?</l></lg></sp>
+                    <lb type="tln" n="2034"/><sp who="#henry"><speaker>King Henry</speaker>
+                        <lg><l>Have I not made you</l>
+                        <lb type="tln" n="2035"/><l>The prime man of the state? I pray you tell me,</l>
+                        <lb type="tln" n="2036"/><l>If what I now pronounce you have found true,</l>
+                        <lb type="tln" n="2037"/><l>And if you may confess it, say withal</l>
+                        <lb type="tln" n="2038"/><l>If you are bound to us or no. What say you?</l></lg></sp>
 
-<lb type="tln" n="2039"/><SP norm="Wolsey">Wolsey
-My sovereign, I confess your royal graces,
-<lb type="tln" n="2040"/>Showered on me daily, have been more than could
-<lb type="tln" n="2041"/>My studied purposes requite, which went
-<lb type="tln" n="2042"/>Beyond all man's endeavors. My endeavors
-<lb type="tln" n="2043"/>Have ever come too short of my desires,
-<lb type="tln" n="2044"/>Yet filled with my abilities. Mine own ends
-<lb type="tln" n="2045"/>Have been mine so, that evermore they pointed
-<lb type="tln" n="2046"/>To'th'good of your most sacred person and
-<lb type="tln" n="2047"/>The profit of the state. For your great graces
-<lb type="tln" n="2048"/>Heaped upon me (poor undeserver), I
-<lb type="tln" n="2049"/>Can nothing render but allegiant thanks,
-<lb type="tln" n="2050"/>My prayers to heaven for you; my loyalty
-<lb type="tln" n="2051"/>Which ever has and ever shall be growing
-<lb type="tln" n="2052"/>Till death (that winter), kill it.
+                    <lb type="tln" n="2039"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>My sovereign, I confess your royal graces,</l>
+                        <lb type="tln" n="2040"/><l>Showered on me daily, have been more than could</l>
+                        <lb type="tln" n="2041"/><l>My studied purposes requite, which went</l>
+                        <lb type="tln" n="2042"/><l>Beyond all man's endeavors. My endeavors</l>
+                        <lb type="tln" n="2043"/><l>Have ever come too short of my desires,</l>
+                        <lb type="tln" n="2044"/><l>Yet filled with my abilities. Mine own ends</l>
+                        <lb type="tln" n="2045"/><l>Have been mine so, that evermore they pointed</l>
+                        <lb type="tln" n="2046"/><l>To'th'good of your most sacred person and</l>
+                        <lb type="tln" n="2047"/><l>The profit of the state. For your great graces</l>
+                        <lb type="tln" n="2048"/><l>Heaped upon me (poor undeserver), I</l>
+                        <lb type="tln" n="2049"/><l>Can nothing render but allegiant thanks,</l>
+                        <lb type="tln" n="2050"/><l>My prayers to heaven for you; my loyalty</l>
+                        <lb type="tln" n="2051"/><l>Which ever has and ever shall be growing</l>
+                        <lb type="tln" n="2052"/><l>Till death (that winter), kill it.</l></lg></sp>
 
-<lb type="tln" n="2053"/><SP norm="King Henry">King Henry
-Fairly answered.
-<lb type="tln" n="2054"/>A loyal and obedient subject is
-<lb type="tln" n="2055"/>Therein illustrated; the honor of it
-<lb type="tln" n="2056"/>Does pay the act of it, as i'th'contrary
-<lb type="tln" n="2057"/>The foulness is the punishment. I presume
-<lb type="tln" n="2058"/>That as my hand has opened bounty to you,
-<lb type="tln" n="2059"/>My heart dropped love, my power rained honor, more
-<lb type="tln" n="2060"/>On you than any. So your hand and heart,
-<lb type="tln" n="2061"/>YYour brain and every function of your power,
-<lb type="tln" n="2062"/>Should, notwithstanding that your bond of duty
-<lb type="tln" n="2063"/>As 'twer in love's particular, be more
-<lb type="tln" n="2064"/>To me your friend than any.
+                    <lb type="tln" n="2053"/><sp who="#henry"><speaker>King Henry</speaker>
+                        <lg><l>Fairly answered.</l>
+                        <lb type="tln" n="2054"/><l>A loyal and obedient subject is</l>
+                        <lb type="tln" n="2055"/><l>Therein illustrated; the honor of it</l>
+                        <lb type="tln" n="2056"/><l>Does pay the act of it, as i'th'contrary</l>
+                        <lb type="tln" n="2057"/><l>The foulness is the punishment. I presume</l>
+                        <lb type="tln" n="2058"/><l>That as my hand has opened bounty to you,</l>
+                        <lb type="tln" n="2059"/><l>My heart dropped love, my power rained honor, more</l>
+                        <lb type="tln" n="2060"/><l>On you than any. So your hand and heart,</l>
+                        <lb type="tln" n="2061"/><l>Your brain and every function of your power,</l>
+                        <lb type="tln" n="2062"/><l>Should, notwithstanding that your bond of duty</l>
+                        <lb type="tln" n="2063"/><l>As 'twer in love's particular, be more</l>
+                        <lb type="tln" n="2064"/><l>To me your friend than any.</l></lg></sp>
 
-<lb type="tln" n="2065"/><SP norm="Wolsey">Wolsey
-I do profess
-<lb type="tln" n="2066"/>That for your highness' good I ever labored
-<lb type="tln" n="2067"/>More then mine own; that am, have, and will be
-<lb type="tln" n="2068"/>(Though all the world should cracke their duty to you,
-<lb type="tln" n="2069"/>And throw it from their soul, though perils did
-<lb type="tln" n="2070"/>Abound, as thick as thought could make 'em, and
-<lb type="tln" n="2071"/>Appear in forms more horrid) yet my duty,
-<lb type="tln" n="2072"/>As doth a rock against the chiding flood,
-<lb type="tln" n="2073"/>Should the approach of this wild river break
-<lb type="tln" n="2074"/>And stand unshaken yours.
+                    <lb type="tln" n="2065"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>I do profess</l>
+                        <lb type="tln" n="2066"/><l>That for your highness' good I ever labored</l>
+                        <lb type="tln" n="2067"/><l>More then mine own; that am, have, and will be</l>
+                        <lb type="tln" n="2068"/><l>(Though all the world should cracke their duty to you,</l>
+                        <lb type="tln" n="2069"/><l>And throw it from their soul, though perils did</l>
+                        <lb type="tln" n="2070"/><l>Abound, as thick as thought could make 'em, and</l>
+                        <lb type="tln" n="2071"/><l>Appear in forms more horrid) yet my duty,</l>
+                        <lb type="tln" n="2072"/><l>As doth a rock against the chiding flood,</l>
+                        <lb type="tln" n="2073"/><l>Should the approach of this wild river break</l>
+                        <lb type="tln" n="2074"/><l>And stand unshaken yours.</l></lg></sp>
 
-<lb type="tln" n="2075"/><SP norm="King Henry">King Henry
-'Tis nobly spoken.
-<lb type="tln" n="2076"/>Take notice, lords, he has a loyal breast,
-<lb type="tln" n="2077"/>For you have seen him open't. Read o'er this,
-<lb type="tln" n="2078"/>And after this, and then to breakfast with
-<lb type="tln" n="2079"/>What appetite you have.
+                    <lb type="tln" n="2075"/><sp who="#henry"><speaker>King Henry</speaker>
+                        <lg><l>'Tis nobly spoken.</l>
+                        <lb type="tln" n="2076"/><l>Take notice, lords, he has a loyal breast,</l>
+                        <lb type="tln" n="2077"/><l>For you have seen him open't. Read o'er this,</l>
+                        <lb type="tln" n="2078"/><l>And after this, and then to breakfast with</l>
+                        <lb type="tln" n="2079"/><l>What appetite you have.</l></lg></sp>
 
-<L n="251.1"/><lb type="tln" n="2080"/><SD t="exit, other">Exit King, frowning upon the Cardinal, the Nobles <lb type="tln" n="2081"/>throng after him, smiling and whispering.</stage>
+                    <lb type="tln" n="2080"/><stage type="exit">Exit King, frowning upon the Cardinal, the Nobles 
+                        <lb type="tln" n="2081"/>throng after him, smiling and whispering.</stage>
 
-<L n="252"/><lb type="tln" n="2082"/><SP norm="Wolsey">Wolsey
-What should this mean?
-<L n="253"/><lb type="tln" n="2083"/>What sudden anger's this? How have I reaped it?
-<L n="254"/><lb type="tln" n="2084"/>He parted frowning from me, as if ruin
-<L n="255"/><lb type="tln" n="2085"/>Leaped from his eyes. So looks the chafed lion
-<L n="256"/><lb type="tln" n="2086"/>Upon the daring huntsman that has galled him;
-<L n="257"/><lb type="tln" n="2087"/>Then makes him nothing. I must read this paper;
-<L n="258"/><lb type="tln" n="2088"/>I fear the story of his anger. 'Tis so:
-<L n="259"/><lb type="tln" n="2089"/>This paper ha's undone me: 'Tis th'account
-<L n="260"/><lb type="tln" n="2090"/>Of all that world of wealth I have drawn together
-<L n="261"/><lb type="tln" n="2091"/>For mine own ends, (indeed to gain the popedom,
-<L n="262"/><lb type="tln" n="2092"/>And fee my friends in Rome). O, negligence!
-<L n="263"/><lb type="tln" n="2093"/>Fit for a fool to fall by! What cross devil
-<L n="264"/><lb type="tln" n="2094"/>Made me put this main secret in the packet
-<L n="265"/><lb type="tln" n="2095"/>I sent the king? Is there no way to cure this?
-<L n="266"/><lb type="tln" n="2096"/>No new device to beat this from his brains?
-<L n="267"/><lb type="tln" n="2097"/>I know 'twill stir him strongly; yet I know
-<L n="268"/><lb type="tln" n="2098"/>A way, if it take right, in spite of fortune
-<L n="269"/><lb type="tln" n="2099"/>Will bring me off again. What's this? To th'pope?
-<L n="270"/><lb type="tln" n="2100"/>The letter (as I live) with all the business
-<L n="271"/><lb type="tln" n="2101"/>I writ to's holiness. Nay then, farewell.
-<L n="272"/><lb type="tln" n="2102"/>I have touched the highest point of all my greatness,
-<L n="273"/><lb type="tln" n="2103"/>And from that full meridian of my glory
-<L n="274"/><lb type="tln" n="2104"/>I haste now to my setting. I shall fall
-<L n="275"/><lb type="tln" n="2105"/>Like a bright exhalation in the evening,
-<L n="276"/><lb type="tln" n="2106"/>And no man see me more.
+                    <lb type="tln" n="2082"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>What should this mean?</l>
+                        <lb type="tln" n="2083"/><l>What sudden anger's this? How have I reaped it?</l>
+                        <lb type="tln" n="2084"/><l>He parted frowning from me, as if ruin</l>
+                        <lb type="tln" n="2085"/><l>Leaped from his eyes. So looks the chafed lion</l>
+                        <lb type="tln" n="2086"/><l>Upon the daring huntsman that has galled him;</l>
+                        <lb type="tln" n="2087"/><l>Then makes him nothing. I must read this paper;</l>
+                        <lb type="tln" n="2088"/><l>I fear the story of his anger. 'Tis so:</l>
+                        <lb type="tln" n="2089"/><l>This paper ha's undone me: 'Tis th'account</l>
+                        <lb type="tln" n="2090"/><l>Of all that world of wealth I have drawn together</l>
+                        <lb type="tln" n="2091"/><l>For mine own ends, (indeed to gain the popedom,</l>
+                        <lb type="tln" n="2092"/><l>And fee my friends in Rome). O, negligence!</l>
+                        <lb type="tln" n="2093"/><l>Fit for a fool to fall by! What cross devil</l>
+                        <lb type="tln" n="2094"/><l>Made me put this main secret in the packet</l>
+                        <lb type="tln" n="2095"/><l>I sent the king? Is there no way to cure this?</l>
+                        <lb type="tln" n="2096"/><l>No new device to beat this from his brains?</l>
+                        <lb type="tln" n="2097"/><l>I know 'twill stir him strongly; yet I know</l>
+                        <lb type="tln" n="2098"/><l>A way, if it take right, in spite of fortune</l>
+                        <lb type="tln" n="2099"/><l>Will bring me off again. What's this? To th'pope?</l>
+                        <lb type="tln" n="2100"/><l>The letter (as I live) with all the business</l>
+                        <lb type="tln" n="2101"/><l>I writ to's holiness. Nay then, farewell.</l>
+                        <lb type="tln" n="2102"/><l>I have touched the highest point of all my greatness,</l>
+                        <lb type="tln" n="2103"/><l>And from that full meridian of my glory</l>
+                        <lb type="tln" n="2104"/><l>I haste now to my setting. I shall fall</l>
+                        <lb type="tln" n="2105"/><l>Like a bright exhalation in the evening,</l>
+                        <lb type="tln" n="2106"/><l>And no man see me more.</l></lg></sp>
+                    
+                    <lb type="tln" n="2107"/><stage type="entrance">Enter to Wolsey the Dukes of Norfolk and Suffolk, the
+                        <lb type="tln" n="2108"/>Earl of Surrey, and the Lord Chamberlain.</stage>
 
-<L n="280.1"/><lb type="tln" n="2107"/><SD t="entrance">Enter to Wolsey the Dukes of Norfolk and Suffolk, the
+                    <lb type="tln" n="2109"/><sp who="#norfolk"><speaker>Norfolk</speaker>
+                        <lg><l>Hear the king's pleasure, cardinal,</l>
+                        <lb type="tln" n="2110"/><l>Who commands you</l>
+                        <lb type="tln" n="2111"/><l>To render up the great seal presently</l>
+                        <lb type="tln" n="2112"/><l>Into our hands, and to confine yourself</l>
+                        <lb type="tln" n="2113"/><l>To Asher house, my lord of Winchester's,</l>
+                        <lb type="tln" n="2114"/><l>Till you hear further from his highness.</l></lg></sp>
 
-<lb type="tln" n="2108"/>Earl of Surrey, and the Lord Chamberlain.</stage>
+                    <lb type="tln" n="2115"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>Stay.</l>
+                        <lb type="tln" n="2116"/><l>Where's your commission? Lords, words cannot carry</l>
+                        <lb type="tln" n="2117"/><l>Authority so weighty.</l></lg></sp>
 
-<L n="277"/><lb type="tln" n="2109"/><SP norm="Norfolk">Norfolk
-Hear the king's pleasure, cardinal,
-<L n="278"/><lb type="tln" n="2110"/>Who commands you
-<L n="279"/><lb type="tln" n="2111"/>To render up the great seal presently
-<L n="280"/><lb type="tln" n="2112"/>Into our hands, and to confine yourself
-<L n="281"/><lb type="tln" n="2113"/>To Asher house, my lord of Winchester's,
-<L n="282"/><lb type="tln" n="2114"/>Till you hear further from his highness.
+                    <lb type="tln" n="2118"/><sp who="#suffolk"><speaker>Suffolk</speaker>
+                        <lg><l>Who dare cross 'em,</l>
+                        <lb type="tln" n="2119"/><l>Bearing the king's will from his mouth expressly?</l></lg></sp>
 
-<L n="283"/><lb type="tln" n="2115"/><SP norm="Wolsey">Wolsey
-Stay.
-<L n="284"/><lb type="tln" n="2116"/>WWhere's your commission? Lords, words cannot carry
-<L n="285"/><lb type="tln" n="2117"/>Authority so weighty.
+                    <lb type="tln" n="2120"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>Till I find more than will, or words to do it,</l>
+                        <lb type="tln" n="2121"/><l>(I mean your malice), know officious lords,</l>
+                        <lb type="tln" n="2122"/><l>I dare and must deny it. Now I feel</l>
+                        <lb type="tln" n="2123"/><l>Of what coarse metal ye are molded. Envy,</l>
+                        <lb type="tln" n="2124"/><l>How eagerly ye follow my disgraces</l>
+                        <lb type="tln" n="2125"/><l>As if it fed ye, and how sleek and wanton</l>
+                        <lb type="tln" n="2126"/><l>Ye appear in everything may bring my ruin?</l>
+                        <lb type="tln" n="2127"/><l>Follow your envious courses, men of malice;</l>
+                        <lb type="tln" n="2128"/><l>You have Christian warrant for 'em, and no doubt</l>
+                        <lb type="tln" n="2129"/><l>In time will find their fit rewards. That seal</l>
+                        <lb type="tln" n="2130"/><l>You ask with such a violence, the king</l>
+                        <lb type="tln" n="2131"/><l>(Mine and your master), with his own hand gave me,</l>
+                        <lb type="tln" n="2132"/><l>Bade me enjoy it with the place and honors</l>
+                        <lb type="tln" n="2133"/><l>During my life, and to confirm his goodness</l>
+                        <lb type="tln" n="2134"/><l>Tied it by letters patents. Now, who'll take it?</l></lg></sp>
 
-<L n="286"/><lb type="tln" n="2118"/><SP norm="Suffolk">Suffolk
-Who dare cross 'em,
-<L n="287"/><lb type="tln" n="2119"/>Bearing the king's will from his mouth expressly?
+                    <lb type="tln" n="2135"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>The king that gave it.</l></lg></sp>
 
-<L n="288"/><lb type="tln" n="2120"/><SP norm="Wolsey">Wolsey
-Till I finde more then will, or words to do it,
-<L n="289"/><lb type="tln" n="2121"/>(I mean your malice), know officious lords,
-<L n="290"/><lb type="tln" n="2122"/>I dare and must deny it. Now I feel
-<L n="291"/><lb type="tln" n="2123"/>Of what coarse metal ye are molded. Envy,
-<L n="292"/><lb type="tln" n="2124"/>How eagerly ye follow my disgraces
-<L n="293"/><lb type="tln" n="2125"/>As if it fed ye, and how sleek and wanton
-<L n="294"/><lb type="tln" n="2126"/>Ye appear in everything may bring my ruin?
-<L n="295"/><lb type="tln" n="2127"/>Follow your envious courses, men of malice;
-<L n="296"/><lb type="tln" n="2128"/>You have Christian warrant for 'em, and no doubt
-<L n="297"/><lb type="tln" n="2129"/>In time will find their fit rewards. That seal
-<L n="298"/><lb type="tln" n="2130"/>You ask with such a violence, the king
-<L n="299"/><lb type="tln" n="2131"/>(Mine and your master), with his own hand gave me,
-<L n="300"/><lb type="tln" n="2132"/>Bade me enjoy it with the place and honors
-<L n="301"/><lb type="tln" n="2133"/>During my life, and to confirm his goodness
-<L n="302"/><lb type="tln" n="2134"/>Tied it by letters patents. Now, who'll take it?
+                   <lb type="tln" n="2136"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                       <lg><l>It must be himself, then.</l></lg></sp>
 
-<L n="303"/><lb type="tln" n="2135"/><SP norm="Surrey">Surrey
-The king that gave it.
+                    <lb type="tln" n="2137"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>Thou art a proud traitor, priest.</l></lg></sp>
 
-<L n="304"/><lb type="tln" n="2136"/><SP norm="Wolsey">Wolsey
-It must be himself, then.
+                    <lb type="tln" n="2138"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>Proud lord, thou liest.</l>
+                        <lb type="tln" n="2139"/><l>Within these forty hours, Surrey, durst better</l>
+                        <lb type="tln" n="2140"/><l>Have burnt that tongue than said so.</l></lg></sp>
 
-<L n="305"/><lb type="tln" n="2137"/><SP norm="Surrey">Surrey
-Thou art a proud traitor, priest.
+                    <lb type="tln" n="2141"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>Thy ambition</l>
+                        <lb type="tln" n="2142"/><l>(Thou scarlet sin), robbed this bewailing land</l>
+                        <lb type="tln" n="2143"/><l>Of noble Buckingham, my father-in-law;</l>
+                        <lb type="tln" n="2144"/><l>The heads of all thy brother-cardinals,</l>
+                        <lb type="tln" n="2145"/><l>(With thee, and all thy best parts bound together),</l>
+                        <lb type="tln" n="2146"/><l>Weighed not a hair of his. Plague of your policy,</l>
+                        <lb type="tln" n="2147"/><l>You sent me deputy for Ireland,</l>
+                        <lb type="tln" n="2148"/><l>Far from his succor; from the king, from all</l>
+                        <lb type="tln" n="2149"/><l>That might have mercy on the fault, thou gav'st him,</l>
+                        <lb type="tln" n="2150"/><l>Whilst your great goodness, out of holy pity,</l>
+                        <lb type="tln" n="2151"/><l>Absolved him with an axe.</l></lg></sp>
 
-<L n="306"/><lb type="tln" n="2138"/><SP norm="Wolsey">Wolsey
-Proud lord, thou liest.
-<L n="307"/><lb type="tln" n="2139"/>Within these forty hours, Surrey, durst better
-<L n="308"/><lb type="tln" n="2140"/>Have burnt that tongue than said so.
+                    <lb type="tln" n="2152"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>This and all else,</l>
+                        <lb type="tln" n="2153"/><l>This talking lord can lay upon my credit,</l>
+                        <lb type="tln" n="2154"/><l>I answer is most false. The duke by law</l>
+                        <lb type="tln" n="2155"/><l>Found his deserts. How innocent I was</l>
+                        <lb type="tln" n="2156"/><l>From any private malice in his end,</l>
+                        <lb type="tln" n="2157"/><l>His noble jury and foul cause can witness.</l>
+                        <lb type="tln" n="2158"/><l>If I loved many words, lord, I should tell you</l>
+                        <lb type="tln" n="2159"/><l>You have as little honesty as honor,</l>
+                        <lb type="tln" n="2160"/><l>That in the way of loyalty and truth</l>
+                        <lb type="tln" n="2161"/><l>Toward the king, my ever royal master,</l>
+                        <lb type="tln" n="2162"/><l>Dare mate a sounder man then Surrey can be,</l>
+                        <lb type="tln" n="2163"/><l>And all that love his follies.</l></lg></sp>
+                            
+                    <lb type="tln" n="2164"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>By my soul</l>
+                        <lb type="tln" n="2165"/><l>Your long coat, priest, protects you.</l>
+                        <lb type="tln" n="2166"/><l>Thou should'st feel</l>
+                        <lb type="tln" n="2167"/><l>My sword i'th'life blood of thee else. My lords,</l>
+                        <lb type="tln" n="2168"/><l>Can ye endure to hear this arrogance?</l>
+                        <lb type="tln" n="2169"/><l>And from this fellow? If we live thus tamely</l>
+                        <lb type="tln" n="2170"/><l>To be thus jaded by a piece of scarlet,</l>
+                        <lb type="tln" n="2171"/><l>Farewell nobility; let his grace go forward,</l>
+                        <lb type="tln" n="2172"/><l>And dare us with his cap like larks.</l></lg></sp>
 
-<L n="309"/><lb type="tln" n="2141"/><SP norm="Surrey">Surrey
-Thy ambition
-<L n="310"/><lb type="tln" n="2142"/>(Thou scarlet sin), robbed this bewailing land
-<L n="311"/><lb type="tln" n="2143"/>Of noble Buckingham, my father-in-law;
-<L n="312"/><lb type="tln" n="2144"/>The heads of all thy brother-cardinals,
-<L n="313"/><lb type="tln" n="2145"/>(With thee, and all thy best parts bound together),
-<L n="314"/><lb type="tln" n="2146"/>Weighed not a hair of his. Plague of your policy,
-<L n="315"/><lb type="tln" n="2147"/>You sent me deputy for Ireland,
-<L n="316"/><lb type="tln" n="2148"/>Far from his succor; from the king, from all
-<L n="317"/><lb type="tln" n="2149"/>That might have mercy on the fault, thou gav'st him,
-<L n="318"/><lb type="tln" n="2150"/>Whilst your great goodness, out of holy pity,
-<L n="319"/><lb type="tln" n="2151"/>Absolu'd him with an axe.
+                    <lb type="tln" n="2173"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>All goodness</l>
+                        <lb type="tln" n="2174"/><l>Is poison to thy stomach.</l></lg></sp>
 
-<L n="320"/><lb type="tln" n="2152"/><SP norm="Wolsey">Wolsey
-This and all else,
-<L n="321"/><lb type="tln" n="2153"/>This talking lord can lay upon my credit,
-<L n="322"/><lb type="tln" n="2154"/>I answer is most false. The duke by law
-<L n="323"/><lb type="tln" n="2155"/>Found his deserts. How innocent I was
-<L n="324"/><lb type="tln" n="2156"/>From any private malice in his end,
-<L n="325"/><lb type="tln" n="2157"/>His noble jury and foul cause can witness.
-<L n="326"/><lb type="tln" n="2158"/>If I loved many words, lord, I should tell you
-<L n="327"/><lb type="tln" n="2159"/>You have as little honesty as honor,
-<L n="328"/><lb type="tln" n="2160"/>That in the way of loyalty and truth
-<L n="329"/><lb type="tln" n="2161"/>Toward the king, my ever royal master,
-<L n="330"/><lb type="tln" n="2162"/>Dare mate a sounder man then Surrey can be,
-<L n="331"/><lb type="tln" n="2163"/>And all that love his follies.
+                    <lb type="tln" n="2175"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>Yes, that goodness</l>
+                        <lb type="tln" n="2176"/><l>Of gleaning all the land's wealth into one,</l>
+                        <lb type="tln" n="2177"/><l>Into your own hands, cardinal, by extortion;</l>
+                        <lb type="tln" n="2178"/><l>The goodness of your intercepted packets</l>
+                        <lb type="tln" n="2179"/><l>You writ to'th pope against the king; your goodness,</l>
+                        <lb type="tln" n="2180"/><l>Since you provoke me, shall be most notorious.</l>
+                        <lb type="tln" n="2181"/><l>My lord of Norfolk, as you are truly noble,</l>
+                        <lb type="tln" n="2182"/><l>As you respect the common good, the state</l>
+                        <lb type="tln" n="2183"/><l>Of our despised nobility, our issues,</l>
+                        <lb type="tln" n="2184"/><l>(Whom, if he live, will scarce be gentlemen),</l>
+                        <lb type="tln" n="2185"/><l>Produce the grand sum of his sins, the articles</l>
+                        <lb type="tln" n="2186"/><l>Collected from his life. I'll startle you</l>
+                        <lb type="tln" n="2187"/><l>Worse then the sacring bell when the brown wench</l>
+                        <lb type="tln" n="2188"/><l>Lay kissing in your arms, lord cardinal.</l></lg></sp>
 
-<L n="332"/><lb type="tln" n="2164"/><SP norm="Surrey">Surrey
-By my soul
-<L n="333"/><lb type="tln" n="2165"/>Your long coat, priest, protects you.
-<L n="334"/><lb type="tln" n="2166"/>Thou should'st feel
-<L n="335"/><lb type="tln" n="2167"/>My sword i'th'life blood of thee else. My lords,
-<L n="336"/><lb type="tln" n="2168"/>Can ye endure to hear this arrogance?
-<L n="337"/><lb type="tln" n="2169"/>And from this fellow? If we live thus tamely
-<L n="338"/><lb type="tln" n="2170"/>To be thus jaded by a piece of scarlet,
-<L n="339"/><lb type="tln" n="2171"/>Farewell nobility; let his grace go forward,
-<L n="340"/><lb type="tln" n="2172"/>And dare us with his cap like larks.
+                    <lb type="tln" n="2189"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>How much, methinks, I could despise this man</l>
+                        <lb type="tln" n="2190"/><l>But that I am bound in charity against it.</l></lg></sp>
 
-<L n="341"/><lb type="tln" n="2173"/><SP norm="Wolsey">Wolsey
-All goodness
-<L n="342"/><lb type="tln" n="2174"/>Is poison to thy stomach.
+                    <lb type="tln" n="2191"/><sp who="#norfolk"><speaker>Norfolk</speaker>
+                        <lg><l>Those articles, my lord, are in the king's hand;</l>
+                        <lb type="tln" n="2192"/><l>But thus much, they are foul ones.</l></lg></sp>
 
-<L n="343"/><lb type="tln" n="2175"/><SP norm="Surrey">Surrey
-Yes, that goodness
-<L n="344"/><lb type="tln" n="2176"/>Of gleaning all the land's wealth into one,
-<L n="345"/><lb type="tln" n="2177"/>Into your own hands, cardinal, by extortion;
-<L n="346"/><lb type="tln" n="2178"/>The goodness of your intercepted packets
-<L n="347"/><lb type="tln" n="2179"/>You writ to'th pope against the king; your goodness,
-<L n="348"/><lb type="tln" n="2180"/>Since you provoke me, shall be most notorious.
-<L n="349"/><lb type="tln" n="2181"/>My lord of Norfolk, as you are truly noble,
-<L n="350"/><lb type="tln" n="2182"/>As you respect the common good, the state
-<L n="351"/><lb type="tln" n="2183"/>Of our despised nobility, our issues,
-<L n="352"/><lb type="tln" n="2184"/>(Whom, if he live, will scarce be gentlemen),
-<L n="353"/><lb type="tln" n="2185"/>Produce the grand sum of his sins, the articles
-<L n="354"/><lb type="tln" n="2186"/>Collected from his life. I'll startle you
-<L n="355"/><lb type="tln" n="2187"/>Worse then the sacring bell when the brown wench
-<L n="356"/><lb type="tln" n="2188"/>LLay kissing in your arms, lord cardinal.
+                    <lb type="tln" n="2193"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>So much fairer</l>
+                        <lb type="tln" n="2194"/><l>And spotless shall mine innocence arise</l>
+                        <lb type="tln" n="2195"/><l>When the king knows my truth.</l></lg></sp>
 
-<L n="357"/><lb type="tln" n="2189"/><SP norm="Wolsey">Wolsey
-How much, methinks, I could despise this man
-<L n="358"/><lb type="tln" n="2190"/>But that I am bound in charity against it.
+                    <lb type="tln" n="2196"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>This cannot saue you.</l>
+                        <lb type="tln" n="2197"/><l>I thank my memory I yet remember</l>
+                        <lb type="tln" n="2198"/><l>Some of these articles, and out they shall.</l>
+                        <lb type="tln" n="2199"/><l>Now, if you can blush and cry guilty, cardinal,</l>
+                        <lb type="tln" n="2200"/><l>You'l show a little honesty.</l></lg></sp>
 
-<L n="359"/><lb type="tln" n="2191"/><SP norm="Norfolk">Norfolk
-Those articles, my lord, are in the king's hand;
-<L n="360"/><lb type="tln" n="2192"/>But thus much, they are foul ones.
+                    <lb type="tln" n="2201"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>Speak on, sir;</l>
+                        <lb type="tln" n="2202"/><l>I dare your worst objections. If I blush</l>
+                        <lb type="tln" n="2203"/><l>It is to see a nobleman want manners.</l></lg></sp>
 
-<L n="361"/><lb type="tln" n="2193"/><SP norm="Wolsey">Wolsey
-So much fairer
-<L n="362"/><lb type="tln" n="2194"/>And spotless shall mine innocence arise
-<L n="363"/><lb type="tln" n="2195"/>When the king knows my truth.
+                    <lb type="tln" n="2204"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>I had rather want those than my head;</l>
+                        <lb type="tln" n="2205"/><l>Have at you.</l>
+                        <lb type="tln" n="2206"/><l>First, that without the king's assent or knowledge,</l>
+                        <lb type="tln" n="2207"/><l>You wrought to be a legate, by which power</l>
+                        <lb type="tln" n="2208"/><l>You maimed the jurisdiction of all bishops.</l></lg></sp>
 
-<L n="364"/><lb type="tln" n="2196"/><SP norm="Surrey">Surrey
-This cannot saue you.
-<L n="365"/><lb type="tln" n="2197"/>I thank my memory I yet remember
-<L n="366"/><lb type="tln" n="2198"/>Some of these articles, and out they shall.
-<L n="367"/><lb type="tln" n="2199"/>Now, if you can blush and cry guilty, cardinal,
-<L n="368"/><lb type="tln" n="2200"/>You'l show a little honesty.
+                    <lb type="tln" n="2209"/><sp who="#norfolk"><speaker>Norfolk</speaker>
+                        <lg><l>Then, that in all you writ to Rome, or else</l>
+                        <lb type="tln" n="2210"/><l>To foreign princes, <foreign xml:lang="la">ego and rex meus</foreign></l>
+                        <lb type="tln" n="2211"/><l>Was still inscribed, in which you brought the king</l>
+                        <lb type="tln" n="2212"/><l>To be your servant.</l></lg></sp>
 
-<L n="369"/><lb type="tln" n="2201"/><SP norm="Wolsey">Wolsey
-Speak on, sir;
-<L n="370"/><lb type="tln" n="2202"/>I dare your worst objections. If I blush
-<L n="371"/><lb type="tln" n="2203"/>It is to see a nobleman want manners.
+                    <lb type="tln" n="2213"/><sp who="#suffolk"><speaker>Suffolk</speaker>
+                        <lg><l>Then, that without the knowledge</l>
+                        <lb type="tln" n="2214"/><l>Either of king or council, when you went</l>
+                        <lb type="tln" n="2215"/><l>Ambassador to the emperor, you made bold</l>
+                        <lb type="tln" n="2216"/><l>To carry into Flanders the great seal.</l></lg></sp>
 
-<L n="372"/><lb type="tln" n="2204"/><SP norm="Surrey">Surrey
-I had rather want those than my head;
-<L n="373"/><lb type="tln" n="2205"/>Have at you.
-<L n="374"/><lb type="tln" n="2206"/>First, that without the king's assent or knowledge,
-<L n="375"/><lb type="tln" n="2207"/>You wrought to be a legate, by which power
-<L n="376"/><lb type="tln" n="2208"/>You maimed the jurisdiction of all bishops.
+                    <lb type="tln" n="2217"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>Item: you sent a large commission</l>
+                        <lb type="tln" n="2218"/><l>To Gregory de Cassado to conclude,</l>
+                        <lb type="tln" n="2219"/><l>Without the king's will or the state's allowance,</l>
+                        <lb type="tln" n="2220"/><l>A league between his highness and Ferrara.</l></lg></sp>
 
-<L n="377"/><lb type="tln" n="2209"/><SP norm="Norfolk">Norfolk
-Then, that in all you writ to Rome, or else
-<L n="378"/><lb type="tln" n="2210"/>To foreign princes, <FOREIGN lang="Latin">ego and rex meus</FOREIGN>
-<L n="379"/><lb type="tln" n="2211"/>Was still inscribed, in which you brought the king
-<L n="380"/><lb type="tln" n="2212"/>To be your servant.
+                    <lb type="tln" n="2221"/><sp who="#suffolk"><speaker>Suffolk</speaker>
+                        <lg><l>That out of mere ambition you have caused</l>
+                        <lb type="tln" n="2222"/><l>Your holy hat to be stamped on the king's coin.</l></lg></sp>
 
-<L n="381"/><lb type="tln" n="2213"/><SP norm="Suffolk">Suffolk
-Then, that without the knowledge
-<L n="382"/><lb type="tln" n="2214"/>Either of king or council, when you went
-<L n="383"/><lb type="tln" n="2215"/>Ambassador to the emperor, you made bold
-<L n="384"/><lb type="tln" n="2216"/>To carry into Flanders the great seal.
+                    <lb type="tln" n="2223"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>Then, that you have sent innumerable substance,</l>
+                        <lb type="tln" n="2224"/><l>(By what means got, I leave to your own conscience),</l>
+                        <lb type="tln" n="2225"/><l>To furnish Rome and to prepare the ways</l>
+                        <lb type="tln" n="2226"/><l>You have for dignities, to the mere undoing</l>
+                        <lb type="tln" n="2227"/><l>Of all the kingdom. Many more there are</l>
+                        <lb type="tln" n="2228"/><l>Which,since they are of you and odious,</l>
+                        <lb type="tln" n="2229"/><l>I will not taint my mouth with.</l></lg></sp>
 
-<L n="385"/><lb type="tln" n="2217"/><SP norm="Surrey">Surrey
-Item: you sent a large commission
-<L n="386"/><lb type="tln" n="2218"/>To Gregory de Cassado to conclude,
-<L n="387"/><lb type="tln" n="2219"/>Without the king's will or the state's allowance,
-<L n="388"/><lb type="tln" n="2220"/>A league between his highness and Ferrara.
+                    <lb type="tln" n="2230"/><sp who="#chamberlain"><speaker>Chamberlain</speaker>
+                        <lg><l>O, my lord,</l>
+                        <lb type="tln" n="2231"/><l>Press not a falling man too far! 'tis virtue;</l>
+                        <lb type="tln" n="2232"/><l>His faults lie open to the laws. Let them,</l>
+                        <lb type="tln" n="2233"/><l>Not you, correct him. My heart weeps to see him</l>
+                        <lb type="tln" n="2234"/><l>So little, of his great self.</l></lg></sp>
 
-<L n="389"/><lb type="tln" n="2221"/><SP norm="Suffolk">Suffolk
-That out of mere ambition you have caused
-<L n="390"/><lb type="tln" n="2222"/>Your holy hat to be stamped on the king's coin.
+                    <lb type="tln" n="2235"/><sp who="#surrey"><speaker>Surrey</speaker>
+                        <lg><l>I forgive him.</l></lg></sp>
 
-<L n="391"/><lb type="tln" n="2223"/><SP norm="Surrey">Surrey
-Then, that you have sent innumerable substance,
-<L n="392"/><lb type="tln" n="2224"/>(By what means got, I leave to your own conscience),
-<L n="393"/><lb type="tln" n="2225"/>To furnish Rome and to prepare the ways
-<L n="394"/><lb type="tln" n="2226"/>You have for dignities, to the mere undoing
-<L n="395"/><lb type="tln" n="2227"/>Of all the kingdom. Many more there are
-<L n="396"/><lb type="tln" n="2228"/>Which,since they are of you and odious,
-<L n="397"/><lb type="tln" n="2229"/>I will not taint my mouth with.
+                    <lb type="tln" n="2236"/><sp who="#suffolk"><speaker>Suffolk</speaker>
+                        <lg><l>Lord cardinal, the king's further pleasure is,</l>
+                        <lb type="tln" n="2237"/><l>Because all those things you have done of late</l>
+                        <lb type="tln" n="2238"/><l>By your power legislative within this kingdom,</l>
+                        <lb type="tln" n="2239"/><l>Fall into th' compass of a premunire;</l>
+                        <lb type="tln" n="2240"/><l>That therefore such a writ be sued against you</l>
+                        <lb type="tln" n="2241"/><l>To forfeit all your goods, lands, tenements,</l>
+                        <lb type="tln" n="2242"/><l>Castles, and whatsoever, and to be</l>
+                        <lb type="tln" n="2243"/><l>Out of the king's protection. This is my charge.</l></lg></sp>
 
-<L n="398"/><lb type="tln" n="2230"/><SP norm="Chamberlain">Chamberlain
-O, my lord,
-<L n="399"/><lb type="tln" n="2231"/>Press not a falling man too far! 'tis virtue;
-<L n="400"/><lb type="tln" n="2232"/>His faults lie open to the laws. Let them,
-<L n="401"/><lb type="tln" n="2233"/>Not you, correct him. My heart weeps to see him
-<L n="402"/><lb type="tln" n="2234"/>So little, of his great self.
+                    <lb type="tln" n="2244"/><sp who="#norfolk"><speaker>Norfolk</speaker>
+                        <lg><l>And so we'll leave you to your meditations</l>
+                        <lb type="tln" n="2245"/><l>How to live better. For your stubborn answer</l>
+                        <lb type="tln" n="2246"/><l>About the giving back the great seal to us,</l>
+                        <lb type="tln" n="2247"/><l>The king shall know it and, no doubt, shall thank you.</l>
+                        <lb type="tln" n="2248"/><l>So fare you well, my little good Lord cardinal.</l></lg></sp>
 
-<L n="403"/><lb type="tln" n="2235"/><SP norm="Surrey">Surrey
-I forgive him.
+                    <lb type="tln" n="2249"/><stage type="exit">Exeunt all but Wolsey.</stage>
 
-<L n="404"/><lb type="tln" n="2236"/><SP norm="Suffolk">Suffolk
-Lord cardinal, the king's further pleasure is,
-<L n="405"/><lb type="tln" n="2237"/>Because all those things you have done of late
-<L n="406"/><lb type="tln" n="2238"/>By your power legislative within this kingdom,
-<L n="407"/><lb type="tln" n="2239"/>Fall into th' compass of a premunire;
-<L n="408"/><lb type="tln" n="2240"/>That therefore such a writ be sued against you
-<L n="409"/><lb type="tln" n="2241"/>To forfeit all your goods, lands, tenements,
-<L n="410"/><lb type="tln" n="2242"/>Castles, and whatsoever, and to be
-<L n="411"/><lb type="tln" n="2243"/>Out of the king's protection. This is my charge.
+                    <lb type="tln" n="2250"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>So farewell to the little good you bear me.</l>
+                        <lb type="tln" n="2251"/><l>Farewell? A long farewell to all my greatness.</l>
+                        <lb type="tln" n="2252"/><l>This is the state of man; today he puts forth</l>
+                        <lb type="tln" n="2253"/><l>The tender leaves of hopes, tomorrow blossoms,</l>
+                        <lb type="tln" n="2254"/><l>And bears his blushing honors thick upon him.</l>
+                        <lb type="tln" n="2255"/><l>The third day comes a frost, a killing frost,</l>
+                        <lb type="tln" n="2256"/><l>And when he thinks, good easy man, full surely</l>
+                        <lb type="tln" n="2257"/><l>His greatness is a ripening, nips his root,</l>
+                        <lb type="tln" n="2258"/><l>And then he falls as I do. I have ventured</l>
+                        <lb type="tln" n="2259"/><l>Like little wanton boys that swim on bladders.</l>
+                        <lb type="tln" n="2260"/><l>This many summers in a sea of glory</l>
+                        <lb type="tln" n="2261"/><l>But far beyond my depth. My high-blown pride</l>
+                        <lb type="tln" n="2262"/><l>At length broke under me and now has left me</l>
+                        <lb type="tln" n="2263"/><l>Weary and old with service to the mercy</l>
+                        <lb type="tln" n="2264"/><l>Of a rude stream that must forever hide me.</l>
+                        <lb type="tln" n="2265"/><l>Vain pomp and glory of this world I hate ye,</l>
+                        <lb type="tln" n="2266"/><l>I feel my heart new opened. Oh how wretched</l>
+                        <lb type="tln" n="2267"/><l>Is that poor man that hangs on princes' favors?</l>
+                        <lb type="tln" n="2268"/><l>There is, betwixt that smile we would aspire to,</l>
+                        <lb type="tln" n="2269"/><l>That sweet aspect of princes and their ruin,</l>
+                        <lb type="tln" n="2270"/><l>More pangs and fears than wars or women have;</l>
+                        <lb type="tln" n="2271"/><l>And when he falls, he falls like Lucifer,</l>
+                        <lb type="tln" n="2272"/><l>Never to hope again.</l>
 
-<L n="412"/><lb type="tln" n="2244"/><SP norm="Norfolk">Norfolk
-And so we'll leave you to your meditations
-<L n="413"/><lb type="tln" n="2245"/>HHow to live better. For your stubborn answer
-<L n="414"/><lb type="tln" n="2246"/>About the giving back the great seal to us,
-<L n="415"/><lb type="tln" n="2247"/>The king shall know it and, no doubt, shall thank you.
-<L n="416"/><lb type="tln" n="2248"/>So fare you well, my little good Lord cardinal.
+                    <lb type="tln" n="2273"/><stage type="entrance">Enter Cromwell, standing amazed.</stage>
 
-<L n="416.1"/><lb type="tln" n="2249"/><SD t="exit">Exeunt all but Wolsey.</stage>
+                    <lb type="tln" n="2274"/><l>Why, how now Cromwell?</l></lg></sp>
 
-<L n="417"/><lb type="tln" n="2250"/><SP norm="Wolsey">Wolsey
-So farewell to the little good you bear me.
-<L n="418"/><lb type="tln" n="2251"/>Farewell? A long farewell to all my greatness.
-<L n="419"/><lb type="tln" n="2252"/>This is the state of man; today he puts forth
-<L n="420"/><lb type="tln" n="2253"/>The tender leaves of hopes, tomorrow blossoms,
-<L n="421"/><lb type="tln" n="2254"/>And bears his blushing honors thick upon him.
-<L n="422"/><lb type="tln" n="2255"/>The third day comes a frost, a killing frost,
-<L n="423"/><lb type="tln" n="2256"/>And when he thinks, good easy man, full surely
-<L n="424"/><lb type="tln" n="2257"/>His greatness is a ripening, nips his root,
-<L n="425"/><lb type="tln" n="2258"/>And then he falls as I do. I have ventured
-<L n="426"/><lb type="tln" n="2259"/>Like little wanton boys that swim on bladders.
-<L n="427"/><lb type="tln" n="2260"/>This many summers in a sea of glory
-<L n="428"/><lb type="tln" n="2261"/>But far beyond my depth. My high-blown pride
-<L n="429"/><lb type="tln" n="2262"/>At length broke under me and now has left me
-<L n="430"/><lb type="tln" n="2263"/>Weary and old with service to the mercy
-<L n="431"/><lb type="tln" n="2264"/>Of a rude stream that must forever hide me.
-<L n="432"/><lb type="tln" n="2265"/>Vain pomp and glory of this world I hate ye,
-<L n="433"/><lb type="tln" n="2266"/>I feel my heart new opened. Oh how wretched
-<L n="434"/><lb type="tln" n="2267"/>Is that poor man that hangs on princes' favors?
-<L n="435"/><lb type="tln" n="2268"/>There is, betwixt that smile we would aspire to,
-<L n="436"/><lb type="tln" n="2269"/>That sweet aspect of princes and their ruin,
-<L n="437"/><lb type="tln" n="2270"/>More pangs and fears than wars or women have;
-<L n="438"/><lb type="tln" n="2271"/>And when he falls, he falls like Lucifer,
-<L n="439"/><lb type="tln" n="2272"/>Never to hope again.
+                    <lb type="tln" n="2275"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>I have no power to speak, sir.</l></lg></sp>
 
-<L n="439.1"/><lb type="tln" n="2273"/><SD t="entrance, other">Enter Cromwell, standing amazed.</stage>
+                    <lb type="tln" n="2276"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>What, amazed</l>
+                        <lb type="tln" n="2277"/><l>At my misfortunes? Can thy spirit wonder</l>
+                        <lb type="tln" n="2278"/><l>A great man should decline? Nay, and you weep</l>
+                        <lb type="tln" n="2279"/><l>I am fallen indeed.</l></lg></sp>
 
-<L n="440"/><lb type="tln" n="2274"/>Why, how now Cromwell?
+                    <lb type="tln" n="2280"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>How does your grace.</l></lg></sp>
 
-<L n="441"/><lb type="tln" n="2275"/><SP norm="Comwell">Cromwell
-I have no power to speak, sir.
+                    <lb type="tln" n="2281"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>Why, well.</l>
+                        <lb type="tln" n="2282"/><l>Never so truly happy, my good Cromwell;</l>
+                        <lb type="tln" n="2283"/><l>I know myself now, and I feel within me</l>
+                        <lb type="tln" n="2284"/><l>A peace above all earthly dignities,</l>
+                        <lb type="tln" n="2285"/><l>A still and quiet conscience. The king has cured me.</l>
+                        <lb type="tln" n="2286"/><l>I humbly thank his grace, and from these shoulders,</l>
+                        <lb type="tln" n="2287"/><l>These ruined pillars, out of pity taken</l>
+                        <lb type="tln" n="2288"/><l>A load would sink a navy, too much honor.</l>
+                        <lb type="tln" n="2289"/><l>O 'tis a burden, Cromwell; 'tis a burden</l>
+                        <lb type="tln" n="2290"/><l>Too heavy for a man that hopes for heaven.</l></lg></sp>
 
-<L n="442"/><lb type="tln" n="2276"/><SP norm="Wolsey">Wolsey
-What, amazed
-<L n="443"/><lb type="tln" n="2277"/>At my misfortunes? Can thy spirit wonder
-<L n="444"/><lb type="tln" n="2278"/>A great man should decline? Nay, and you weep
-<L n="445"/><lb type="tln" n="2279"/>I am fallen indeed.
+                    <lb type="tln" n="2291"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>I am glad your grace</l>
+                        <lb type="tln" n="2292"/><l>Has made that right use of it.</l></lg></sp>
 
-<L n="446"/><lb type="tln" n="2280"/><SP norm="Comwell">Cromwell
-How does your grace.
+                    <lb type="tln" n="2293"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>I hope I have.</l>
+                        <lb type="tln" n="2294"/><l>I am able now, methinks,</l>
+                        <lb type="tln" n="2295"/><l>(Out of a fortitude of soul, I feel),</l>
+                        <lb type="tln" n="2296"/><l>To endure more miseries, and greater far</l>
+                        <lb type="tln" n="2297"/><l>Than my weak-hearted enemies dare offer.</l>
+                        <lb type="tln" n="2298"/><l>What news abroad?</l></lg></sp>
 
-<L n="447"/><lb type="tln" n="2281"/><SP norm="Wolsey">Wolsey
-Why, well.
-<L n="448"/><lb type="tln" n="2282"/>Never so truly happy, my good Cromwell;
-<L n="449"/><lb type="tln" n="2283"/>I know myself now, and I feel within me
-<L n="450"/><lb type="tln" n="2284"/>A peace above all earthly dignities,
-<L n="451"/><lb type="tln" n="2285"/>A still and quiet conscience. The king has cured me.
-<L n="452"/><lb type="tln" n="2286"/>I humbly thank his grace, and from these shoulders,
-<L n="453"/><lb type="tln" n="2287"/>These ruined pillars, out of pity taken
-<L n="454"/><lb type="tln" n="2288"/>A load would sink a navy, too much honor.
-<L n="455"/><lb type="tln" n="2289"/>O 'tis a burden, Cromwell; 'tis a burden
-<L n="456"/><lb type="tln" n="2290"/>Too heavy for a man that hopes for heaven.
+                    <lb type="tln" n="2299"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>The heaviest and the worst</l>
+                        <lb type="tln" n="2300"/><l>Is your displeasure with the king.</l></lg></sp>
 
-<L n="457"/><lb type="tln" n="2291"/><SP norm="Comwell">Cromwell
-I am glad your grace
-<L n="458"/><lb type="tln" n="2292"/>Has made that right use of it.
+                    <lb type="tln" n="2301"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>God bless him.</l></lg></sp>
 
-<L n="459"/><lb type="tln" n="2293"/><SP norm="Wolsey">Wolsey
-I hope I have.
-<L n="460"/><lb type="tln" n="2294"/>I am able now, methinks,
-<L n="461"/><lb type="tln" n="2295"/>(Out of a fortitude of soul, I feel),
-<L n="462"/><lb type="tln" n="2296"/>To endure more miseries, and greater far
-<L n="463"/><lb type="tln" n="2297"/>Than my weak-hearted enemies dare offer.
-<L n="464"/><lb type="tln" n="2298"/>What news abroad?
+                    <lb type="tln" n="2302"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>The next is that Sir Thomas More is chosen</l>
+                        <lb type="tln" n="2303"/><l>Lord Chancellor in your place.</l></lg></sp>
 
-<L n="465"/><lb type="tln" n="2299"/><SP norm="Comwell">Comwell
-The heaviest and the worst
-<L n="466"/><lb type="tln" n="2300"/>Is your displeasure with the king.
+                    <lb type="tln" n="2304"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>That's somewhat sudden,</l>
+                        <lb type="tln" n="2305"/><l>But he's a learned man. May he continue</l>
+                        <lb type="tln" n="2306"/><l>Long in his highness's favor, and do justice</l>
+                        <lb type="tln" n="2307"/><l>For truth's sake and his conscience; that his bones,</l>
+                        <lb type="tln" n="2308"/><l>When he has run his course and sleeps in blessings,</l>
+                        <lb type="tln" n="2309"/><l>May have a tomb of orphans' tears wept on him.</l>
+                        <lb type="tln" n="2310"/><l>What more?</l></lg></sp>
 
-<L n="467"/><lb type="tln" n="2301"/><SP norm="Wolsey">Wolsey
-God bless him.
+                    <lb type="tln" n="2311"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>That Cranmer is returned with welcome;</l>
+                        <lb type="tln" n="2312"/><l>Installed Lord Archbishop of Canterbury.</l></lg></sp>
 
-<L n="468"/><lb type="tln" n="2302"/><SP norm="Comwell">Cromwell
-The next is that Sir Thomas More is chosen
-<L n="469"/><lb type="tln" n="2303"/>Lord Chancellor in your place.
+                    <lb type="tln" n="2313"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>That's news, indeed.</l></lg></sp>
 
-<L n="470"/><lb type="tln" n="2304"/><SP norm="Wolsey">Wolsey
-That's somewhat sudden,
-<L n="471"/><lb type="tln" n="2305"/>But he's a learned man. May he continue
-<L n="472"/><lb type="tln" n="2306"/>Long in his highness's favor, and do justice
-<L n="473"/><lb type="tln" n="2307"/>For truth's sake and his conscience; that his bones,
-<L n="474"/><lb type="tln" n="2308"/>When he has run his course and sleeps in blessings,
-<L n="475"/><lb type="tln" n="2309"/>May have a tomb of orphans' tears wept on him.
-<L n="476"/><lb type="tln" n="2310"/>What more?
+                    <lb type="tln" n="2314"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>Last, that the lady Anne,</l>
+                        <lb type="tln" n="2315"/><l>Whom the king hath in secrecy long married,</l>
+                        <lb type="tln" n="2316"/><l>This day was viewed in open, as his queen,</l>
+                        <lb type="tln" n="2317"/><l>Going to chapel; and the voice is now</l>
+                        <lb type="tln" n="2318"/><l>Only about her coronation.</l></lg></sp>
 
-<L n="477"/><lb type="tln" n="2311"/><SP norm="Comwell">Cromwell
-That Cranmer is returned with welcome;
-<L n="478"/><lb type="tln" n="2312"/>Installed Lord Archbishop of Canterbury.
+                    <lb type="tln" n="2319"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+                        <lg><l>There was the weight that pulled me down.</l>
+                        <lb type="tln" n="2320"/><l>O, Cromwell,</l>
+                        <lb type="tln" n="2321"/><l>The king has gone beyond me: All my glories</l>
+                        <lb type="tln" n="2322"/><l>In that one woman I have lost forever.</l>
+                        <lb type="tln" n="2323"/><l>No sun shall ever usher forth mine honors,</l>
+                        <lb type="tln" n="2324"/><l>Or gild again the noble troops that waited</l>
+                        <lb type="tln" n="2325"/><l>Upon my smiles. Go, get thee from me, Cromwell;</l>
+                        <lb type="tln" n="2326"/><l>I am a poor fall'n man, unworthy now</l>
+                        <lb type="tln" n="2327"/><l>To be thy lord and master. Seek the king</l>
+                        <lb type="tln" n="2328"/><l>(That sun I pray may never set), I have told him</l>
+                        <lb type="tln" n="2329"/><l>What and how true thou art. He will advance thee.</l>
+                        <lb type="tln" n="2330"/><l>Some little memory of me will stir him</l>
+                        <lb type="tln" n="2331"/><l>(I know his Noble Nature) not to let</l>
+                        <lb type="tln" n="2332"/><l>Thy hopeful service perish, too. Good Cromwell,</l>
+                        <lb type="tln" n="2333"/><l>Neglect him not; make use now, and provide</l>
+                        <lb type="tln" n="2334"/><l>For thine own future safety.</l></lg></sp>
 
-<L n="479"/><lb type="tln" n="2313"/><SP norm="Wolsey">Wolsey
-That's news, indeed.
+                    <lb type="tln" n="2335"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+                        <lg><l>O, my lord,</l>
+                        <lb type="tln" n="2336"/><l>Must I then leave you? Must I needs forego</l>
+                        <lb type="tln" n="2337"/><l>So good, so noble, and so true a master?</l>
+                        <lb type="tln" n="2338"/><l>Bear witness, all that have not hearts of iron,</l>
+                        <lb type="tln" n="2339"/><l>With what a sorrow Cromwell leaves his lord.</l>
+                        <lb type="tln" n="2340"/><l>The King shall have my service, but my prayers</l>
+                        <lb type="tln" n="2341"/><l>Forever and forever shall be yours.</l></lg></sp>
 
-<L n="480"/><lb type="tln" n="2314"/><SP norm="Comwell">Comwell
-Last, that the lady Anne,
-<L n="481"/><lb type="tln" n="2315"/>Whom the king hath in secrecy long married,
-<L n="482"/><lb type="tln" n="2316"/>This day was viewed in open, as his queen,
-<L n="483"/><lb type="tln" n="2317"/>Going to chapel; and the voice is now
-<L n="484"/><lb type="tln" n="2318"/>Only about her coronation.
+<lb type="tln" n="2342"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+<lg><l>Cromwell, I did not think to shed a tear</l>
+<lb type="tln" n="2343"/><l>In all my miseries, but thou hast forced me</l>
+<lb type="tln" n="2344"/><l>(Out of thy honest truth), to play the woman.</l>
+<lb type="tln" n="2345"/><l>Let's dry our eyes. And thus far hear me, Cromwell,</l>
+<lb type="tln" n="2346"/><l>And when I am forgotten, as I shall be,</l>
+<lb type="tln" n="2347"/><l>And sleep in dull cold marble, where no mention</l>
+<lb type="tln" n="2348"/><l>Of me more must be heard of; say I taught thee;</l>
+<lb type="tln" n="2349"/><l>Say Wolsey, that once trod the ways of glory,</l>
+<lb type="tln" n="2350"/><l>And sounded all the depths and shoals of honor,</l>
+<lb type="tln" n="2351"/><l>Found thee a way (out of his wreck), to rise in;</l>
+<lb type="tln" n="2352"/><l>A sure and safe one, though thy master missed it.</l>
+<lb type="tln" n="2353"/><l>Mark but my fall and that that ruined me.</l>
+<lb type="tln" n="2354"/><l>Cromwell, I charge thee: fling away ambition;</l>
+<lb type="tln" n="2355"/><l>By that sin fell the angels. How can man then</l>
+<lb type="tln" n="2356"/><l>(The image of his maker), hope to win by it?</l>
+<lb type="tln" n="2357"/><l>Love thyself last; cherish those hearts that hate thee.</l>
+<lb type="tln" n="2358"/><l>Corruption wins not more then honesty.</l>
+<lb type="tln" n="2359"/><l>Still, in thy right hand carry gentle peace</l>
+<lb type="tln" n="2360"/><l>To silence envious tongues. Be just and fear not;</l>
+<lb type="tln" n="2361"/><l>Let all the ends thou aimest at be thy countries,</l>
+<lb type="tln" n="2362"/><l>Thy gods, and truths. Then if thou fallest, O Cromwell,</l>
+<lb type="tln" n="2363"/><l>Thou fallest a blessed martyr.</l>
+<lb type="tln" n="2364"/><l>Serve the king; and prithee, lead me in.</l>
+<lb type="tln" n="2365"/><l>There take an inventory of all I have:</l>
+<lb type="tln" n="2366"/><l>To the last penny 'tis the king's. My robe,</l>
+<lb type="tln" n="2367"/><l>And my integrity to heaven is all</l>
+<lb type="tln" n="2368"/><l>I dare now call mine own. O Cromwell, Cromwell;</l>
+<lb type="tln" n="2369"/><l>Had I but served my God with half the zeal</l>
+<lb type="tln" n="2370"/><l>I served my king he would not, in mine age,</l>
+<lb type="tln" n="2371"/><l>Have left me naked to mine enemies.</l></lg></sp>
 
-<L n="485"/><lb type="tln" n="2319"/><SP norm="Wolsey">Wolsey
-There was the weight that pulled me down.
-<L n="486"/><lb type="tln" n="2320"/>O, Cromwell,
-<L n="487"/><lb type="tln" n="2321"/>The king has gone beyond me: All my glories
-<L n="488"/><lb type="tln" n="2322"/>In that one woman I have lost forever.
-<L n="489"/><lb type="tln" n="2323"/>No sun shall ever usher forth mine honors,
-<L n="490"/><lb type="tln" n="2324"/>Or gild again the noble troops that waited
-<L n="491"/><lb type="tln" n="2325"/>Upon my smiles. Go, get thee from me, Cromwell;
-<L n="492"/><lb type="tln" n="2326"/>I am a poor fall'n man, unworthy now
-<L n="493"/><lb type="tln" n="2327"/>To be thy lord and master. Seek the king
-<L n="494"/><lb type="tln" n="2328‚Äù/>(That sun I pray may never set), I have told him
-<L n="495"/><lb type="tln" n="2329"/>What and how true thou art. He will advance thee.
-<L n="496"/><lb type="tln" n="2330"/>Some little memory of me will stir him
-<L n="497"/><lb type="tln" n="2331"/>(I know his Noble Nature) not to let
-<L n="498"/><lb type="tln" n="2332"/>Thy hopeful service perish, too. Good Cromwell,
-<L n="499"/><lb type="tln" n="2333"/>Neglect him not; make use now, and provide
-<L n="500"/><lb type="tln" n="2334"/>For thine own future safety.
+<lb type="tln" n="2372"/><sp who="#cromwell"><speaker>Cromwell</speaker>
+<lg><l>Good sir, have patience.</l></lg></sp>
 
-<L n="501"/><lb type="tln" n="2335"/><SP norm="Comwell">Cromwell
-O, my lord,
-<L n="502"/><lb type="tln" n="2336"/>Must I then leave you? Must I needs forego
-<L n="503"/><lb type="tln" n="2337"/>So good, so noble, and so true a master?
-<L n="504"/><lb type="tln" n="2338"/>Bear witness, all that have not hearts of iron,
-<L n="505"/><lb type="tln" n="2339"/>With what a sorrow Cromwell leaves his lord.
-<L n="506"/><lb type="tln" n="2340"/>The King shall have my service, but my prayers
-<L n="507"/><lb type="tln" n="2341"/>Forever and forever shall be yours.
+<lb type="tln" n="2373"/><sp who="#cardinal"><speaker>Wolsey</speaker>
+<lg><l>So I have. Farewell</l>
+<lb type="tln" n="2374"/><l>The hopes of court; my hopes in heaven do dwell.</l></lg></sp>
 
-<L n="508"/><lb type="tln" n="2342"/><SP norm="Wolsey">Wolsey
-Cromwell, I did not think to shed a tear
-<L n="509"/><lb type="tln" n="2343"/>In all my miseries, but thou hast forced me
-<L n="510"/><lb type="tln" n="2344"/>(Out of thy honest truth), to play the woman.
-<L n="511"/><lb type="tln" n="2345"/>Let's dry our eyes. And thus far hear me, Cromwell,
-<L n="512"/><lb type="tln" n="2346"/>And when I am forgotten, as I shall be,
-<L n="513"/><lb type="tln" n="2347"/>And sleep in dull cold marble, where no mention
-<L n="514"/><lb type="tln" n="2348"/>Of me more must be heard of; say I taught thee;
-<L n="515"/><lb type="tln" n="2349"/>Say Wolsey, that once trod the ways of glory,
-<L n="516"/><lb type="tln" n="2350"/>And sounded all the depths and shoals of honor,
-<L n="517"/><lb type="tln" n="2351"/>Found thee a way (out of his wreck), to rise in;
-<L n="518"/><lb type="tln" n="2352"/>A sure and safe one, though thy master missed it.
-<L n="519"/><lb type="tln" n="2353"/>Mark but my fall and that that ruined me.
-<L n="520"/><lb type="tln" n="2354"/>Cromwell, I charge thee: fling away ambition;
-<L n="521"/><lb type="tln" n="2355"/>By that sin fell the angels. How can man then
-<L n="522"/><lb type="tln" n="2356"/>(The image of his maker), hope to win by it?
-<L n="523"/><lb type="tln" n="2357"/>Love thyself last; cherish those hearts that hate thee.
-<L n="524"/><lb type="tln" n="2358"/>Corruption wins not more then honesty.
-<L n="525"/><lb type="tln" n="2359"/>Still, in thy right hand carry gentle peace
-<L n="526"/><lb type="tln" n="2360"/>To silence envious tongues. Be just and fear not;
-<L n="527"/><lb type="tln" n="2361"/>Let all the ends thou aimest at be thy countries,
-<L n="528"/><lb type="tln" n="2362"/>Thy gods, and truths. Then if thou fallest, O Cromwell,
-<L n="529"/><lb type="tln" n="2363"/>Thou fallest a blessed martyr.
-<L n="530"/><lb type="tln" n="2364"/>Serve the king; and prithee, lead me in.
-<L n="531"/><lb type="tln" n="2365"/>There take an inventory of all I have:
-<L n="532"/><lb type="tln" n="2366"/>To the last penny 'tis the king's. My robe,
-<L n="533"/><lb type="tln" n="2367"/>And my integrity to heaven is all
-<L n="534"/><lb type="tln" n="2368"/>I dare now call mine own. O Cromwell, Cromwell;
-<L n="535"/><lb type="tln" n="2369"/>Had I but served my God with half the zeal
-<L n="536"/><lb type="tln" n="2370"/>I served my king he would not, in mine age,
-<L n="537"/><lb type="tln" n="2371"/>Have left me naked to mine enemies.
-
-<L n="538"/><lb type="tln" n="2372"/><SP norm="Comwell">Cromwell
-Good sir, have patience.
-
-<L n="539"/><lb type="tln" n="2373"/><SP norm="Wolsey">Wolsey
-So I have. Farewell
-<L n="540"/><lb type="tln" n="2374"/>The hopes of court; my hopes in heaven do dwell.</MODE>
-
-<L n="540.1"/><lb type="tln" n="2375"/><SD t="exit">Exeunt.</stage>
+<lb type="tln" n="2375"/><stage type="exit">Exeunt.</stage>
 
                 </div>
             </div>
