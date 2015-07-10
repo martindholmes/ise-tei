@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." default="doAll" name="ise_start">
+
+  <!-- note: following properties are passed as parameters via Oxygen:
+      -${pd}:  current project directory path (i.e. where the ise.xpr file lives)
+      -${suggestedPlayId}: value to be used as @xml:id for the play, and filename.
+      -${suggestedPlayTitle}: modern gneeric title for the play, for the teiHeader.
+  -->
+
+  <property name="echo.separator" value="************************************************"/>
+  <property name="suggestedPlayId" value=""/>
+  <property name="suggestedPlayTitle" value=""/>
+
+
+  <target name="createFile">
+    <echo message="${echo.separator}"/>
+    <echo message="Checking the supplied id to make sure it's conformant."/>
+    <script language="javascript">
+      <![CDATA[
+        // Get the id which was input in Oxygen
+        var suggestedId = ise_start.getProperty("suggestedPlayId");
+        var cleanedId = suggestedId.replace(/[^a-z\d]+/, '_').replace(/(^\d)/, 'ise_$1');
+
+        // Set a new property which can be retrieved by the ant script
+        ise_start.setProperty("playId", cleanedId);
+      ]]>
+    </script>
+    <echo message="Cleaned-up id is ${playId}."/>
+    <echo message="Creating a file for ${suggestedPlayTitle} based on the template and id ${playId}."/>
+    <echo message="${echo.separator}"/>
+    <echo message="Transforming the template to create the file."/>
+    <java classname="net.sf.saxon.Transform">
+      <arg value="-s:${pd}/templates/template.xml"/>
+      <arg value="-xsl:${pd}/xsl/play_file_from_template.xsl"/> 
+      <arg value="-o:${pd}/${playId}.xml"/>
+      <arg value="projectDirectory=${pd}"/>
+      <arg value="playId=${playId}"/>
+      <arg value="playTitle=${suggestedPlayTitle}"/>
+    </java>
+    <echo message="${echo.separator}"/>
+    <echo message="Completed. Open the file ${playId}.xml in Oxygen to start editing."/>
+  </target>
+  
+  <target name="doAll">
+    <antcall target="createFile"/>
+  </target>
+
+</project>

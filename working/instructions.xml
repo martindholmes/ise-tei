@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_minimal.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_minimal.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>GETTING STARTED WITH YOUR ENCODING PROJECT</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Free for all.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+        <div>
+          <head>GETTING STARTED WITH YOUR ENCODING PROJECT</head>
+          <div>
+          <p>This is a brief set of instructions which should help get you started
+            in encoding your play.</p></div>
+          
+          <div>
+            <head>A. CREATE YOUR XML PLAY FILE</head>
+            
+            <p>This is easy:</p>
+            
+            <list rend="numbered">
+              <item>Make sure this file (instructions.xml) is open in Oxygen, and 
+              you're looking at it.</item>
+              <item>Press the red triangle button you see on the Oxygen toolbar.</item>
+              <item>When asked, provide an id for your file. This must be in a format suitable for
+              an @xml:id attribute, so: <list rend="bulleted">
+              <item>it must begin with a letter</item>
+              <item>it must not contain spaces or punctuation</item>
+              <item>it should be short but distinctive</item>
+              <item>lower-case is preferred</item>
+              </list> Examples: <list rend="bulleted">
+              <item>h8 (for Henry VIII)</item>
+              <item>iyknmykn (If You Know Not Me, You Know Nobody)</item>
+              <item>rt (The Revengers Tragedy)</item>
+              </list> <p> <emph>Now type your id here:</emph> <idno xml:id="playId"
+              >yourPlayId</idno> </p> </item>
+              <item>When asked, provide a short (modern) title for the play. This will 
+              be used as the title in the play metadata.
+              <p>
+              <emph>Type the title of the play here:</emph> <idno xml:id="playTitle">Your Play Title</idno>
+              </p>
+              </item>
+              <item>A new file should be created for you, with a filename based
+                on the @xml:id. Open that file and you can begin editing.</item>
+            </list>
+          </div>
+          <div>
+            <head>B. CREATE YOUR LIST OF CHARACTERS</head>
+            <p>The next stage is to construct a character list in the header of the 
+            file you have created. The reason this has to be done first is that when 
+            you come to mark up speeches in the play, each speech will be associated
+            with one or more characters, and the character ids must be available so that 
+            you can do that.</p>
+          </div>
+        </div>
+      </body>
+  </text>
+</TEI>
