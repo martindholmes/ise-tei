@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="17.0">
+<project version="15.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="17.0" xml:space="preserve">
+            <serialized version="15.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
                                     <String>ISE Instructions</String>
                                 </field>
@@ -42,9 +39,6 @@
                                             </cssFile-array>
                                         </field>
                                         <field name="mergeCSSsFromDocument">
-                                            <Boolean>false</Boolean>
-                                        </field>
-                                        <field name="multipleAlternateSelectionEnabled">
                                             <Boolean>false</Boolean>
                                         </field>
                                         <field name="actionDescriptors">
@@ -226,9 +220,6 @@
                                 </field>
                             </documentTypeDescriptor>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
                                     <String>ISE Play</String>
                                 </field>
@@ -259,9 +250,6 @@
                                             </cssFile-array>
                                         </field>
                                         <field name="mergeCSSsFromDocument">
-                                            <Boolean>false</Boolean>
-                                        </field>
-                                        <field name="multipleAlternateSelectionEnabled">
                                             <Boolean>false</Boolean>
                                         </field>
                                         <field name="actionDescriptors">
@@ -308,9 +296,6 @@
                                                             </actionMode>
                                                         </actionMode-array>
                                                     </field>
-                                                    <field name="enabledInReadOnlyContext">
-                                                        <Boolean>false</Boolean>
-                                                    </field>
                                                 </action>
                                                 <action>
                                                     <field name="id">
@@ -353,9 +338,6 @@
                                                                 </field>
                                                             </actionMode>
                                                         </actionMode-array>
-                                                    </field>
-                                                    <field name="enabledInReadOnlyContext">
-                                                        <Boolean>false</Boolean>
                                                     </field>
                                                 </action>
                                             </action-array>
@@ -550,9 +532,6 @@
                                             <field name="outputFile">
                                                 <File>${cfd}/${cfn}.htm</File>
                                             </field>
-                                            <field name="outputResource">
-                                                <String>${cfd}/${cfn}.htm</String>
-                                            </field>
                                             <field name="openOtherLocationInBrowser">
                                                 <Boolean>false</Boolean>
                                             </field>
@@ -618,6 +597,9 @@
                                                         <field name="type">
                                                             <Integer>5</Integer>
                                                         </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                         <field name="possibleValues">
                                                             <null/>
                                                         </field>
@@ -638,6 +620,9 @@
                                                         <field name="type">
                                                             <Integer>5</Integer>
                                                         </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                         <field name="possibleValues">
                                                             <null/>
                                                         </field>
@@ -657,6 +642,9 @@
                                                         </field>
                                                         <field name="type">
                                                             <Integer>5</Integer>
+                                                        </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
                                                         </field>
                                                         <field name="possibleValues">
                                                             <null/>
@@ -728,9 +716,6 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                             <field name="outputFile">
-                                                <null/>
-                                            </field>
-                                            <field name="outputResource">
                                                 <null/>
                                             </field>
                                             <field name="openOtherLocationInBrowser">
@@ -907,6 +892,230 @@
                         <documentTypeEntry-array>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
+                                    <String>2/internal/ISE Play</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>2/internal/ISE Instructions</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/ant/ant.framework/ANT</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/dita/dita.framework/DITA</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/dita/ditamap.framework/DITA Map</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/dita/ditaval.framework/DITAVAL</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/docbook/docbook4.framework/DocBook 4</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/docbook/docbook5.framework/DocBook 5</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/docbook/targetset.framework/Docbook Targetset</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/ead/ead.framework/EAD</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/fo/fo.framework/FO</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/kml/kml.framework/KML</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/mathml/mathml.framework/MathML</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/ncx/ncx.framework/NCX</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/nvdl/nvdl.framework/NVDL</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xml/xmlcatalog.framework/OASIS XML Catalog</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/ocf/ocf.framework/OCF</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/odf/odf.framework/ODF 1.2</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/ooxml/ooxml.framework/OOXML</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/opf/opf2.0.framework/OPF 2.0</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/opf/opf3.0.framework/OPF 3.0</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/relaxng/relaxng.framework/Relax NG</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/svg/svg.framework/SVG</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xslt/saxon.framework/Saxon</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/schematron/schematron.framework/Schematron</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/schematron/schematron15.framework/Schematron 1.5</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/stratml/stratml1.framework/StratML Part 1 (Strategic Plan)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/stratml/stratml2.framework/StratML Part 2 (Perfomance Plans and Reports)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
                                     <String>6/tei/teip5odd.framework/TEI ODD</String>
                                 </field>
                                 <field name="enable">
@@ -915,10 +1124,114 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
+                                    <String>6/tei/teip4.framework/TEI P4 (deprecated)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
                                     <String>6/tei/teip5.framework/TEI P5</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/wsdl/wsdl.framework/WSDL</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/widgets/widgets.framework/Widgets</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xhtml/xhtml.framework/XHTML</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xmlschema/xmlschema.framework/XML Schema</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xmlspec/xmlspec.framework/XMLSpec</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xproc/xproc.framework/XProc</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xslt/xslt.framework/XSLT</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/xspec/xspec.framework/XSpec</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/samples/application_form.framework/Application Form (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/samples/form-controls.framework/Form Controls (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/samples/personal.framework/Personal (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/samples/travel-guide.framework/Travel Guide (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
                                 </field>
                             </documentTypeEntry>
                         </documentTypeEntry-array>
@@ -1055,462 +1368,6 @@
                     <entry>
                         <String>scenarios</String>
                         <scenario-array>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>ise_xml_to_tei</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/xsl/ise-xml-to-tei.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>${pd}/temp/test_ise_to_tei.xml</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${pd}/temp/test_ise_to_tei.xml</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <antScenario>
-                                <field name="additionalAntArgs">
-                                    <String></String>
-                                </field>
-                                <field name="buildTarget">
-                                    <String></String>
-                                </field>
-                                <field name="buildFilePath">
-                                    <String>${cfne}</String>
-                                </field>
-                                <field name="ditaParams">
-                                    <list>
-                                        <antParameter>
-                                            <field name="name">
-                                                <String>pd</String>
-                                            </field>
-                                            <field name="description">
-                                                <String>Project directory.</String>
-                                            </field>
-                                            <field name="value">
-                                                <String>${pd}</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>5</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                        </antParameter>
-                                        <antParameter>
-                                            <field name="name">
-                                                <String>sourceParticDescFile</String>
-                                            </field>
-                                            <field name="description">
-                                                <String>Location of a file containing a particDesc element to be used in constructing the sp/@who attributes in the schema.</String>
-                                            </field>
-                                            <field name="value">
-                                                <String>file:///home/mholmes/WorkData/ise/svnrepo/trunk/ise-tei/working/pilot_h8/h8.xml</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>5</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                        </antParameter>
-                                        <antParameter>
-                                            <field name="name">
-                                                <String>teiFramework</String>
-                                            </field>
-                                            <field name="description">
-                                                <String>TEI P5 framework, whichever is active.</String>
-                                            </field>
-                                            <field name="value">
-                                                <String>${frameworkDir(TEI P5)}</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>5</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                        </antParameter>
-                                    </list>
-                                </field>
-                                <field name="jvmArgs">
-                                    <String>-Xmx256m</String>
-                                </field>
-                                <field name="useCustomJavaHome">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="customJavaHomeDir">
-                                    <String></String>
-                                </field>
-                                <field name="useCustomANTHome">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="customANTHomeDir">
-                                    <String></String>
-                                </field>
-                                <field name="workingDir">
-                                    <String>${cfd}</String>
-                                </field>
-                                <field name="showConsoleAlways">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>ise_tei_BUILDER_BUILD</String>
-                                </field>
-                                <field name="baseURL">
-                                    <null/>
-                                </field>
-                                <field name="footerURL">
-                                    <null/>
-                                </field>
-                                <field name="fOPMethod">
-                                    <null/>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <null/>
-                                </field>
-                                <field name="headerURL">
-                                    <null/>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <null/>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <null/>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>ANT</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <String></String>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>ANT</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array>
-                                        <String>${oxygenHome}/classes/</String>
-                                        <String>${pdu}/lib/jsch-0.1.52.jar</String>
-                                        <String>${oxygenHome}/lib/oxygen.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenDeveloper.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/resolver.jar</String>
-                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
-                                        <String>${oxygenHome}/lib/saxon9ee.jar</String>
-                                        <String>${oxygenHome}/lib/saxon.jar</String>
-                                        <String>${oxygenHome}/lib/xml-apis-ext.jar</String>
-                                        <String>${oxygenHome}/lib/log4j.jar</String>
-                                    </String-array>
-                                </field>
-                            </antScenario>
-                            <antScenario>
-                                <field name="additionalAntArgs">
-                                    <String></String>
-                                </field>
-                                <field name="buildTarget">
-                                    <String></String>
-                                </field>
-                                <field name="buildFilePath">
-                                    <String>${cfne}</String>
-                                </field>
-                                <field name="ditaParams">
-                                    <list>
-                                        <antParameter>
-                                            <field name="name">
-                                                <String>pd</String>
-                                            </field>
-                                            <field name="description">
-                                                <String>Project directory.</String>
-                                            </field>
-                                            <field name="value">
-                                                <String>${pd}</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>5</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                        </antParameter>
-                                        <antParameter>
-                                            <field name="name">
-                                                <String>teiFramework</String>
-                                            </field>
-                                            <field name="description">
-                                                <String>TEI P5 framework, whichever is active.</String>
-                                            </field>
-                                            <field name="value">
-                                                <String>${frameworkDir(TEI P5)}</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>5</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                        </antParameter>
-                                    </list>
-                                </field>
-                                <field name="jvmArgs">
-                                    <String>-Xmx256m</String>
-                                </field>
-                                <field name="useCustomJavaHome">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="customJavaHomeDir">
-                                    <String></String>
-                                </field>
-                                <field name="useCustomANTHome">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="customANTHomeDir">
-                                    <String></String>
-                                </field>
-                                <field name="workingDir">
-                                    <String>${cfd}</String>
-                                </field>
-                                <field name="showConsoleAlways">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>ise_tei_TEST_ISGML</String>
-                                </field>
-                                <field name="baseURL">
-                                    <null/>
-                                </field>
-                                <field name="footerURL">
-                                    <null/>
-                                </field>
-                                <field name="fOPMethod">
-                                    <null/>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <null/>
-                                </field>
-                                <field name="headerURL">
-                                    <null/>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <null/>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <null/>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>ANT</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <String></String>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>ANT</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array>
-                                        <String>${oxygenHome}/classes/</String>
-                                        <String>${pdu}/lib/jsch-0.1.52.jar</String>
-                                        <String>${oxygenHome}/lib/oxygen.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenDeveloper.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
-                                        <String>${oxygenHome}/lib/resolver.jar</String>
-                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
-                                        <String>${oxygenHome}/lib/saxon9ee.jar</String>
-                                        <String>${oxygenHome}/lib/saxon.jar</String>
-                                        <String>${oxygenHome}/lib/xml-apis-ext.jar</String>
-                                        <String>${oxygenHome}/lib/log4j.jar</String>
-                                    </String-array>
-                                </field>
-                            </antScenario>
                             <antScenario>
                                 <field name="additionalAntArgs">
                                     <String></String>
@@ -1538,6 +1395,9 @@
                                             </field>
                                             <field name="type">
                                                 <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
                                             </field>
                                             <field name="possibleValues">
                                                 <null/>
@@ -1611,9 +1471,6 @@
                                 <field name="outputFile">
                                     <null/>
                                 </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
@@ -1651,7 +1508,473 @@
                                     <String-array/>
                                 </field>
                             </antScenario>
+                            <antScenario>
+                                <field name="additionalAntArgs">
+                                    <String></String>
+                                </field>
+                                <field name="buildTarget">
+                                    <String></String>
+                                </field>
+                                <field name="buildFilePath">
+                                    <String>${cfne}</String>
+                                </field>
+                                <field name="ditaParams">
+                                    <list>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>pd</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Project directory.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${pd}</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>sourceParticDescFile</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Location of a file containing a particDesc element to be used in constructing the sp/@who attributes in the schema.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>file:///home/mholmes/WorkData/ise/svnrepo/trunk/ise-tei/working/pilot_h8/h8.xml</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>teiFramework</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>TEI P5 framework, whichever is active.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${frameworkDir(TEI P5)}</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                    </list>
+                                </field>
+                                <field name="jvmArgs">
+                                    <String>-Xmx256m</String>
+                                </field>
+                                <field name="useCustomJavaHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customJavaHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="useCustomANTHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customANTHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="workingDir">
+                                    <String>${cfd}</String>
+                                </field>
+                                <field name="showConsoleAlways">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>ise_tei_BUILDER_BUILD</String>
+                                </field>
+                                <field name="baseURL">
+                                    <null/>
+                                </field>
+                                <field name="footerURL">
+                                    <null/>
+                                </field>
+                                <field name="fOPMethod">
+                                    <null/>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <null/>
+                                </field>
+                                <field name="headerURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <null/>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>ANT</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <String></String>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>ANT</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array>
+                                        <String>${oxygenHome}/classes/</String>
+                                        <String>${pdu}/lib/jsch-0.1.52.jar</String>
+                                        <String>${oxygenHome}/lib/oxygen.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenDeveloper.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/resolver.jar</String>
+                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
+                                        <String>${oxygenHome}/lib/saxon9ee.jar</String>
+                                        <String>${oxygenHome}/lib/saxon.jar</String>
+                                        <String>${oxygenHome}/lib/xml-apis-ext.jar</String>
+                                        <String>${oxygenHome}/lib/log4j.jar</String>
+                                    </String-array>
+                                </field>
+                            </antScenario>
+                            <antScenario>
+                                <field name="additionalAntArgs">
+                                    <String></String>
+                                </field>
+                                <field name="buildTarget">
+                                    <String></String>
+                                </field>
+                                <field name="buildFilePath">
+                                    <String>${cfne}</String>
+                                </field>
+                                <field name="ditaParams">
+                                    <list>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>pd</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Project directory.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${pd}</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>teiFramework</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>TEI P5 framework, whichever is active.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${frameworkDir(TEI P5)}</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                    </list>
+                                </field>
+                                <field name="jvmArgs">
+                                    <String>-Xmx256m</String>
+                                </field>
+                                <field name="useCustomJavaHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customJavaHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="useCustomANTHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customANTHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="workingDir">
+                                    <String>${cfd}</String>
+                                </field>
+                                <field name="showConsoleAlways">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>ise_tei_TEST_ISGML</String>
+                                </field>
+                                <field name="baseURL">
+                                    <null/>
+                                </field>
+                                <field name="footerURL">
+                                    <null/>
+                                </field>
+                                <field name="fOPMethod">
+                                    <null/>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <null/>
+                                </field>
+                                <field name="headerURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <null/>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>ANT</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <String></String>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>ANT</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array>
+                                        <String>${oxygenHome}/classes/</String>
+                                        <String>${pdu}/lib/jsch-0.1.52.jar</String>
+                                        <String>${oxygenHome}/lib/oxygen.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenDeveloper.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
+                                        <String>${oxygenHome}/lib/resolver.jar</String>
+                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
+                                        <String>${oxygenHome}/lib/saxon9ee.jar</String>
+                                        <String>${oxygenHome}/lib/saxon.jar</String>
+                                        <String>${oxygenHome}/lib/xml-apis-ext.jar</String>
+                                        <String>${oxygenHome}/lib/log4j.jar</String>
+                                    </String-array>
+                                </field>
+                            </antScenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>ise_xml_to_tei</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xsl/ise-xml-to-tei.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <File>${pd}/temp/test_ise_to_tei.xml</File>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
                         </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
                     </entry>
                 </serializableOrderedMap>
             </serialized>
