@@ -17,12 +17,13 @@
   <text>
     <body>
       <schemaSpec ident="ise_all" start="TEI">
-        <moduleRef key="header" include="authority availability calendar calendarDesc catDesc catRef category change classDecl correction distributor edition editionStmt editorialDecl encodingDesc fileDesc funder hyphenation idno licence listPrefixDef normalization notesStmt prefixDef principal profileDesc projectDesc publicationStmt punctuation rendition revisionDesc sourceDesc sponsor styleDefDecl taxonomy teiHeader titleStmt"/>
+        <moduleRef key="header" include="authority availability calendar calendarDesc catDesc catRef category change classDecl correction distributor edition editionStmt editorialDecl encodingDesc extent fileDesc funder handNote hyphenation idno licence listPrefixDef normalization notesStmt prefixDef principal profileDesc projectDesc publicationStmt punctuation rendition revisionDesc sourceDesc sponsor styleDefDecl taxonomy teiHeader titleStmt"/>
         <moduleRef key="core" include="abbr author bibl biblScope cb choice cit corr date desc editor email expan foreign gap gb graphic head hi imprint item l label lb lg list listBibl milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt sic sp speaker stage title unclear"/>
         <moduleRef key="tei" />
         <moduleRef key="textstructure" include="TEI back body closer div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur opener text titlePage titlePart trailer"/>
+        <moduleRef key="msDescription" include="accMat altIdentifier bindingDesc catchwords collation colophon depth dimensions foliation handDesc height history intitution layoutDesc material msContents msDescs msIdentifier msName msPart objectType origDate origPlace physDesc provenance repository signatures stamp support supportDesc typeDesc watermark width"/>
         <moduleRef key="drama" include="actor caption castGroup castItem castList role roleDesc spGrp"/>
-        <moduleRef key="transcr" include="am ex facsimile fw space subst supplied surface surfaceGrp zone"/>
+        <moduleRef key="transcr" include="am ex facsimile fw handNotes handShift space subst supplied surface surfaceGrp zone"/>
         
         <moduleRef key="figures" include="figure"/>
         <moduleRef key="corpus" include="particDesc"/>
@@ -32,7 +33,7 @@
 
         <moduleRef key="gaiji" include="char charDecl charName g glyph glyphName mapping"/>
         
-        <moduleRef key="namesdates" include="addName affiliation age faith forename genName listPerson nameLink nationality occupation persName person placeName roleName socecStatus state surname trait"/>
+        <moduleRef key="namesdates" include="addName affiliation age faith forename genName listPerson nameLink nationality occupation persName person placeName region roleName settlement socecStatus state surname trait"/>
 
         <elementSpec ident="cb" module="core" mode="change">
           <attList>
