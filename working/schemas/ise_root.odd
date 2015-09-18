@@ -21,7 +21,7 @@
         <moduleRef key="core" include="abbr author bibl biblScope cb choice cit corr date desc editor email expan foreign gap gb graphic head hi imprint item l label lb lg list listBibl milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt sic sp speaker stage title unclear"/>
         <moduleRef key="tei" />
         <moduleRef key="textstructure" include="TEI back body closer div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur opener text titlePage titlePart trailer"/>
-        <moduleRef key="msDescription" include="accMat altIdentifier bindingDesc catchwords collation colophon depth dimensions foliation handDesc height history intitution layoutDesc material msContents msDescs msIdentifier msName msPart objectType origDate origPlace physDesc provenance repository signatures stamp support supportDesc typeDesc watermark width"/>
+        <moduleRef key="msDescription" include="accMat altIdentifier bindingDesc catchwords collation colophon depth dimensions foliation handDesc height history institution layoutDesc material msContents msDescs msIdentifier msName msPart objectType origDate origPlace physDesc provenance repository signatures stamp support supportDesc typeDesc watermark width"/>
         <moduleRef key="drama" include="actor caption castGroup castItem castList role roleDesc spGrp"/>
         <moduleRef key="transcr" include="am ex facsimile fw handNotes handShift space subst supplied surface surfaceGrp zone"/>
         
