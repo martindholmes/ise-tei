@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full" xml:id="h8">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>King Henry the Eighth or All is True.</title>
+            </titleStmt>
+            <editionStmt><p></p></editionStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+            <note>
+                <lb type="tln" n="47-48"/>
+                <lem>Met in the vale of Andres / 'Twixt Guines and Ardes</lem>
+                <level n="1">I use Andres ... Guines ... Ardres based on consultation with Google map. Ardes does not make sense, as it is near Lyon - some 750 km south of Calais.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="67"/>
+                <lem>As cherubim, all gilt. The madams too,</lem>
+                <level n="1">I use "cherubim" as the plural form of cherub, relying on the plural form identified in the OED.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="87-95"/>
+                <lem>Which action's self was tongue to. / All was royal; To the disposing of it nought rebelled, / Order gave each thing view; the office did / Distinctly his full function. / I mean, who set the body and the limbs / Of this great sport together, / as you guess? / One, certes, that promises no element </lem>
+                <level n="1">I have followed Foakes and McMullan in breaking this speech between Buckingham and Norfolk with the difference of keeping "as you guess" with Norfolk rather than Buckingham.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="301"/>
+                <lem>[Brandon hands warrant to Buckingham]</lem>
+                <level n="1">Stage direction not in F1.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="317"/>
+                <lem>Of the duke's confessor, John de la Car</lem>
+                <level n="1">NOTE TO SELF: This could also be Dellacourt - check ODNB.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="305"/>
+                <lem>One Gilbert Peck, his chancellor.</lem>
+                <level n="1">NOTE TO SELF: This could also be Perk - check ODNB.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="309"/>
+                <lem>O, Nicholas Hopkins?</lem>
+                <level n="1">ODNB identifies the monk as Nicolas Hopkins rather than Michael</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="317"/>
+                <lem>lemma</lem>
+                <level n="1">I have added Secretary entering with rest, since Cardinal speaks to someone at tln ####</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="329"/>
+                <lem>lemma</lem>
+                <level n="1">I have added [The Queen is]</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="#"/>
+                <lem></lem>
+                <level n="1"></level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="#"/>
+                <lem></lem>
+                <level n="1"></level>
+            </note>
+                    
+        </body>
+    </text>
+</TEI>

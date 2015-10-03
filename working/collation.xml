@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full" xml:id="h8">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>King Henry the Eighth or All is True.</title>
+            </titleStmt>
+            <editionStmt><p></p></editionStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+            <collation>
+                <lb type="tln" n="20"/>
+                <lem resp="F1">beside</lem>
+                <rdg resp="Theobald">besides</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="22"/>
+                <lem resp="F1">To make that onely true, we now intend,</lem>
+                <rdg resp="Theobald">To make that only true we now intend)</rdg>
+                <rdg resp="Foakes">To make that only true we now intend,</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="33"/>
+                <lem resp="F1"></lem>
+                <rdg resp="Oxford">SD not in F1</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="40"/>
+                <lem resp="F1">we saw in</lem>
+                <rdg resp="F3">we saw y'n</rdg>
+                <rdg resp="Theobald">we saw in</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="46"/>
+                <lem resp="F1">Those Sunnes of Glory</lem>
+                <rdg resp="F3">Those Sons of Glory</rdg>
+                <rdg resp="Theobald">Those suns of glory</rdg>
+                <rdg resp="Foakes">Those suns of glory</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="47-48"/>
+                <lem resp="F1">Andren ... Guynes ... Arde</lem>
+                <rdg resp="Rowe">Ardres. / Guyens ... Ardres</rdg>
+                <rdg resp="Theobald">Arde. / Guynes ... Arde</rdg>
+                <rdg resp="Foakes">Andren. / Guynes ... Arde</rdg>
+                <rdg resp="McMullan">Andres. / Guînes ... Ardres</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="52-53"/>
+                <lem resp="F1">they,/ What ... weigh'd</lem>
+                <rdg resp="Theobald">Which had they, what four thron'd ones could have weigh'd</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="67"/>
+                <lem resp="F1">Cherubins</lem>
+                <rdg resp="McMullan">cherubims</rdg>
+                <rdg resp="this edn">cherubim</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="91-92"/>
+                <lem resp="F1">who did guide,</lem>
+                <rdg resp="McMullan">Who did guide --</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="93-95"/>
+                <lem resp="F1">together?/ As you guesse:/ One certest</lem>
+                <rdg resp="F2">As you guess: / Once certes</rdg>
+                <rdg resp="Rowe">As you guess? / One certes</rdg>
+                <rdg resp="Theobald">As you guess? / One, sure,</rdg>
+                <rdg resp="Foakes">As you guess? / One, certes,</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="113"/>
+                <lem resp="F1">his Selfe-drawing</lem>
+                <rdg resp="F2">his self-drawing</rdg>
+                <rdg resp="Theobald">his self-drawn</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="113"/>
+                <lem resp="F">Web. O giues vs note,</lem>
+                <rdg resp="F2">Web. O!gives us note,</rdg>
+                <rdg resp="F3">Web. O ! gives us note,</rdg>
+                <rdg resp="Theobald">web: -- this gives us note,</rdg>
+                <rdg resp="Foakes">web, O, gives us note,</rdg>
+                <rdg resp="McMullan">web, 'a gives us note</rdg>
+            </collation>
+                
+            <collation>
+                <lb type="tln" n="119-20"/>
+                <lem resp="F1">that, ... Hell? The</lem>
+                <rdg resp="F2">that, ... Hell? the</rdg>
+                <rdg resp="Theobald">that? / ... hell, the</rdg>
+                <rdg resp="Foakes">that? / ... hell the</rdg>
+                <rdg resp="McMullan">that? / hell, the</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="131"/>
+                <lem resp="F1">he Papers.</lem>
+                <rdg resp="Theobald">he papers.</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="140"/>
+                <lem resp="F1">issue.</lem>
+                <rdg resp="Theobald">issue?</rdg>
+             </collation>
+            
+            <collation>
+                <lb type="tln" n="188"/>
+                <lem resp="F1">venom'd-mouth'd</lem>
+                <rdg resp="Rowe">venome mouth'd</rdg>
+                <rdg resp="Theobald">venom-mouth'd</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="192"/>
+                <lem resp="F1">What are you chaff'd?</lem>
+                <rdg resp="F3">What, are you chaf'd?</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="193"/>
+                <lem resp="F1">Aske God for Temp'rance</lem>
+                <rdg resp="F3">Ask God for temp'rance,</rdg>
+                <rdg resp="Theobald">Ask God for temp'rance:</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="248"/>
+                <lem resp="F1">Count-Cardinall</lem>
+                <rdg resp="F4">Count-Cardinal</rdg>
+                <rdg resp="Pope">McMullan cites Pope as Court-Cardinal source</rdg>
+                <rdg resp="Theobald">Court-Cardinal</rdg>
+                <rdg resp="Foakes">court-cardinal</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="259"/>
+                <lem resp="F1">menac'd him. Priuily</lem>
+                <rdg resp="F2">menac'd him. He Privily</rdg>
+                <rdg resp="F3">menac'd him. He privily</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="260-263"/>
+                <lem resp="F1">troa / Which ... well; ... sure ... ask'd.</lem>
+                <rdg resp="F3">trow, / Which ... well; ... sure ... ask'd.</rdg>
+                <rdg resp="Rowe">trow, / Which ... well -- sure ... / ask'd.</rdg>
+                <rdg resp="Foakes">trow / (Which ... well; sure ... / ask'd)</rdg>
+                <rdg resp="McMullan">trow -- / Which ... well, sure ... asked --</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="301"/>
+                <lem resp="F1"></lem>
+                <rdg resp="F3">By me obey'd.</rdg>
+                <rdg resp="Theobald">By me obey'd!</rdg>
+                <rdg resp="McMullan">By me obeyed.</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="303"/>
+                <lem resp="F1">Mountecute</lem>
+                <rdg resp="F2">Mountacute</rdg>
+                <rdg resp="Rowe">Montague</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="304"/>
+                <lem resp="F1">de la Car</lem>
+                <rdg resp="McMullan">de la Court</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="305"/>
+                <lem resp="F1">Pecke</lem>
+                <rdg resp="F3">Peck</rdg>
+                <rdg resp="Foakes">Perk</rdg>
+                <rdg resp="McMullan">Park</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="305"/>
+                <lem resp="F1">Councellour</lem>
+                <rdg resp="F3">Counsellour</rdg>
+                <rdg resp="Rowe">Counsellor</rdg>
+                <rdg resp="McMullan">chancellor</rdg>
+            </collation>
+            
+            <collation>
+                <lb type="tln" n="309"/>
+                <lem resp="F1">Michaell</lem>
+                <rdg resp="Theobald">Nicholas</rdg>
+            </collation>
+                        
+            <collation>
+                <lb type="tln" n="#"/>
+                <lem resp="F1"></lem>
+                <rdg resp="#"></rdg>
+            </collation>
+ 
+
+        </body>
+    </text>
+    
+</TEI>

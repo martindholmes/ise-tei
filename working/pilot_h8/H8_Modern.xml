@@ -455,7 +455,7 @@
                     
                     <lb type="tln" n="38"/><sp who="#buckingham"><speaker>Buckingham</speaker>
                         <lb type="tln" n="39"/><lg><l>Good morrow, and well met. How have ye done</l>
-                            <lb type="tln" n="40"/><l>Since last we saw in  France?</l></lg></sp>
+                            <lb type="tln" n="40"/><l>Since last we saw in France?</l></lg></sp>
                     
                     <lb type="tln" n="41"/><sp who="#norfolk"><speaker>Norfolk</speaker>
                         <lg><l>I thank your grace,</l>
@@ -526,12 +526,10 @@
                     
                     <sp who="#buckingham"><speaker>Buckingham</speaker>
                         <lg><l>Who did guide —-</l>
-                            <!-- Foakes and McMullan start Buckingham's speach in mid-line tln 91 -->
+                            <!-- need to find a way to reflect that I have broken between lines 90 and 92 -->
                             <lb type="tln" n="92"/><l>I mean, who set the body and the limbs</l>
                             <lb type="tln" n="93"/><l>Of this great sport together, 
-                                <lb type="tln" n="94"/>as you guess?</l></lg></sp>
-                    <!-- Foakes and McMullan ascribe "as you guess?" to Buckingham. This causes problems with tln 94 -->
-                    
+                                <lb type="tln" n="94"/>as you guess?</l></lg></sp>           
                     <lb type="tln" n="95"/><sp who="#norfolk"><speaker>Norfolk</speaker>
                         <lg><l>One, certes, that promises no element</l>
                             <lb type="tln" n="96"/><l>In such a business.</l></lg></sp>
@@ -835,8 +833,8 @@
                     <lb type="tln" n="302"/><sp who="#brandon"><speaker>Brandon</speaker>
                         <lg><l>Here is a warrant from</l>
                             <lb type="tln" n="303"/><l>The king, t'attach Lord Montague and the Bodies</l>
-                            <lb type="tln" n="304"/><l>Of the duke's confessor, John de la Car,<!--could also be Dellacourt--></l>
-                            <lb type="tln" n="305"/><l>One Gilbert Peck,<!--Perk?--> his chancellor.</l></lg></sp>
+                            <lb type="tln" n="304"/><l>Of the duke's confessor, John de la Car,</l>
+                            <lb type="tln" n="305"/><l>One Gilbert Peck, his chancellor.</l></lg></sp>
                     
                     <lb type="tln" n="306"/><sp who="#buckingham"><speaker>Buckingham</speaker>
                         <lg><l>So, so;</l>
@@ -846,8 +844,7 @@
                         <lg><l>A monk o'th'Chartreux.</l></lg></sp>
                     
                     <lb type="tln" n="309"/><sp who="#buckingham"><speaker>Buckingham</speaker>
-                        <lg><l>O, Nicholas Hopkins?
-                            <!--ODNB identifies the monk as Nicholas Hopkins rather than Michael- so does Rasmussen--></l></lg></sp>
+                        <lg><l>O, Nicholas Hopkins?</l></lg></sp>
                     
                     <lb type="tln" n="310"/><sp who="#brandon"><speaker>Brandon</speaker>
                         <lg><l>He.</l></lg></sp>

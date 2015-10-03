@@ -1982,5 +1982,7 @@
     </meta>
     <projectTree name="ise_tei_internal.xpr">
         <folder path="../"/>
+        <file name="collation.xml"/>
+        <file name="notes.xml"/>
     </projectTree>
 </project>
