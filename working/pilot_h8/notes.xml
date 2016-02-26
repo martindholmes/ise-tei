@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:full" xml:id="h8">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>King Henry the Eighth or All is True.</title>
+            </titleStmt>
+            <editionStmt><p></p></editionStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+            <note>
+                <lb type="tln" n="47-48"/>
+                <lem>Met in the vale of Andres / 'Twixt Guines and Ardes</lem>
+                <level n="1">I use Andres ... Guines ... Ardres based on consultation with Google map. Ardes does not make sense, as it is near Lyon - some 750 km south of Calais.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="67"/>
+                <lem>As cherubim, all gilt. The madams too,</lem>
+                <level n="1">I use "cherubim" as the plural form of cherub, relying on the plural form identified in the OED.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="87-95"/>
+                <lem>Which action's self was tongue to. / All was royal; To the disposing of it nought rebelled, / Order gave each thing view; the office did / Distinctly his full function. / I mean, who set the body and the limbs / Of this great sport together, / as you guess? / One, certes, that promises no element </lem>
+                <level n="1">I have followed Foakes and McMullan in breaking this speech between Buckingham and Norfolk with the difference of keeping "as you guess" with Norfolk rather than Buckingham.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="301"/>
+                <lem>[Brandon hands warrant to Buckingham]</lem>
+                <level n="1">Stage direction not in F1.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="317"/>
+                <lem>Of the duke's confessor, John de la Car</lem>
+                <level n="1">NOTE TO SELF: This could also be Dellacourt - check ODNB. - would also affect line 508</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="305"/>
+                <lem>One Gilbert Peck, his chancellor.</lem>
+                <level n="1">NOTE TO SELF: This could also be Perk - check ODNB.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="309"/>
+                <lem>O, Nicholas Hopkins?</lem>
+                <level n="1">ODNB identifies the monk as Nicolas Hopkins rather than Michael</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="318"/>
+                <lem>[Secretary enters with the Cardinal]</lem>
+                <level n="1">I have added Secretary entering with rest, since Cardinal speaks to someone at tln ####, but have placed the Secretary's entrance among the rest of the party rather than at the end of the stage direction, as Foakes and McMullan have.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="411"/>
+                <lem>we must not stint</lem>
+                <level n="1">At this point Wolsey shifts from first person singular to first person plural. While this is a subtle shift, it occurs at a point that suggests that Wolsey has, in fact, been overreaching his authority.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="329-330"/>
+                <lem>A noyse within crying roome for the Queene, vsher'd by the Duke of Norfolke. Enter the Queene, Norfolke and</lem>
+                <level n="1">The repetition of the reference to the Duke of Norfolk in the stage direction in F1 has resulted in several interpretations beginning with F4. I have chosen to emphasize the off-stage cry and include the first reference to Norfolk as part of that announcement.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="491"/>
+                <lem>Nicholas Hopkins</lem>
+                <level n="1"> In his note 7, Theobald notes that " ... We heard before, from Brandon, of one Nicholas Hopkins; and now his Name is chang'd into Henton; so that Brandon and the Surveyor seem to be in two Stories. There is, however, but one and the same Person meant, Hopkins; as I have restor'd in the Text: nor will it be any Difficulty to account for the other Name, when we come to consider that He was a Monk of the Convent, call'd Henton, near Bristol. So both Hall and Holingshed acquaint us. And he might, according to the Custom of those Times, be call'd as wel Nicholas of Henton, from the Place; as Hopkins, from his Family. I formerly set the Text right; and Mr. Pope has since acceded to my Alteration." (pp. 17-18) Foakes chooses to maintain Henton because, "as Pooler noted, the chronicler's words account for the error, "a vaine prophesie which one Nicholas Hopkins, a monke of an house of the Chartreux order beside Bristow, called Henton, sometime his confessor had opened unto him" (Pooler p. 863)." (p. 93) I have chosen Hopkins, in keeping with Theobald, Oxford, and McMullan.
+                </level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="507-509"/>
+                <lem>Hath .. / .. / .. moment:</lem>
+                <level n="1">I have chosen to indicate that the Surveyor is quoting the Duke at this point, as he does further down the passage.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="585"/>
+                <lem>stringhalt</lem>
+                <level n="1">OED citation for stringhalt and springhalt</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="731"/>
+                <lem>chambers discharged</lem>
+                <level n="1">Note about cannons and burning down of the Globe.</level>
+            </note>
+            
+            <note>
+                <lb type="tln" n="778"/>
+                <lem>More worthy this place .. / .. / I would surrender it.</lem>
+                <level n="1">Note about foreshadowing of Wolsey surrendering York Place to Henry.</level>
+            </note>
+           
+            </note>
+                    
+        </body>
+    </text>
+</TEI>
