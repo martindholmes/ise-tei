@@ -23,26 +23,15 @@
   <xsl:param name="sourceParticDescFile" as="xs:string"/>
   <xsl:variable name="sourceParticDesc" as="element(particDesc)*" select="if (string-length($sourceParticDescFile) gt 0) then doc($sourceParticDescFile)//particDesc else ()"/>
   
-  <xsl:variable name="excludedFromBasic" select="('cb', 'lb', 'gb', 'pb', 'g', 'gap', 'graphic', 'hi', 'list', 'item', 'listBibl', 'bibl', 'milestone', 'quote', 'ref', 'sic', 'actor', 'caption', 'castGroup', 'castItem', 'castList', 'role', 'roleDesc', 'facsimile', 'placeName', 'surface', 'surfaceGrp', 'zone', 'fw')"/>
-  
-  <xsl:variable name="excludedFromIntermediate" select="('placeName')"/>
-  
   <xsl:variable name="includes" select="doc('includes.xml')"/>
   
   <xsl:template match="/">
-    <xsl:result-document href="schemas/ise_full.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
-      <xsl:apply-templates mode="full"/>
-    </xsl:result-document>
-    <xsl:result-document href="schemas/ise_intermediate.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
-      <xsl:apply-templates mode="intermediate"/>
-    </xsl:result-document>
-    <xsl:result-document href="schemas/ise_basic.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
-      <xsl:apply-templates mode="basic"/>
+    <xsl:result-document href="schemas/ise_tei.odd" encoding="UTF-8" indent="yes" exclude-result-prefixes="#all">
+      <xsl:apply-templates/>
     </xsl:result-document>
   </xsl:template>
   
-<!-- Full mode. In full mode we add stuff from the includes file. -->
-  <xsl:template match="moduleRef[@key='gaiji']" mode="full intermediate" exclude-result-prefixes="#all">
+  <xsl:template match="moduleRef[@key='gaiji']" exclude-result-prefixes="#all">
     <xsl:copy-of select="." exclude-result-prefixes="#all" copy-namespaces="no"/>
     
     <elementSpec ident="g" module="gaiji" mode="change">
@@ -65,11 +54,14 @@
     </elementSpec>
   </xsl:template>
   
-  <xsl:template match="moduleRef[@key='core']" mode="full">
+  <xsl:template match="moduleRef[@key='core']">
     <xsl:copy-of select="." exclude-result-prefixes="#all" copy-namespaces="no"/>
     <elementSpec ident="sp" module="core" mode="change">
       <attList>
         <attDef ident="who" mode="replace" usage="req">
+          <datatype minOccurs="1" maxOccurs="unbounded">
+            <ref xmlns="http://relaxng.org/ns/structure/1.0" name="data.enumerated"/>
+          </datatype>
           <valList type="closed">
             <xsl:choose>
               <xsl:when test="$sourceParticDesc">
@@ -105,28 +97,6 @@
     <xsl:if test="preceding-sibling::node()"><xsl:text>) </xsl:text></xsl:if>
   </xsl:template>
   
-<!--  Basic mode. -->
-  <xsl:template match="@include" mode="basic">
-    <xsl:attribute name="include" select="string-join(for $e in tokenize(., '\s+') return if (not($e = $excludedFromBasic)) then $e else (), ' ')" />
-  </xsl:template>
-  
-  <xsl:template match="elementSpec[@ident=$excludedFromBasic]" mode="basic"/>
-  
-  <xsl:template match="elementSpec[@ident=$excludedFromIntermediate]" mode="intermediate"/>
-  
-  <xsl:template match="specGrp[@xml:id='attributeClasses']" mode="basic">
-    <xsl:copy copy-namespaces="no">
-      <xsl:copy-of select="@*"/>
-      <xsl:copy-of select="node()"/>
-      
-<!--    Additional deletions.  -->
-      
-    </xsl:copy>
-  </xsl:template>
-  
-  <xsl:template match="classSpec[@ident='att.placement']" mode="basic"/>
-  
-<!--  Templates used in all modes. -->
   <!-- Let's add in some formatting help. -->
   <xsl:template match="processing-instruction()" mode="#all">
     <xsl:text>

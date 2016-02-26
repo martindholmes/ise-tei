@@ -5,9 +5,38 @@
 teiHeader{
   display: block;
   padding: 1em;
-  background-color: #d0d0d0;
+  background-color: #eeeeee;
   border: solid 1px black;
   margin-bottom: 1em;
+}
+
+fileDesc:before{
+  content: "Metadata";
+  font-size: 150%;
+  text-align: center;
+  display: block;
+}
+
+fileDesc{
+  display: block;
+}
+
+particDesc:before{
+  content: "List of characters";
+  font-size: 120%;
+}
+
+particDesc listPerson{
+  list-style-type: disc;
+  margin: 1em;
+}
+
+listPerson person{
+  display: list-item;
+}
+
+person persName{
+  font-weight: bold;
 }
 
 encodingDesc, revisionDesc, editorialDesc, editionStmt, publicationStmt, sourceDesc{

@@ -8,34 +8,47 @@
   version="2.0">
   <xd:doc scope="stylesheet">
     <xd:desc>
-      <xd:p><xd:b>Created on:</xd:b> Mar 26, 2015</xd:p>
+      <xd:p><xd:b>Created on:</xd:b> July 9, 2015</xd:p>
       <xd:p><xd:b>Author:</xd:b> mholmes</xd:p>
-      <xd:p>This is an identity transform which turns a basic template into 
-      a fully-fledged template for the ISE.</xd:p>
+      <xd:p>This is an identity transform which turns a basic ISE template file
+        into a play file with a specific id and title.</xd:p>
     </xd:desc>
   </xd:doc>
   
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
-  <xsl:param name="rootRendAtt" select="'ise'"/>
+  <xsl:param name="projectDirectory"/>
+  <xsl:param name="playId"/>
+  <xsl:param name="playTitle"/>
+<!-- This isn't used at the moment, but we may find a purpose for it. -->
   <xsl:variable name="includes" select="doc('includes.xml')"/>
+  
+  <xsl:template match="/">
+    <xsl:result-document href="{$projectDirectory}/{$playId}.xml">
+      <xsl:apply-templates/>
+    </xsl:result-document>
+  </xsl:template>
+  
+  <xsl:template match="titleStmt/title">
+    <title><xsl:value-of select="$playTitle"/></title>
+  </xsl:template>
+  
+  <xsl:template match="change">
+    <change when="{format-date(current-date(), '[Y0001]-[M01]-[D01]')}">
+      Created this file from the ISE template based on user input.
+    </change>
+  </xsl:template>
   
   <xsl:template match="TEI" mode="#all">
     <xsl:text>
 </xsl:text>
     <xsl:copy copy-namespaces="no">
-      <xsl:attribute name="rend" select="$rootRendAtt"/>
+      <xsl:attribute name="rend" select="'ise'"/>
+      <xsl:attribute name="xml:id" select="$playId"/>
       <xsl:apply-templates select="@*|*|text()|processing-instruction()|comment()" mode="#current"/>
     </xsl:copy>
   </xsl:template>
   
-<!-- Don't need to do this because we're using a private URI scheme. -->
-<!--  <xsl:template match="encodingDesc">
-    <xsl:copy>
-      <xsl:copy-of select="@*"/>
-      <xsl:copy-of select="$includes//charDecl"/>
-      <xsl:apply-templates select="node()"/>
-    </xsl:copy>
-  </xsl:template>-->
+
   
   <!-- Let's add in some formatting help. -->
   <xsl:template match="processing-instruction()" mode="#all">

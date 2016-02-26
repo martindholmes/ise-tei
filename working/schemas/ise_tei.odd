@@ -23,6 +23,9 @@
             <elementSpec ident="sp" module="core" mode="change">
                <attList>
                   <attDef ident="who" mode="replace" usage="req">
+                     <datatype minOccurs="1" maxOccurs="unbounded">
+                        <ref xmlns="http://relaxng.org/ns/structure/1.0" name="data.enumerated"/>
+                     </datatype>
                      <valList type="closed">
                         <valItem ident="#abergavenny">
                            <gloss>Lord Abergavenny</gloss>
@@ -63,9 +66,6 @@
                            <gloss>Lord Capuchius
                 (Eustace Chapuys)  (
             ) </gloss>
-                        </valItem>
-                        <valItem ident="#cardinal">
-                           <gloss>Cardinal Wolsey</gloss>
                         </valItem>
                         <valItem ident="#chamberlain">
                            <gloss>Lord Chamberlain</gloss>
@@ -182,6 +182,9 @@
                         <valItem ident="#porter">
                            <gloss>Porter</gloss>
                         </valItem>
+                        <valItem ident="#prologue">
+                           <gloss>Prologue</gloss>
+                        </valItem>
                         <valItem ident="#rochester">
                            <gloss>Bishop of Rochester</gloss>
                         </valItem>
@@ -219,6 +222,9 @@
                         </valItem>
                         <valItem ident="#vaux">
                            <gloss>Nicholas Vaux  (Sir) </gloss>
+                        </valItem>
+                        <valItem ident="#wolsey">
+                           <gloss>Cardinal Wolsey</gloss>
                         </valItem>
                      </valList>
                   </attDef>
@@ -570,14 +576,8 @@
                <attList>
                   <attDef ident="rend" mode="replace">
                      <valList type="closed">
-                        <valItem ident="ise:basic">
-                           <gloss>Conforms to the basic ISE schema (text structure)</gloss>
-                        </valItem>
-                        <valItem ident="ise:intermediate">
-                           <gloss>Conforms to structural and textual feature components of the ISE schema</gloss>
-                        </valItem>
-                        <valItem ident="ise:full">
-                           <gloss>Conforms to the full ISE schema</gloss>
+                        <valItem ident="ise">
+                           <gloss>Conforms to the ISE TEI schema (usually a customized version)</gloss>
                         </valItem>
                      </valList>
                   </attDef>
@@ -750,6 +750,27 @@
                      </valList>
                   </attDef>
                </attList>
+            </classSpec>
+        
+            <!--    We add a Schematron constraint to @who to make sure its values point to 
+        existing <person> elements. -->
+            <classSpec type="atts" ident="att.ascribed" module="tei" mode="change">
+               <attList>
+                  <attDef ident="who" mode="change">
+                     <constraintSpec scheme="isoschematron" ident="deprecated">
+                        <constraint>
+                           <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@who]">
+                              <sch:let name="bools"
+                                       value="for $i in tokenize(@who, '\s+') return count(//tei:person[@xml:id=substring-after($i, '#')]) gt 0"/>
+                              <sch:assert test="every $i in $bools satisfies $i=true()">
+                      The @who attribute must point to one or more person elements in the particDesc.
+                    </sch:assert>
+                           </sch:rule>
+                        </constraint>
+                     </constraintSpec>
+                  </attDef>
+               </attList>
+          
             </classSpec>
         
          </schemaSpec>

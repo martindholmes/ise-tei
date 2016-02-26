@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise:basic" xml:id="iykn2">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise" xml:id="iykn2">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -384,6 +384,10 @@
             <occupation>Servant</occupation>
           </person>
           
+          <person xml:id="prologue">
+            <persName>Prologue</persName>
+          </person>
+          
           <person xml:id="sandys">
             <persName>Lord Sandys</persName>
             <nationality>English</nationality>
@@ -394,12 +398,7 @@
             <persName>Servant</persName>
             <nationality>English</nationality>
             <occupation>Servant</occupation>
-          </person>
-          
-          <person xml:id="prologue">
-            <persName>Prologue</persName>
-          </person>
-            
+          </person>           
           
         </listPerson>
       </particDesc>
@@ -412,11 +411,11 @@
 
     <front>
       <docTitle>
-        <titlePart type="main">[Title goes here...]</titlePart>
+        <titlePart type="main">Henry VIII, or All is True</titlePart>
       </docTitle>
       <figure type="rule"/>
       <div type="prologue">
-
+        <sp who="#abergavenny #acolyte"><speaker>a</speaker> <l>Thing</l></sp>
       </div>
     </front>
     <body>

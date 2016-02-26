@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="17.0">
+<project version="15.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="17.0" xml:space="preserve">
+            <serialized version="15.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array>
                             <documentTypeDescriptor>
-                                <field name="extensionPatch">
-                                    <null/>
-                                </field>
                                 <field name="name">
-                                    <String>ISE Full</String>
+                                    <String>ISE Instructions</String>
                                 </field>
                                 <field name="schemaDescriptor">
                                     <null/>
@@ -30,10 +27,10 @@
                                             <cssFile-array>
                                                 <cssFile>
                                                     <field name="href">
-                                                        <String>${pd}/css/ise_tei.css</String>
+                                                        <String>${pdu}/css/ise_instructions.css</String>
                                                     </field>
                                                     <field name="title">
-                                                        <String>ISE Author Mode CSS</String>
+                                                        <String>ISE Instructions</String>
                                                     </field>
                                                     <field name="alternate">
                                                         <Boolean>false</Boolean>
@@ -42,9 +39,6 @@
                                             </cssFile-array>
                                         </field>
                                         <field name="mergeCSSsFromDocument">
-                                            <Boolean>false</Boolean>
-                                        </field>
-                                        <field name="multipleAlternateSelectionEnabled">
                                             <Boolean>false</Boolean>
                                         </field>
                                         <field name="actionDescriptors">
@@ -138,7 +132,327 @@
                                     <String-array/>
                                 </field>
                                 <field name="description">
-                                    <String>Fully-encoded ISE document</String>
+                                    <String>Instructions document for ISE. This needs to be shown in Oxygen in a user-friendly author view.</String>
+                                </field>
+                                <field name="doctypeRules">
+                                    <documentTypeRule-array>
+                                        <documentTypeRule>
+                                            <field name="namespace">
+                                                <String>http://www.tei-c.org/ns/1.0</String>
+                                            </field>
+                                            <field name="rootElem">
+                                                <String>TEI</String>
+                                            </field>
+                                            <field name="fileName">
+                                                <String>instructions.xml</String>
+                                            </field>
+                                            <field name="publicID">
+                                                <String>*</String>
+                                            </field>
+                                            <field name="javaRuleClass">
+                                                <String></String>
+                                            </field>
+                                            <field name="attributeLocalName">
+                                                <String>*</String>
+                                            </field>
+                                            <field name="attributeNamespace">
+                                                <String>*</String>
+                                            </field>
+                                            <field name="attributeValue">
+                                                <String>*</String>
+                                            </field>
+                                        </documentTypeRule>
+                                    </documentTypeRule-array>
+                                </field>
+                                <field name="scenarios">
+                                    <scenario-array/>
+                                </field>
+                                <field name="validationScenarios">
+                                    <validationScenario-array/>
+                                </field>
+                                <field name="defaultValidationScenarios">
+                                    <null/>
+                                </field>
+                                <field name="defaultTransformationScenarios">
+                                    <null/>
+                                </field>
+                                <field name="extensionsBundleClassName">
+                                    <null/>
+                                </field>
+                                <field name="useImposedInitialPage">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="imposedInitialPage">
+                                    <String>Author</String>
+                                </field>
+                                <field name="elementLocatorExtension">
+                                    <null/>
+                                </field>
+                                <field name="schemaManagerFilterExtension">
+                                    <null/>
+                                </field>
+                                <field name="authorSWTDndExtension">
+                                    <null/>
+                                </field>
+                                <field name="textSWTDndExtension">
+                                    <null/>
+                                </field>
+                                <field name="authorSwingDndExtension">
+                                    <null/>
+                                </field>
+                                <field name="cssStylesFilterExtension">
+                                    <null/>
+                                </field>
+                                <field name="attributesValueEditor">
+                                    <null/>
+                                </field>
+                                <field name="priority">
+                                    <Integer>3</Integer>
+                                </field>
+                                <field name="xmlNodeCustomizerExtension">
+                                    <null/>
+                                </field>
+                                <field name="externalObjectInsertionHandler">
+                                    <null/>
+                                </field>
+                                <field name="customAttributeValueEditor">
+                                    <null/>
+                                </field>
+                            </documentTypeDescriptor>
+                            <documentTypeDescriptor>
+                                <field name="name">
+                                    <String>ISE Play</String>
+                                </field>
+                                <field name="schemaDescriptor">
+                                    <null/>
+                                </field>
+                                <field name="classpath">
+                                    <String-array/>
+                                </field>
+                                <field name="parentClassLoaderID">
+                                    <null/>
+                                </field>
+                                <field name="authorExtensionDescriptor">
+                                    <authorExtension>
+                                        <field name="cssDescriptors">
+                                            <cssFile-array>
+                                                <cssFile>
+                                                    <field name="href">
+                                                        <String>${pd}/css/ise_tei.css</String>
+                                                    </field>
+                                                    <field name="title">
+                                                        <String>ISE Author Mode CSS</String>
+                                                    </field>
+                                                    <field name="alternate">
+                                                        <Boolean>false</Boolean>
+                                                    </field>
+                                                </cssFile>
+                                            </cssFile-array>
+                                        </field>
+                                        <field name="mergeCSSsFromDocument">
+                                            <Boolean>false</Boolean>
+                                        </field>
+                                        <field name="actionDescriptors">
+                                            <action-array>
+                                                <action>
+                                                    <field name="id">
+                                                        <String>schema.rebuild</String>
+                                                    </field>
+                                                    <field name="name">
+                                                        <String>Rebuild schema</String>
+                                                    </field>
+                                                    <field name="description">
+                                                        <String>Rebuild project schemas to incorporate list of characters.</String>
+                                                    </field>
+                                                    <field name="largeIconPath">
+                                                        <String>${pdu}/images/schema20.png</String>
+                                                    </field>
+                                                    <field name="smallIconPath">
+                                                        <String>${pdu}/images/schema16.png</String>
+                                                    </field>
+                                                    <field name="accessKey">
+                                                        <String></String>
+                                                    </field>
+                                                    <field name="accelerator">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="actionModes">
+                                                        <actionMode-array>
+                                                            <actionMode>
+                                                                <field name="xpathCondition">
+                                                                    <String>true()</String>
+                                                                </field>
+                                                                <field name="argValues">
+                                                                    <serializableOrderedMap>
+                                                                        <entry>
+                                                                            <String>scenarioNames</String>
+                                                                            <String>ISE Rebuild Schema</String>
+                                                                        </entry>
+                                                                    </serializableOrderedMap>
+                                                                </field>
+                                                                <field name="operationID">
+                                                                    <String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
+                                                                </field>
+                                                            </actionMode>
+                                                        </actionMode-array>
+                                                    </field>
+                                                </action>
+                                                <action>
+                                                    <field name="id">
+                                                        <String>html.render</String>
+                                                    </field>
+                                                    <field name="name">
+                                                        <String>Create HTML view</String>
+                                                    </field>
+                                                    <field name="description">
+                                                        <String>Create a web page view of the play for checking/proofing</String>
+                                                    </field>
+                                                    <field name="largeIconPath">
+                                                        <String>${pdu}/images/web20.png</String>
+                                                    </field>
+                                                    <field name="smallIconPath">
+                                                        <String>file:/home/mholmes/WorkData/ise/ise-tei-pilot/working/images/web16.png</String>
+                                                    </field>
+                                                    <field name="accessKey">
+                                                        <String></String>
+                                                    </field>
+                                                    <field name="accelerator">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="actionModes">
+                                                        <actionMode-array>
+                                                            <actionMode>
+                                                                <field name="xpathCondition">
+                                                                    <String>true()</String>
+                                                                </field>
+                                                                <field name="argValues">
+                                                                    <serializableOrderedMap>
+                                                                        <entry>
+                                                                            <String>scenarioNames</String>
+                                                                            <String>ISE TEI to HTML</String>
+                                                                        </entry>
+                                                                    </serializableOrderedMap>
+                                                                </field>
+                                                                <field name="operationID">
+                                                                    <String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
+                                                                </field>
+                                                            </actionMode>
+                                                        </actionMode-array>
+                                                    </field>
+                                                </action>
+                                            </action-array>
+                                        </field>
+                                        <field name="menubarDescriptor">
+                                            <menu>
+                                                <field name="label">
+                                                    <String>ISE Actions</String>
+                                                </field>
+                                                <field name="accessKey">
+                                                    <String>I</String>
+                                                </field>
+                                                <field name="iconPath">
+                                                    <String></String>
+                                                </field>
+                                                <field name="menuEntriesDescriptorList">
+                                                    <menuEntry-array>
+                                                        <menuItem>
+                                                            <field name="actionID">
+                                                                <String>schema.rebuild</String>
+                                                            </field>
+                                                        </menuItem>
+                                                        <menuItem>
+                                                            <field name="actionID">
+                                                                <String>html.render</String>
+                                                            </field>
+                                                        </menuItem>
+                                                    </menuEntry-array>
+                                                </field>
+                                            </menu>
+                                        </field>
+                                        <field name="popupMenuDescriptor">
+                                            <menu>
+                                                <field name="label">
+                                                    <String>Contextual menu</String>
+                                                </field>
+                                                <field name="accessKey">
+                                                    <null/>
+                                                </field>
+                                                <field name="iconPath">
+                                                    <null/>
+                                                </field>
+                                                <field name="menuEntriesDescriptorList">
+                                                    <menuEntry-array/>
+                                                </field>
+                                            </menu>
+                                        </field>
+                                        <field name="toolbarDescriptor">
+                                            <toolbar>
+                                                <field name="id">
+                                                    <String>Toolbar</String>
+                                                </field>
+                                                <field name="type">
+                                                    <Integer>2</Integer>
+                                                </field>
+                                                <field name="largeIconPath">
+                                                    <null/>
+                                                </field>
+                                                <field name="smallIconPath">
+                                                    <null/>
+                                                </field>
+                                                <field name="toolbarEntriesDescriptorList">
+                                                    <toolbarEntry-array>
+                                                        <toolbarItem>
+                                                            <field name="actionID">
+                                                                <String>schema.rebuild</String>
+                                                            </field>
+                                                        </toolbarItem>
+                                                        <toolbarItem>
+                                                            <field name="actionID">
+                                                                <String>html.render</String>
+                                                            </field>
+                                                        </toolbarItem>
+                                                    </toolbarEntry-array>
+                                                </field>
+                                            </toolbar>
+                                        </field>
+                                        <field name="additionalToolbarsDescriptors">
+                                            <null/>
+                                        </field>
+                                        <field name="contextualItems">
+                                            <contextProvider>
+                                                <field name="items">
+                                                    <contextItem-array/>
+                                                </field>
+                                                <field name="removeItems">
+                                                    <null/>
+                                                </field>
+                                            </contextProvider>
+                                        </field>
+                                        <field name="tableSupportClassName">
+                                            <null/>
+                                        </field>
+                                        <field name="tableColWidthSupportClassName">
+                                            <null/>
+                                        </field>
+                                        <field name="customReferencesResolver">
+                                            <null/>
+                                        </field>
+                                        <field name="authorExtensionStateListener">
+                                            <null/>
+                                        </field>
+                                        <field name="attributesRecognizer">
+                                            <null/>
+                                        </field>
+                                    </authorExtension>
+                                </field>
+                                <field name="templatesLocations">
+                                    <String-array/>
+                                </field>
+                                <field name="xmlCatalogs">
+                                    <String-array/>
+                                </field>
+                                <field name="description">
+                                    <String>Play encoded in TEI for the ISE</String>
                                 </field>
                                 <field name="doctypeRules">
                                     <documentTypeRule-array>
@@ -165,7 +479,7 @@
                                                 <String>*</String>
                                             </field>
                                             <field name="attributeValue">
-                                                <String>ise:full</String>
+                                                <String>ise</String>
                                             </field>
                                         </documentTypeRule>
                                     </documentTypeRule-array>
@@ -218,9 +532,6 @@
                                             <field name="outputFile">
                                                 <File>${cfd}/${cfn}.htm</File>
                                             </field>
-                                            <field name="outputResource">
-                                                <String>${cfd}/${cfn}.htm</String>
-                                            </field>
                                             <field name="openOtherLocationInBrowser">
                                                 <Boolean>false</Boolean>
                                             </field>
@@ -258,6 +569,207 @@
                                                 <String-array/>
                                             </field>
                                         </scenario>
+                                        <antScenario>
+                                            <field name="additionalAntArgs">
+                                                <String></String>
+                                            </field>
+                                            <field name="buildTarget">
+                                                <String></String>
+                                            </field>
+                                            <field name="buildFilePath">
+                                                <String>${pd}/create_schema.xml</String>
+                                            </field>
+                                            <field name="ditaParams">
+                                                <list>
+                                                    <antParameter>
+                                                        <field name="name">
+                                                            <String>pd</String>
+                                                        </field>
+                                                        <field name="description">
+                                                            <String>Project directory path.</String>
+                                                        </field>
+                                                        <field name="value">
+                                                            <String>${pd}</String>
+                                                        </field>
+                                                        <field name="defaultValue">
+                                                            <null/>
+                                                        </field>
+                                                        <field name="type">
+                                                            <Integer>5</Integer>
+                                                        </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="possibleValues">
+                                                            <null/>
+                                                        </field>
+                                                    </antParameter>
+                                                    <antParameter>
+                                                        <field name="name">
+                                                            <String>sourceParticDescFile</String>
+                                                        </field>
+                                                        <field name="description">
+                                                            <String>The current file being edited. This is a TEI file which should include a complete &lt;particDesc> with the characters in the play.</String>
+                                                        </field>
+                                                        <field name="value">
+                                                            <String>${cf}</String>
+                                                        </field>
+                                                        <field name="defaultValue">
+                                                            <null/>
+                                                        </field>
+                                                        <field name="type">
+                                                            <Integer>5</Integer>
+                                                        </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="possibleValues">
+                                                            <null/>
+                                                        </field>
+                                                    </antParameter>
+                                                    <antParameter>
+                                                        <field name="name">
+                                                            <String>teiFramework</String>
+                                                        </field>
+                                                        <field name="description">
+                                                            <String>Path to the active TEI Framework.</String>
+                                                        </field>
+                                                        <field name="value">
+                                                            <String>${frameworkDir(TEI P5)}</String>
+                                                        </field>
+                                                        <field name="defaultValue">
+                                                            <null/>
+                                                        </field>
+                                                        <field name="type">
+                                                            <Integer>5</Integer>
+                                                        </field>
+                                                        <field name="isPredefined">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="possibleValues">
+                                                            <null/>
+                                                        </field>
+                                                    </antParameter>
+                                                </list>
+                                            </field>
+                                            <field name="jvmArgs">
+                                                <String>-Xmx256m</String>
+                                            </field>
+                                            <field name="useCustomJavaHome">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="customJavaHomeDir">
+                                                <String></String>
+                                            </field>
+                                            <field name="useCustomANTHome">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="customANTHomeDir">
+                                                <String></String>
+                                            </field>
+                                            <field name="workingDir">
+                                                <String>${pd}</String>
+                                            </field>
+                                            <field name="showConsoleAlways">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="advancedOptionsMap">
+                                                <null/>
+                                            </field>
+                                            <field name="name">
+                                                <String>ISE Rebuild Schema</String>
+                                            </field>
+                                            <field name="baseURL">
+                                                <null/>
+                                            </field>
+                                            <field name="footerURL">
+                                                <null/>
+                                            </field>
+                                            <field name="fOPMethod">
+                                                <null/>
+                                            </field>
+                                            <field name="fOProcessorName">
+                                                <null/>
+                                            </field>
+                                            <field name="headerURL">
+                                                <null/>
+                                            </field>
+                                            <field name="inputXSLURL">
+                                                <null/>
+                                            </field>
+                                            <field name="inputXMLURL">
+                                                <null/>
+                                            </field>
+                                            <field name="defaultScenario">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isFOPPerforming">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="type">
+                                                <String>ANT</String>
+                                            </field>
+                                            <field name="saveAs">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="openInBrowser">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="outputFile">
+                                                <null/>
+                                            </field>
+                                            <field name="openOtherLocationInBrowser">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="locationToOpenInBrowserURL">
+                                                <String></String>
+                                            </field>
+                                            <field name="openInEditor">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="showInHTMLPane">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="showInXMLPane">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="showInSVGPane">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="showInResultSetPane">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="useXSLTInput">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="xsltParams">
+                                                <list/>
+                                            </field>
+                                            <field name="cascadingStylesheets">
+                                                <String-array/>
+                                            </field>
+                                            <field name="xslTransformer">
+                                                <String>ANT</String>
+                                            </field>
+                                            <field name="extensionURLs">
+                                                <String-array>
+                                                    <String>${oxygenHome}/classes/</String>
+                                                    <String>${pdu}/lib/jsch-0.1.52.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygen.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygenDeveloper.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
+                                                    <String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
+                                                    <String>${oxygenHome}/lib/resolver.jar</String>
+                                                    <String>${oxygenHome}/lib/xercesImpl.jar</String>
+                                                    <String>${oxygenHome}/lib/saxon9ee.jar</String>
+                                                    <String>${oxygenHome}/lib/saxon.jar</String>
+                                                    <String>${oxygenHome}/lib/xml-apis-ext.jar</String>
+                                                    <String>${oxygenHome}/lib/log4j.jar</String>
+                                                </String-array>
+                                            </field>
+                                        </antScenario>
                                     </scenario-array>
                                 </field>
                                 <field name="validationScenarios">
@@ -304,7 +816,7 @@
                                                                     <Integer>6</Integer>
                                                                 </field>
                                                                 <field name="uri">
-                                                                    <String>${pd}/schemas/ise_full.rng</String>
+                                                                    <String>${pd}/schemas/ise_tei.rng</String>
                                                                 </field>
                                                             </validationUnitSchema>
                                                         </field>
@@ -380,7 +892,15 @@
                         <documentTypeEntry-array>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>2/internal/ISE Full</String>
+                                    <String>2/internal/ISE Play</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>2/internal/ISE Instructions</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -413,14 +933,6 @@
                             <documentTypeEntry>
                                 <field name="documentTypeID">
                                     <String>6/dita/ditaval.framework/DITAVAL</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/daisy/daisy.framework/Daisy</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -477,22 +989,6 @@
                             <documentTypeEntry>
                                 <field name="documentTypeID">
                                     <String>6/mathml/mathml.framework/MathML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/maven/maven.framework/Maven Project</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/maven/maven.framework/Maven Settings</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -596,7 +1092,7 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>6/schematron/schematron15.framework/Schematron 1.5 (deprecated)</String>
+                                    <String>6/schematron/schematron15.framework/Schematron 1.5</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -620,22 +1116,6 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>4/tei/teip5jtei.framework/TEI JTEI</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/tei/teip5odd.framework/TEI ODD</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/tei/teip5odd.framework/TEI ODD</String>
                                 </field>
                                 <field name="enable">
@@ -644,23 +1124,7 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>4/tei/teip4.framework/TEI P4 (deprecated)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/tei/teip4.framework/TEI P4 (deprecated)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/tei/teip5.framework/TEI P5</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>true</Boolean>
@@ -781,7 +1245,52 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>create_schemas.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>ise_tei_BUILDER_BUILD</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>ANT</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>build.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>ise_tei_BUILDER_BUILD</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>ANT</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>instructions.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>ise_instructions</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>ANT</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>start.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -859,33 +1368,90 @@
                     <entry>
                         <String>scenarios</String>
                         <scenario-array>
-                            <scenario>
+                            <antScenario>
+                                <field name="additionalAntArgs">
+                                    <String></String>
+                                </field>
+                                <field name="buildTarget">
+                                    <String></String>
+                                </field>
+                                <field name="buildFilePath">
+                                    <String>${pd}/start.xml</String>
+                                </field>
+                                <field name="ditaParams">
+                                    <list>
+                                        <antParameter>
+                                            <field name="name">
+                                                <String>suggestedplay.id</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>A unique QName which can be used as both the filename (with .xml) and the @xml:id of the play file.</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${ask('Please provide an identifier for your play.', generic, 'hamlet')}</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <null/>
+                                            </field>
+                                        </antParameter>
+                                    </list>
+                                </field>
+                                <field name="jvmArgs">
+                                    <String>-Xmx256m</String>
+                                </field>
+                                <field name="useCustomJavaHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customJavaHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="useCustomANTHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customANTHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="workingDir">
+                                    <String>${cfd}</String>
+                                </field>
+                                <field name="showConsoleAlways">
+                                    <Boolean>true</Boolean>
+                                </field>
                                 <field name="advancedOptionsMap">
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>ise_xml_to_tei</String>
+                                    <String>ise_instructions</String>
                                 </field>
                                 <field name="baseURL">
-                                    <String></String>
+                                    <null/>
                                 </field>
                                 <field name="footerURL">
-                                    <String></String>
+                                    <null/>
                                 </field>
                                 <field name="fOPMethod">
-                                    <String>pdf</String>
+                                    <null/>
                                 </field>
                                 <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
+                                    <null/>
                                 </field>
                                 <field name="headerURL">
-                                    <String></String>
+                                    <null/>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xsl/ise-xml-to-tei.xsl</String>
+                                    <null/>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
+                                    <null/>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -894,7 +1460,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="type">
-                                    <String>XSL</String>
+                                    <String>ANT</String>
                                 </field>
                                 <field name="saveAs">
                                     <Boolean>true</Boolean>
@@ -903,16 +1469,13 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>${pd}/temp/test_ise_to_tei.xml</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${pd}/temp/test_ise_to_tei.xml</String>
+                                    <null/>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <null/>
+                                    <String></String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>true</Boolean>
@@ -930,7 +1493,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="xsltParams">
                                     <list/>
@@ -939,12 +1502,12 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>ANT</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
                                 </field>
-                            </scenario>
+                            </antScenario>
                             <antScenario>
                                 <field name="additionalAntArgs">
                                     <String></String>
@@ -973,6 +1536,9 @@
                                             <field name="type">
                                                 <Integer>5</Integer>
                                             </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
                                             <field name="possibleValues">
                                                 <null/>
                                             </field>
@@ -993,6 +1559,9 @@
                                             <field name="type">
                                                 <Integer>5</Integer>
                                             </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
                                             <field name="possibleValues">
                                                 <null/>
                                             </field>
@@ -1012,6 +1581,9 @@
                                             </field>
                                             <field name="type">
                                                 <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
                                             </field>
                                             <field name="possibleValues">
                                                 <null/>
@@ -1085,9 +1657,6 @@
                                 <field name="outputFile">
                                     <null/>
                                 </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
@@ -1168,6 +1737,9 @@
                                             <field name="type">
                                                 <Integer>5</Integer>
                                             </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
+                                            </field>
                                             <field name="possibleValues">
                                                 <null/>
                                             </field>
@@ -1187,6 +1759,9 @@
                                             </field>
                                             <field name="type">
                                                 <Integer>5</Integer>
+                                            </field>
+                                            <field name="isPredefined">
+                                                <Boolean>false</Boolean>
                                             </field>
                                             <field name="possibleValues">
                                                 <null/>
@@ -1260,9 +1835,6 @@
                                 <field name="outputFile">
                                     <null/>
                                 </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
@@ -1315,7 +1887,94 @@
                                     </String-array>
                                 </field>
                             </antScenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>ise_xml_to_tei</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xsl/ise-xml-to-tei.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <File>${pd}/temp/test_ise_to_tei.xml</File>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
                         </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
                     </entry>
                 </serializableOrderedMap>
             </serialized>

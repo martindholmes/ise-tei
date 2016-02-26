@@ -1,0 +1,54 @@
+/* CSS file whose only purpose is to display documentation in Author mode. */
+
+
+teiHeader{
+  display: none;
+}
+
+body{
+  display: block;
+  font-family: Georgia;
+  padding: 1em;
+}
+
+div, p, head{
+  display: block;
+  margin-top: 1em;
+}
+
+head{
+  font-size: 130%;
+  margin-top: 1em;
+}
+
+list{
+  padding-left: 1em;
+  display: block;
+  margin: 1em 0;
+}
+
+list[rend="bulleted"]{ 
+  list-style-type: circle;
+}
+
+list[rend="numbered"]{
+  list-style-type: decimal;
+}
+
+item{
+  display: list-item;
+}
+
+emph{
+  font-weight: bold;
+  display: inline;
+}
+
+idno{
+  font-family: monospace;
+}
+
+p{
+  display: block;
+  margin: 1em;
+}

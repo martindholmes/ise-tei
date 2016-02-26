@@ -143,9 +143,7 @@
   </teiHeader>
   <text>
     <body>
-      <div type="act">
-        <head></head>
-      </div>
+      <p>This file contains components to be integrated into an ISE TEI schema.</p>
     </body>
   </text>
 </TEI>

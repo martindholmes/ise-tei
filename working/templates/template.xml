@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="ise">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>[Title of the play]</title>
       </titleStmt>
-      <editionStmt><p></p></editionStmt>
-      <publicationStmt><p></p></publicationStmt>
+      <editionStmt><p>Electronic edition.</p></editionStmt>
+      <publicationStmt><p>Encoded for the Internet Shakespeare Editions.</p></publicationStmt>
       <sourceDesc><p></p></sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <!--   NOTE: YOUR FIRST TASK IS TO COMPLETE THE LIST OF CHARACTERS IN YOUR PLAY,
+          following the model below. Each character should have a unique @xml:id and 
+          a distinct name. -->
+        <listPerson>
+          <person xml:id="ophelia">
+            <persName>Ophelia</persName>
+            <nationality>Danish</nationality>
+            <occupation>Noblewoman</occupation>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
     <encodingDesc>
       <p></p>
     </encodingDesc>
@@ -17,17 +31,22 @@
     </revisionDesc>
   </teiHeader>
   <text>
+<!--   You (the editor) are in control of the structure of your text, and it should reflect 
+      as closely as possible the original source you are encoding. So, for instance, if 
+      the source has no act divisions, only scenes, then obviously you would not 
+      use <div type="act">, only <div type="scene">. -->
     <front>
       <docTitle>
         <titlePart type="main">[Title as it appears in the document]</titlePart>
       </docTitle>
-      <div>
+      <div type="prologue">
         <!-- Prologue here... -->
       </div>
     </front>
     <body>
       <div type="act">
-        <head>  </head>
+        <head>Act I</head>
+        
       </div>
     </body>
   </text>
